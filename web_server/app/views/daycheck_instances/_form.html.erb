@@ -1,0 +1,41 @@
+<%= form_for(@daycheck_instance) do |f| %>
+  <% if @daycheck_instance.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@daycheck_instance.errors.count, "error") %> prohibited this daycheck_instance from being saved:</h2>
+
+      <ul>
+      <% @daycheck_instance.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :DAYCHECK_NO %><br>
+    <%= f.number_field :DAYCHECK_NO %>
+  </div>
+  <div class="field">
+    <%= f.label :USER_NO %><br>
+    <%= f.number_field :USER_NO %>
+  </div>
+  <div class="field">
+    <%= f.label :USER_TYPE %><br>
+    <%= f.number_field :USER_TYPE %>
+  </div>
+  <div class="field">
+    <%= f.label :DAYCHECK_ID %><br>
+    <%= f.number_field :DAYCHECK_ID %>
+  </div>
+  <div class="field">
+    <%= f.label :TIME %><br>
+    <%= f.text_area :TIME %>
+  </div>
+  <div class="field">
+    <%= f.label :CHECK %><br>
+    <%= f.number_field :CHECK %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

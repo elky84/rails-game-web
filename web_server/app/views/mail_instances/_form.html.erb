@@ -1,0 +1,61 @@
+<%= form_for(@mail_instance) do |f| %>
+  <% if @mail_instance.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@mail_instance.errors.count, "error") %> prohibited this mail_instance from being saved:</h2>
+
+      <ul>
+      <% @mail_instance.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :MAIL_NO %><br>
+    <%= f.number_field :MAIL_NO %>
+  </div>
+  <div class="field">
+    <%= f.label :USER_NO %><br>
+    <%= f.number_field :USER_NO %>
+  </div>
+  <div class="field">
+    <%= f.label :TITLE %><br>
+    <%= f.text_area :TITLE %>
+  </div>
+  <div class="field">
+    <%= f.label :CONTENT %><br>
+    <%= f.text_area :CONTENT %>
+  </div>
+  <div class="field">
+    <%= f.label :SENDER %><br>
+    <%= f.text_area :SENDER %>
+  </div>
+  <div class="field">
+    <%= f.label :SENDER_ACTOR_ID %><br>
+    <%= f.number_field :SENDER_ACTOR_ID %>
+  </div>
+  <div class="field">
+    <%= f.label :SENDER_USER_NO %><br>
+    <%= f.number_field :SENDER_USER_NO %>
+  </div>
+  <div class="field">
+    <%= f.label :OPENED %><br>
+    <%= f.text_area :OPENED %>
+  </div>
+  <div class="field">
+    <%= f.label :REWARD %><br>
+    <%= f.text_area :REWARD %>
+  </div>
+  <div class="field">
+    <%= f.label :END_DATE %><br>
+    <%= f.datetime_select :END_DATE %>
+  </div>
+  <div class="field">
+    <%= f.label :MAIL_TYPE %><br>
+    <%= f.text_area :MAIL_TYPE %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

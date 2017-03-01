@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User no:</strong>
+  <%= @stage_clear_instance.USER_NO %>
+</p>
+
+<p>
+  <strong>Character no:</strong>
+  <%= @stage_clear_instance.CHARACTER_NO %>
+</p>
+
+<p>
+  <strong>Play stage:</strong>
+  <%= @stage_clear_instance.PLAY_STAGE %>
+</p>
+
+<p>
+  <strong>Clear stage:</strong>
+  <%= @stage_clear_instance.CLEAR_STAGE %>
+</p>
+
+<p>
+  <strong>Stage score:</strong>
+  <%= @stage_clear_instance.STAGE_SCORE %>
+</p>
+
+<p>
+  <strong>Last date:</strong>
+  <%= @stage_clear_instance.LAST_DATE %>
+</p>
+
+<%= link_to 'Edit', edit_stage_clear_instance_path(@stage_clear_instance) %> |
+<%= link_to 'Back', stage_clear_instances_path %>

@@ -1,0 +1,63 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Pvp Instances</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Character no</th>
+      <th>Character lv</th>
+      <th>Character id</th>
+      <th>Costume id</th>
+      <th>User no</th>
+      <th>User nickname</th>
+      <th>User lv</th>
+      <th>Rating</th>
+      <th>Party attacker</th>
+      <th>Attacker power</th>
+      <th>Party defender</th>
+      <th>Defender power</th>
+      <th>Season num</th>
+      <th>Is succession victory</th>
+      <th>Succession count</th>
+      <th>Victory count</th>
+      <th>Defeat count</th>
+      <th>Cur match no</th>
+      <th>Rank</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @pvp_instances.each do |pvp_instance| %>
+      <tr>
+        <td><%= pvp_instance.CHARACTER_NO %></td>
+        <td><%= pvp_instance.CHARACTER_LV %></td>
+        <td><%= pvp_instance.CHARACTER_ID %></td>
+        <td><%= pvp_instance.COSTUME_ID %></td>
+        <td><%= pvp_instance.USER_NO %></td>
+        <td><%= pvp_instance.USER_NICKNAME %></td>
+        <td><%= pvp_instance.USER_LV %></td>
+        <td><%= pvp_instance.RATING %></td>
+        <td><%= pvp_instance.PARTY_ATTACKER %></td>
+        <td><%= pvp_instance.ATTACKER_POWER %></td>
+        <td><%= pvp_instance.PARTY_DEFENDER %></td>
+        <td><%= pvp_instance.DEFENDER_POWER %></td>
+        <td><%= pvp_instance.SEASON_NUM %></td>
+        <td><%= pvp_instance.IS_SUCCESSION_VICTORY %></td>
+        <td><%= pvp_instance.SUCCESSION_COUNT %></td>
+        <td><%= pvp_instance.VICTORY_COUNT %></td>
+        <td><%= pvp_instance.DEFEAT_COUNT %></td>
+        <td><%= pvp_instance.CUR_MATCH_NO %></td>
+        <td><%= pvp_instance.RANK %></td>
+        <td><%= link_to 'Show', pvp_instance %></td>
+        <td><%= link_to 'Edit', edit_pvp_instance_path(pvp_instance) %></td>
+        <td><%= link_to 'Destroy', pvp_instance, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Pvp instance', new_pvp_instance_path %>

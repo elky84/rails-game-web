@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Character no:</strong>
+  <%= @character_instance.CHARACTER_NO %>
+</p>
+
+<p>
+  <strong>User no:</strong>
+  <%= @character_instance.USER_NO %>
+</p>
+
+<p>
+  <strong>Character id:</strong>
+  <%= @character_instance.CHARACTER_ID %>
+</p>
+
+<p>
+  <strong>Level:</strong>
+  <%= @character_instance.LEVEL %>
+</p>
+
+<p>
+  <strong>Exp:</strong>
+  <%= @character_instance.EXP %>
+</p>
+
+<p>
+  <strong>Lastest active time:</strong>
+  <%= @character_instance.LASTEST_ACTIVE_TIME %>
+</p>
+
+<p>
+  <strong>Mastery group id:</strong>
+  <%= @character_instance.MASTERY_GROUP_ID %>
+</p>
+
+<p>
+  <strong>Party monster id:</strong>
+  <%= @character_instance.PARTY_MONSTER_ID %>
+</p>
+
+<p>
+  <strong>Stage instance no:</strong>
+  <%= @character_instance.STAGE_INSTANCE_NO %>
+</p>
+
+<p>
+  <strong>Costume id:</strong>
+  <%= @character_instance.COSTUME_ID %>
+</p>
+
+<%= link_to 'Edit', edit_character_instance_path(@character_instance) %> |
+<%= link_to 'Back', character_instances_path %>

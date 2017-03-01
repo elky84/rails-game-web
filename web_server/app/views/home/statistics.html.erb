@@ -1,0 +1,516 @@
+﻿<div align="center" style="padding:10px;" class="container">
+	
+<h1>Statistics</h1>
+<% time_str = DateTime.current %><%= time_str %><br><br>
+
+<b>Unique Visitor [VALUE:유저수]</b>
+<form action="/statistics/uv" method="get">
+	START_DATE
+	<input type="date" name="start_date" value= <%=time_str.to_date %> >
+	<input type="time" name="start_time" value= <%="00:00:00 +0000"%> >
+	
+	END_DATE
+	<input type="date" name="end_date" value= <%=time_str.to_date%> >
+	<input type="time" name="end_time" value= <%=time_str.to_time.strftime("%T")%> >
+
+	<input type="submit" value="submit">
+</form>
+<br>
+
+
+<b>NEW USER [VALUE:유저수]</b>
+<form action="/statistics/nru" method="get">
+	START_DATE
+	<input type="date" name="start_date" value= <%=time_str.to_date %> >
+	<input type="time" name="start_time" value= <%="00:00:00 +0000"%> >
+	
+	END_DATE
+	<input type="date" name="end_date" value= <%=time_str.to_date%> >
+	<input type="time" name="end_time" value= <%=time_str.to_time.strftime("%T")%> >
+
+	<input type="submit" value="submit">
+</form>
+<br>
+
+
+<b>RETENTION [VALUE:유저수]</b>
+<form action="/statistics/retention" method="get">
+	START_DATE
+	<input type="date" name="start_date" value= <%=time_str.to_date %> >
+	<input type="time" name="start_time" value= <%="00:00:00 +0000"%> >
+	
+	END_DATE
+	<input type="date" name="end_date" value= <%=time_str.to_date%> >
+	<input type="time" name="end_time" value= <%=time_str.to_time.strftime("%T")%> >
+
+	<input type="submit" value="submit">
+</form>
+<br>
+
+<b>DAU [VALUE:유저수]</b>
+<form action="/statistics/dau" method="get">
+	START_DATE
+	<input type="date" name="start_date" value= <%=time_str.to_date %> >
+	<input type="time" name="start_time" value= <%="00:00:00 +0000"%> >
+	
+	END_DATE
+	<input type="date" name="end_date" value= <%=time_str.to_date%> >
+	<input type="time" name="end_time" value= <%=time_str.to_time.strftime("%T")%> >
+
+	<input type="submit" value="submit">
+</form>
+<br>
+
+
+<b>CU [VALUE:유저수]</b>
+<form action="/statistics/cu" method="get">
+	START_DATE
+	<input type="date" name="start_date" value= <%=time_str.to_date %> >
+	<input type="time" name="start_time" value= <%="00:00:00 +0000"%> >
+	
+	END_DATE
+	<input type="date" name="end_date" value= <%=time_str.to_date%> >
+	<input type="time" name="end_time" value= <%=time_str.to_time.strftime("%T")%> >
+
+	<input type="submit" value="submit">
+</form>
+<br>
+
+<b>DBU [VALUE:유저수]</b>
+<form action="/statistics/dbu" method="get">
+	START_DATE
+	<input type="date" name="start_date" value= <%=time_str.to_date %> >
+	<input type="time" name="start_time" value= <%="00:00:00 +0000"%> >
+	
+	END_DATE
+	<input type="date" name="end_date" value= <%=time_str.to_date%> >
+	<input type="time" name="end_time" value= <%=time_str.to_time.strftime("%T")%> >
+
+	<input type="submit" value="submit">
+</form>
+<br>
+
+
+<b>FIRST_BU [VALUE:유저수]</b>
+<form action="/statistics/first_bu" method="get">
+	START_DATE
+	<input type="date" name="start_date" value= <%=time_str.to_date %> >
+	<input type="time" name="start_time" value= <%="00:00:00 +0000"%> >
+	
+	END_DATE
+	<input type="date" name="end_date" value= <%=time_str.to_date%> >
+	<input type="time" name="end_time" value= <%=time_str.to_time.strftime("%T")%> >
+
+	<input type="submit" value="submit">
+</form>
+<br>
+
+
+<b>USER_LEVEL RATE [VALUE:유저수, INFO:레벨]</b>
+<form action="/statistics/user_level_rate" method="get">
+	START_DATE
+	<input type="date" name="start_date" value= <%=time_str.to_date %> >
+	<input type="time" name="start_time" value= <%="00:00:00 +0000"%> >
+	
+	END_DATE
+	<input type="date" name="end_date" value= <%=time_str.to_date%> >
+	<input type="time" name="end_time" value= <%=time_str.to_time.strftime("%T")%> >
+
+	<input type="submit" value="submit">
+</form>
+<br>
+
+<b>CHARACTER_LEVEL RATE [VALUE:유저수, INFO:레벨]</b>
+<form action="/statistics/character_level_rate" method="get">
+	START_DATE
+	<input type="date" name="start_date" value= <%=time_str.to_date %> >
+	<input type="time" name="start_time" value= <%="00:00:00 +0000"%> >
+	
+	END_DATE
+	<input type="date" name="end_date" value= <%=time_str.to_date%> >
+	<input type="time" name="end_time" value= <%=time_str.to_time.strftime("%T")%> >
+
+	<input type="submit" value="submit">
+</form>
+<br>
+
+<b>BUY_SHOP by SHOP_ID [VALUE:유저수, INFO:SHOP_ID]</b>
+<form action="/statistics/buy_shop_by_shop_id" method="get">
+	START_DATE
+	<input type="date" name="start_date" value= <%=time_str.to_date %> >
+	<input type="time" name="start_time" value= <%="00:00:00 +0000"%> >
+	
+	END_DATE
+	<input type="date" name="end_date" value= <%=time_str.to_date%> >
+	<input type="time" name="end_time" value= <%=time_str.to_time.strftime("%T")%> >
+
+	<input type="submit" value="submit">
+</form>
+<br>
+
+<b>MONSTER by MONSTER_ID [VALUE:유저수, INFO:MONSTER_ID]</b>
+<form action="/statistics/monster_by_monster_id" method="get">
+	START_DATE
+	<input type="date" name="start_date" value= <%=time_str.to_date %> >
+	<input type="time" name="start_time" value= <%="00:00:00 +0000"%> >
+	
+	END_DATE
+	<input type="date" name="end_date" value= <%=time_str.to_date%> >
+	<input type="time" name="end_time" value= <%=time_str.to_time.strftime("%T")%> >
+
+	<input type="submit" value="submit">
+</form>
+<br>
+
+
+<b>ITEM by ITEM_ID [VALUE:유저수, INFO:ITEM_ID]</b>
+<form action="/statistics/item_by_item_id" method="get">
+	START_DATE
+	<input type="date" name="start_date" value= <%=time_str.to_date %> >
+	<input type="time" name="start_time" value= <%="00:00:00 +0000"%> >
+	
+	END_DATE
+	<input type="date" name="end_date" value= <%=time_str.to_date%> >
+	<input type="time" name="end_time" value= <%=time_str.to_time.strftime("%T")%> >
+
+	<input type="submit" value="submit">
+</form>
+<br>
+
+<b>STAGE by STAGE_ID [VALUE:유저수, INFO:STAGE_ID]</b>
+<form action="/statistics/stage_by_stage_id" method="get">
+	START_DATE
+	<input type="date" name="start_date" value= <%=time_str.to_date %> >
+	<input type="time" name="start_time" value= <%="00:00:00 +0000"%> >
+	
+	END_DATE
+	<input type="date" name="end_date" value= <%=time_str.to_date%> >
+	<input type="time" name="end_time" value= <%=time_str.to_time.strftime("%T")%> >
+
+	<input type="submit" value="submit">
+</form>
+<br>
+
+<b>GACHA ITEM  [VALUE:유저수, INFO:아이템 이름]</b>
+<form action="/statistics/gacha_item" method="get">
+	START_DATE
+	<input type="date" name="start_date" value= <%=time_str.to_date %> >
+	<input type="time" name="start_time" value= <%="00:00:00 +0000"%> >
+	
+	END_DATE
+	<input type="date" name="end_date" value= <%=time_str.to_date%> >
+	<input type="time" name="end_time" value= <%=time_str.to_time.strftime("%T")%> >
+
+	<input type="submit" value="submit">
+</form>
+<br>
+
+<b>GACHA ITEM GRADE [VALUE:유저수, INFO:아이템 등급]</b>
+<form action="/statistics/gacha_item_grade" method="get">
+	START_DATE
+	<input type="date" name="start_date" value= <%=time_str.to_date %> >
+	<input type="time" name="start_time" value= <%="00:00:00 +0000"%> >
+	
+	END_DATE
+	<input type="date" name="end_date" value= <%=time_str.to_date%> >
+	<input type="time" name="end_time" value= <%=time_str.to_time.strftime("%T")%> >
+
+	<input type="submit" value="submit">
+</form>
+<br>
+
+<b>GACHA MONSTER [VALUE:유저수, INFO:몬스터 이름]</b>
+<form action="/statistics/gacha_monster" method="get">
+	START_DATE
+	<input type="date" name="start_date" value= <%=time_str.to_date %> >
+	<input type="time" name="start_time" value= <%="00:00:00 +0000"%> >
+	
+	END_DATE
+	<input type="date" name="end_date" value= <%=time_str.to_date%> >
+	<input type="time" name="end_time" value= <%=time_str.to_time.strftime("%T")%> >
+
+	<input type="submit" value="submit">
+</form>
+<br>
+
+<b>GACHA MONSTER GRADE [VALUE:유저수, INFO:몬스터 등급]</b>
+<form action="/statistics/gacha_monster_grade" method="get">
+	START_DATE
+	<input type="date" name="start_date" value= <%=time_str.to_date %> >
+	<input type="time" name="start_time" value= <%="00:00:00 +0000"%> >
+	
+	END_DATE
+	<input type="date" name="end_date" value= <%=time_str.to_date%> >
+	<input type="time" name="end_time" value= <%=time_str.to_time.strftime("%T")%> >
+
+	<input type="submit" value="submit">
+</form>
+<br>
+
+<b>ALL DIAMOND [VALUE:다이아]</b>
+<form action="/statistics/all_diamond" method="get">
+	START_DATE
+	<input type="date" name="start_date" value= <%=time_str.to_date %> >
+	<input type="time" name="start_time" value= <%="00:00:00 +0000"%> >
+	
+	END_DATE
+	<input type="date" name="end_date" value= <%=time_str.to_date%> >
+	<input type="time" name="end_time" value= <%=time_str.to_time.strftime("%T")%> >
+
+	<input type="submit" value="submit">
+</form>
+<br>
+
+<b>ALL MONEY [VALUE:엽전]</b>
+<form action="/statistics/all_money" method="get">
+	START_DATE
+	<input type="date" name="start_date" value= <%=time_str.to_date %> >
+	<input type="time" name="start_time" value= <%="00:00:00 +0000"%> >
+	
+	END_DATE
+	<input type="date" name="end_date" value= <%=time_str.to_date%> >
+	<input type="time" name="end_time" value= <%=time_str.to_time.strftime("%T")%> >
+
+	<input type="submit" value="submit">
+</form>
+<br>
+
+<b>LOG_BY_USER_LEVEL_RATE  [VALUE:횟수, INFO:유저가 한 행동]</b>
+<form action="/statistics/log_by_user_level_rate" method="get">
+	START_DATE
+	<input type="date" name="start_date" value= <%=time_str.to_date %> >
+	<input type="time" name="start_time" value= <%="00:00:00 +0000"%> >
+	
+	END_DATE
+	<input type="date" name="end_date" value= <%=time_str.to_date%> >
+	<input type="time" name="end_time" value= <%=time_str.to_time.strftime("%T")%> >
+
+	<input type="submit" value="submit">
+</form>
+<br>
+
+<b>PVP COUNT [VALUE:횟수, INFO:승패]</b>
+<form action="/statistics/pvp" method="get">
+	START_DATE
+	<input type="date" name="start_date" value= <%=time_str.to_date %> >
+	<input type="time" name="start_time" value= <%="00:00:00 +0000"%> >
+	
+	END_DATE
+	<input type="date" name="end_date" value= <%=time_str.to_date%> >
+	<input type="time" name="end_time" value= <%=time_str.to_time.strftime("%T")%> >
+
+	<input type="submit" value="submit">
+</form>
+<br>
+
+
+<b>PVP_RATING [VALUE:횟수, INFO:레이팅. 1400이면 1400~1499]</b>
+<form action="/statistics/pvp_rating" method="get">
+	START_DATE
+	<input type="date" name="start_date" value= <%=time_str.to_date %> >
+	<input type="time" name="start_time" value= <%="00:00:00 +0000"%> >
+	
+	END_DATE
+	<input type="date" name="end_date" value= <%=time_str.to_date%> >
+	<input type="time" name="end_time" value= <%=time_str.to_time.strftime("%T")%> >
+
+	<input type="submit" value="submit">
+</form>
+<br>
+
+
+<b>ITEM_ENCHANT [VALUE:횟수]</b>
+<form action="/statistics/item_enchant" method="get">
+	START_DATE
+	<input type="date" name="start_date" value= <%=time_str.to_date %> >
+	<input type="time" name="start_time" value= <%="00:00:00 +0000"%> >
+	
+	END_DATE
+	<input type="date" name="end_date" value= <%=time_str.to_date%> >
+	<input type="time" name="end_time" value= <%=time_str.to_time.strftime("%T")%> >
+
+	<input type="submit" value="submit">
+</form>
+<br>
+
+
+<b>SKILL_ENCHANT  [VALUE:횟수]</b>
+<form action="/statistics/skill_enchant" method="get">
+	START_DATE
+	<input type="date" name="start_date" value= <%=time_str.to_date %> >
+	<input type="time" name="start_time" value= <%="00:00:00 +0000"%> >
+	
+	END_DATE
+	<input type="date" name="end_date" value= <%=time_str.to_date%> >
+	<input type="time" name="end_time" value= <%=time_str.to_time.strftime("%T")%> >
+
+	<input type="submit" value="submit">
+</form>
+<br>
+
+
+<b>MONSTER_ENCHANT [VALUE:횟수]</b>
+<form action="/statistics/monster_enchant" method="get">
+	START_DATE
+	<input type="date" name="start_date" value= <%=time_str.to_date %> >
+	<input type="time" name="start_time" value= <%="00:00:00 +0000"%> >
+	
+	END_DATE
+	<input type="date" name="end_date" value= <%=time_str.to_date%> >
+	<input type="time" name="end_time" value= <%=time_str.to_time.strftime("%T")%> >
+
+	<input type="submit" value="submit">
+</form>
+<br>
+
+
+<b>MONSTER_EVOLUTION [VALUE:횟수]</b>
+<form action="/statistics/monster_evolution" method="get">
+	START_DATE
+	<input type="date" name="start_date" value= <%=time_str.to_date %> >
+	<input type="time" name="start_time" value= <%="00:00:00 +0000"%> >
+	
+	END_DATE
+	<input type="date" name="end_date" value= <%=time_str.to_date%> >
+	<input type="time" name="end_time" value= <%=time_str.to_time.strftime("%T")%> >
+
+	<input type="submit" value="submit">
+</form>
+<br>
+
+
+<b>SUMMON_FRIEND [VALUE:횟수]</b>
+<form action="/statistics/summon_friend" method="get">
+	START_DATE
+	<input type="date" name="start_date" value= <%=time_str.to_date %> >
+	<input type="time" name="start_time" value= <%="00:00:00 +0000"%> >
+	
+	END_DATE
+	<input type="date" name="end_date" value= <%=time_str.to_date%> >
+	<input type="time" name="end_time" value= <%=time_str.to_time.strftime("%T")%> >
+
+	<input type="submit" value="submit">
+</form>
+<br>
+
+
+<b>MASTERY [VALUE:횟수, INFO:공격/방어/유틸 구분]</b>
+<form action="/statistics/mastery" method="get">
+	START_DATE
+	<input type="date" name="start_date" value= <%=time_str.to_date %> >
+	<input type="time" name="start_time" value= <%="00:00:00 +0000"%> >
+	
+	END_DATE
+	<input type="date" name="end_date" value= <%=time_str.to_date%> >
+	<input type="time" name="end_time" value= <%=time_str.to_time.strftime("%T")%> >
+
+	<input type="submit" value="submit">
+</form>
+<br>
+
+
+<b>EXT SLOT [VALUE:횟수, INFO:장비/파티 구분]</b>
+<form action="/statistics/ext_slot" method="get">
+	START_DATE
+	<input type="date" name="start_date" value= <%=time_str.to_date %> >
+	<input type="time" name="start_time" value= <%="00:00:00 +0000"%> >
+	
+	END_DATE
+	<input type="date" name="end_date" value= <%=time_str.to_date%> >
+	<input type="time" name="end_time" value= <%=time_str.to_time.strftime("%T")%> >
+
+	<input type="submit" value="submit">
+</form>
+<br>
+
+
+<b>BUY_MASTERY_POINT [VALUE:횟수]</b>
+<form action="/statistics/buy_mastery_point" method="get">
+	START_DATE
+	<input type="date" name="start_date" value= <%=time_str.to_date %> >
+	<input type="time" name="start_time" value= <%="00:00:00 +0000"%> >
+	
+	END_DATE
+	<input type="date" name="end_date" value= <%=time_str.to_date%> >
+	<input type="time" name="end_time" value= <%=time_str.to_time.strftime("%T")%> >
+
+	<input type="submit" value="submit">
+</form>
+<br>
+
+
+<b>CASH GACHA [VALUE:횟수]</b>
+<form action="/statistics/cash_gacha" method="get">
+	START_DATE
+	<input type="date" name="start_date" value= <%=time_str.to_date %> >
+	<input type="time" name="start_time" value= <%="00:00:00 +0000"%> >
+	
+	END_DATE
+	<input type="date" name="end_date" value= <%=time_str.to_date%> >
+	<input type="time" name="end_time" value= <%=time_str.to_time.strftime("%T")%> >
+
+	<input type="submit" value="submit">
+</form>
+<br>
+
+<b>QUEST [VALUE:횟수]</b>
+<form action="/statistics/quest" method="get">
+	START_DATE
+	<input type="date" name="start_date" value= <%=time_str.to_date %> >
+	<input type="time" name="start_time" value= <%="00:00:00 +0000"%> >
+	
+	END_DATE
+	<input type="date" name="end_date" value= <%=time_str.to_date%> >
+	<input type="time" name="end_time" value= <%=time_str.to_time.strftime("%T")%> >
+
+	<input type="submit" value="submit">
+</form>
+<br>
+
+
+<b>DAILY_QUEST [VALUE:횟수]</b>
+<form action="/statistics/daily_quest" method="get">
+	START_DATE
+	<input type="date" name="start_date" value= <%=time_str.to_date %> >
+	<input type="time" name="start_time" value= <%="00:00:00 +0000"%> >
+	
+	END_DATE
+	<input type="date" name="end_date" value= <%=time_str.to_date%> >
+	<input type="time" name="end_time" value= <%=time_str.to_time.strftime("%T")%> >
+
+	<input type="submit" value="submit">
+</form>
+<br>
+
+
+<b>STAGE_REWARD [VALUE:횟수, INFO:보상 ]</b>
+<form action="/statistics/stage_reward" method="get">
+	START_DATE
+	<input type="date" name="start_date" value= <%=time_str.to_date %> >
+	<input type="time" name="start_time" value= <%="00:00:00 +0000"%> >
+	
+	END_DATE
+	<input type="date" name="end_date" value= <%=time_str.to_date%> >
+	<input type="time" name="end_time" value= <%=time_str.to_time.strftime("%T")%> >
+
+	<input type="submit" value="submit">
+</form>
+<br>
+
+<b>STAGE_ENTER [VALUE:횟수]</b>
+<form action="/statistics/stage_enter" method="get">
+	START_DATE
+	<input type="date" name="start_date" value= <%=time_str.to_date %> >
+	<input type="time" name="start_time" value= <%="00:00:00 +0000"%> >
+	
+	END_DATE
+	<input type="date" name="end_date" value= <%=time_str.to_date%> >
+	<input type="time" name="end_time" value= <%=time_str.to_time.strftime("%T")%> >
+
+	<input type="submit" value="submit">
+</form>
+<br>
+
+
+
+</div>

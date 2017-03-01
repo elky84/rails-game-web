@@ -1,0 +1,81 @@
+<%= form_for(@quest_info) do |f| %>
+  <% if @quest_info.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@quest_info.errors.count, "error") %> prohibited this quest_info from being saved:</h2>
+
+      <ul>
+      <% @quest_info.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :QUEST_INFO_ID %><br>
+    <%= f.number_field :QUEST_INFO_ID %>
+  </div>
+  <div class="field">
+    <%= f.label :QUEST_APPLY_TYPE %><br>
+    <%= f.text_area :QUEST_APPLY_TYPE %>
+  </div>
+  <div class="field">
+    <%= f.label :GROUP_ID %><br>
+    <%= f.number_field :GROUP_ID %>
+  </div>
+  <div class="field">
+    <%= f.label :LEVEL_LIMIT %><br>
+    <%= f.number_field :LEVEL_LIMIT %>
+  </div>
+  <div class="field">
+    <%= f.label :NEXT_QUEST_ID %><br>
+    <%= f.number_field :NEXT_QUEST_ID %>
+  </div>
+  <div class="field">
+    <%= f.label :QUEST_SCHEDULE_ID %><br>
+    <%= f.number_field :QUEST_SCHEDULE_ID %>
+  </div>
+  <div class="field">
+    <%= f.label :QUEST_TYPE_ID %><br>
+    <%= f.number_field :QUEST_TYPE_ID %>
+  </div>
+  <div class="field">
+    <%= f.label :QUEST_GRADE_TYPE %><br>
+    <%= f.text_area :QUEST_GRADE_TYPE %>
+  </div>
+  <div class="field">
+    <%= f.label :GRADE %><br>
+    <%= f.number_field :GRADE %>
+  </div>
+  <div class="field">
+    <%= f.label :PREVIEW %><br>
+    <%= f.text_area :PREVIEW %>
+  </div>
+  <div class="field">
+    <%= f.label :MAXVALUE %><br>
+    <%= f.number_field :MAXVALUE %>
+  </div>
+  <div class="field">
+    <%= f.label :REWARD %><br>
+    <%= f.text_area :REWARD %>
+  </div>
+  <div class="field">
+    <%= f.label :SHORT_CUT %><br>
+    <%= f.number_field :SHORT_CUT %>
+  </div>
+  <div class="field">
+    <%= f.label :COMPLETE_IMAGE %><br>
+    <%= f.text_area :COMPLETE_IMAGE %>
+  </div>
+  <div class="field">
+    <%= f.label :COMPLETE_SCENE %><br>
+    <%= f.text_area :COMPLETE_SCENE %>
+  </div>
+  <div class="field">
+    <%= f.label :COMPLETE_EXPLAN %><br>
+    <%= f.text_area :COMPLETE_EXPLAN %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

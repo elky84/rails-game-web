@@ -1,0 +1,17 @@
+<html>
+	<form action="https://accounts.google.com/o/oauth2/token" method="post">
+
+		<!-- AuthCode를 이용하여 받은 access token이 1회용이므로 재사용 토큰을 요청해야함 -->
+
+		<!-- 구글 개발자콘솔에서 생성한 id, secret -->
+		<input type="hidden" name="client_id" value="156081241075-8f6ja9i0vp1rcdi8fkv2u05b8pk7o61h.apps.googleusercontent.com">
+		<input type="hidden" name="client_secret" value="a3e7-HagSXMdnjVax99J4d6B">
+
+		<!-- access token을 받을때 받은 refresh token 입력 -->
+		<input type="hidden" name="refresh_token" value="1/jcvwrv10Y9uIJNdof9RwIdSTJEXKbZnY_w-ks-wab4A">
+
+		<input type="hidden" name="grant_type" value="refresh_token">	
+Refresh Token!
+		<input type="submit" value="Submit">
+	</form>
+</html>

@@ -1,0 +1,69 @@
+<%= form_for(@evolution_info) do |f| %>
+  <% if @evolution_info.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@evolution_info.errors.count, "error") %> prohibited this evolution_info from being saved:</h2>
+
+      <ul>
+      <% @evolution_info.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :EVOLUTION_ID %><br>
+    <%= f.number_field :EVOLUTION_ID %>
+  </div>
+  <div class="field">
+    <%= f.label :GRADE %><br>
+    <%= f.number_field :GRADE %>
+  </div>
+  <div class="field">
+    <%= f.label :RAW %><br>
+    <%= f.number_field :RAW %>
+  </div>
+  <div class="field">
+    <%= f.label :SPECIAL_MONSTER_LIST %><br>
+    <%= f.text_area :SPECIAL_MONSTER_LIST %>
+  </div>
+  <div class="field">
+    <%= f.label :SPECIAL_SKILL_LIST %><br>
+    <%= f.text_area :SPECIAL_SKILL_LIST %>
+  </div>
+  <div class="field">
+    <%= f.label :RESULT %><br>
+    <%= f.text_area :RESULT %>
+  </div>
+  <div class="field">
+    <%= f.label :RESULT_PERCENT %><br>
+    <%= f.text_area :RESULT_PERCENT %>
+  </div>
+  <div class="field">
+    <%= f.label :PRICE_COIN %><br>
+    <%= f.number_field :PRICE_COIN %>
+  </div>
+  <div class="field">
+    <%= f.label :PRICE_DIAMOND %><br>
+    <%= f.number_field :PRICE_DIAMOND %>
+  </div>
+  <div class="field">
+    <%= f.label :EVOLUTION_EVENT_TYPE %><br>
+    <%= f.text_area :EVOLUTION_EVENT_TYPE %>
+  </div>
+  <div class="field">
+    <%= f.label :PERCENT_UP %><br>
+    <%= f.number_field :PERCENT_UP %>
+  </div>
+  <div class="field">
+    <%= f.label :START_DATE_TIME %><br>
+    <%= f.datetime_select :START_DATE_TIME %>
+  </div>
+  <div class="field">
+    <%= f.label :END_DATE_TIME %><br>
+    <%= f.datetime_select :END_DATE_TIME %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

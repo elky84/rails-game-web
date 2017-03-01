@@ -1,0 +1,33 @@
+<%= form_for(@pvp_period) do |f| %>
+  <% if @pvp_period.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@pvp_period.errors.count, "error") %> prohibited this pvp_period from being saved:</h2>
+
+      <ul>
+      <% @pvp_period.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :PVP_PERIOD_ID %><br>
+    <%= f.number_field :PVP_PERIOD_ID %>
+  </div>
+  <div class="field">
+    <%= f.label :SEASON_NUM %><br>
+    <%= f.number_field :SEASON_NUM %>
+  </div>
+  <div class="field">
+    <%= f.label :START_DATE %><br>
+    <%= f.datetime_select :START_DATE %>
+  </div>
+  <div class="field">
+    <%= f.label :END_DATE %><br>
+    <%= f.datetime_select :END_DATE %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

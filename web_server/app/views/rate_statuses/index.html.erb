@@ -1,0 +1,53 @@
+<h1>Listing rate_statuses</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Rate no</th>
+      <th>User no</th>
+      <th>Poison rate</th>
+      <th>Silence rate</th>
+      <th>Paralyze rate</th>
+      <th>Slow rate</th>
+      <th>Resist poison</th>
+      <th>Resist silence</th>
+      <th>Resist paralyze</th>
+      <th>Resist slow</th>
+      <th>Hp steal hit</th>
+      <th>Mp steal hit</th>
+      <th>Hp steal damage</th>
+      <th>Mp steal damage</th>
+      <th>Last date</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @rate_statuses.each do |rate_status| %>
+      <tr>
+        <td><%= rate_status.RATE_NO %></td>
+        <td><%= rate_status.USER_NO %></td>
+        <td><%= rate_status.POISON_RATE %></td>
+        <td><%= rate_status.SILENCE_RATE %></td>
+        <td><%= rate_status.PARALYZE_RATE %></td>
+        <td><%= rate_status.SLOW_RATE %></td>
+        <td><%= rate_status.RESIST_POISON %></td>
+        <td><%= rate_status.RESIST_SILENCE %></td>
+        <td><%= rate_status.RESIST_PARALYZE %></td>
+        <td><%= rate_status.RESIST_SLOW %></td>
+        <td><%= rate_status.HP_STEAL_HIT %></td>
+        <td><%= rate_status.MP_STEAL_HIT %></td>
+        <td><%= rate_status.HP_STEAL_DAMAGE %></td>
+        <td><%= rate_status.MP_STEAL_DAMAGE %></td>
+        <td><%= rate_status.LAST_DATE %></td>
+        <td><%= link_to 'Show', rate_status %></td>
+        <td><%= link_to 'Edit', edit_rate_status_path(rate_status) %></td>
+        <td><%= link_to 'Destroy', rate_status, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Rate status', new_rate_status_path %>

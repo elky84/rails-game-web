@@ -1,0 +1,25 @@
+<%= form_for(@mastery_reset) do |f| %>
+  <% if @mastery_reset.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@mastery_reset.errors.count, "error") %> prohibited this mastery_reset from being saved:</h2>
+
+      <ul>
+      <% @mastery_reset.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :MASTERY_RESET_ID %><br>
+    <%= f.number_field :MASTERY_RESET_ID %>
+  </div>
+  <div class="field">
+    <%= f.label :COST %><br>
+    <%= f.text_area :COST %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,2 @@
+module ConnectRestrictsHelper
+end

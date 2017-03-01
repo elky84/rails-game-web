@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Friend no:</strong>
+  <%= @friend_instance.FRIEND_NO %>
+</p>
+
+<p>
+  <strong>User no:</strong>
+  <%= @friend_instance.USER_NO %>
+</p>
+
+<p>
+  <strong>Friend user no:</strong>
+  <%= @friend_instance.FRIEND_USER_NO %>
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%= @friend_instance.STATE %>
+</p>
+
+<p>
+  <strong>User send point date:</strong>
+  <%= @friend_instance.USER_SEND_POINT_DATE %>
+</p>
+
+<p>
+  <strong>Friend user send point date:</strong>
+  <%= @friend_instance.FRIEND_USER_SEND_POINT_DATE %>
+</p>
+
+<p>
+  <strong>User adv together date:</strong>
+  <%= @friend_instance.USER_ADV_TOGETHER_DATE %>
+</p>
+
+<p>
+  <strong>Friend user adv together date:</strong>
+  <%= @friend_instance.FRIEND_USER_ADV_TOGETHER_DATE %>
+</p>
+
+<p>
+  <strong>Is bot:</strong>
+  <%= @friend_instance.IS_BOT %>
+</p>
+
+<%= link_to 'Edit', edit_friend_instance_path(@friend_instance) %> |
+<%= link_to 'Back', friend_instances_path %>

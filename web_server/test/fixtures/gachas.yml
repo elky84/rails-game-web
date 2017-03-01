@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  GACHA_ID: 1
+  GACHA_MACHINE_TYPE: 1
+  GROUP_ID: MyText
+  REWARD_PROBABILITY: MyText
+  GACHA_NAME: MyText
+
+two:
+  GACHA_ID: 1
+  GACHA_MACHINE_TYPE: 1
+  GROUP_ID: MyText
+  REWARD_PROBABILITY: MyText
+  GACHA_NAME: MyText

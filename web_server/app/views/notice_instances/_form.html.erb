@@ -1,0 +1,37 @@
+<%= form_for(@notice_instance) do |f| %>
+  <% if @notice_instance.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@notice_instance.errors.count, "error") %> prohibited this notice_instance from being saved:</h2>
+
+      <ul>
+      <% @notice_instance.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :NOTICE_NO %><br>
+    <%= f.number_field :NOTICE_NO %>
+  </div>
+  <div class="field">
+    <%= f.label :NOTICE_TYPE %><br>
+    <%= f.text_area :NOTICE_TYPE %>
+  </div>
+  <div class="field">
+    <%= f.label :CONTENT %><br>
+    <%= f.text_area :CONTENT %>
+  </div>
+  <div class="field">
+    <%= f.label :START_DATE %><br>
+    <%= f.datetime_select :START_DATE %>
+  </div>
+  <div class="field">
+    <%= f.label :END_DATE %><br>
+    <%= f.datetime_select :END_DATE %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

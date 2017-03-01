@@ -1,0 +1,37 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  PHASE_ID: 1
+  INIT_POS: MyText
+  MOVE_TIME: MyText
+  CLEAR: MyText
+  WAIT_TIME: MyText
+  STAY_TIME: MyText
+  MONSTER: MyText
+  MONSTER_GEN_INFO: MyText
+  MONSTER_LV: MyText
+  APPEAR_SPEED: MyText
+  APPEAR_TIME: MyText
+  TEAM_INDEX: MyText
+  START_SCENARIO: MyText
+  END_SCENARIO: MyText
+  IS_BOSS_PHASE: 1
+  PHASE_WIDTH: MyText
+
+two:
+  PHASE_ID: 1
+  INIT_POS: MyText
+  MOVE_TIME: MyText
+  CLEAR: MyText
+  WAIT_TIME: MyText
+  STAY_TIME: MyText
+  MONSTER: MyText
+  MONSTER_GEN_INFO: MyText
+  MONSTER_LV: MyText
+  APPEAR_SPEED: MyText
+  APPEAR_TIME: MyText
+  TEAM_INDEX: MyText
+  START_SCENARIO: MyText
+  END_SCENARIO: MyText
+  IS_BOSS_PHASE: 1
+  PHASE_WIDTH: MyText

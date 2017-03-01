@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  ITEM_ENCHANT_EFFECT_ID: 1
+  ITEM_CATEGORY: MyText
+  LEVEL: 1
+  GRADE: 1
+  ENCHANT: 1
+  BASIC_EFFECT: MyText
+  BONUS_EFFECT: MyText
+
+two:
+  ITEM_ENCHANT_EFFECT_ID: 1
+  ITEM_CATEGORY: MyText
+  LEVEL: 1
+  GRADE: 1
+  ENCHANT: 1
+  BASIC_EFFECT: MyText
+  BONUS_EFFECT: MyText

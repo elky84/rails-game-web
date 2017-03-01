@@ -1,0 +1,2 @@
+module ItemStageDropsHelper
+end

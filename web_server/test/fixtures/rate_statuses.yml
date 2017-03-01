@@ -1,0 +1,35 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  RATE_NO: 1
+  USER_NO: 1
+  POISON_RATE: MyString
+  SILENCE_RATE: MyString
+  PARALYZE_RATE: MyString
+  SLOW_RATE: MyString
+  RESIST_POISON: MyString
+  RESIST_SILENCE: MyString
+  RESIST_PARALYZE: MyString
+  RESIST_SLOW: MyString
+  HP_STEAL_HIT: MyString
+  MP_STEAL_HIT: MyString
+  HP_STEAL_DAMAGE: MyString
+  MP_STEAL_DAMAGE: MyString
+  LAST_DATE: MyString
+
+two:
+  RATE_NO: 1
+  USER_NO: 1
+  POISON_RATE: MyString
+  SILENCE_RATE: MyString
+  PARALYZE_RATE: MyString
+  SLOW_RATE: MyString
+  RESIST_POISON: MyString
+  RESIST_SILENCE: MyString
+  RESIST_PARALYZE: MyString
+  RESIST_SLOW: MyString
+  HP_STEAL_HIT: MyString
+  MP_STEAL_HIT: MyString
+  HP_STEAL_DAMAGE: MyString
+  MP_STEAL_DAMAGE: MyString
+  LAST_DATE: MyString

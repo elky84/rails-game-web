@@ -1,0 +1,45 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  SHOP_ITEM_ID: 1
+  HIDE: 1
+  GIFT: 1
+  STORE: MyText
+  ICON: MyText
+  PRICE_TYPE: MyText
+  CHARACTER_LEVEL: 1
+  PRICE: 1
+  SHOP_CATEGORY: MyText
+  CAPACITY: 1
+  ITEM_ID: 1
+  GACHA: 1
+  BONUS_STRING: MyText
+  BONUS_ID: MyText
+  NAME: MyText
+  EXPLAIN: MyText
+  START_DATE: 2016-01-06 11:32:01
+  END_DATE: 2016-01-06 11:32:01
+  NSTORE_PID: MyText
+  PLAY_PID: MyText
+
+two:
+  SHOP_ITEM_ID: 1
+  HIDE: 1
+  GIFT: 1
+  STORE: MyText
+  ICON: MyText
+  PRICE_TYPE: MyText
+  CHARACTER_LEVEL: 1
+  PRICE: 1
+  SHOP_CATEGORY: MyText
+  CAPACITY: 1
+  ITEM_ID: 1
+  GACHA: 1
+  BONUS_STRING: MyText
+  BONUS_ID: MyText
+  NAME: MyText
+  EXPLAIN: MyText
+  START_DATE: 2016-01-06 11:32:01
+  END_DATE: 2016-01-06 11:32:01
+  NSTORE_PID: MyText
+  PLAY_PID: MyText

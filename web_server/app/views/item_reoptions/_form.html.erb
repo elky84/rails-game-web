@@ -1,0 +1,37 @@
+<%= form_for(@item_reoption) do |f| %>
+  <% if @item_reoption.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@item_reoption.errors.count, "error") %> prohibited this item_reoption from being saved:</h2>
+
+      <ul>
+      <% @item_reoption.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :ITEM_REOPTION_ID %><br>
+    <%= f.number_field :ITEM_REOPTION_ID %>
+  </div>
+  <div class="field">
+    <%= f.label :ITEM_CATEGORY %><br>
+    <%= f.text_area :ITEM_CATEGORY %>
+  </div>
+  <div class="field">
+    <%= f.label :GRADE %><br>
+    <%= f.number_field :GRADE %>
+  </div>
+  <div class="field">
+    <%= f.label :LEVEL %><br>
+    <%= f.number_field :LEVEL %>
+  </div>
+  <div class="field">
+    <%= f.label :MONEY %><br>
+    <%= f.text_area :MONEY %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

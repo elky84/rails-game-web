@@ -1,0 +1,77 @@
+<%= form_for(@area_info) do |f| %>
+  <% if @area_info.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@area_info.errors.count, "error") %> prohibited this area_info from being saved:</h2>
+
+      <ul>
+      <% @area_info.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :AREA_ID %><br>
+    <%= f.number_field :AREA_ID %>
+  </div>
+  <div class="field">
+    <%= f.label :OPEN %><br>
+    <%= f.text_area :OPEN %>
+  </div>
+  <div class="field">
+    <%= f.label :START_DATE %><br>
+    <%= f.datetime_select :START_DATE %>
+  </div>
+  <div class="field">
+    <%= f.label :END_DATE %><br>
+    <%= f.datetime_select :END_DATE %>
+  </div>
+  <div class="field">
+    <%= f.label :AREA_TYPE %><br>
+    <%= f.text_area :AREA_TYPE %>
+  </div>
+  <div class="field">
+    <%= f.label :BG_COLOR %><br>
+    <%= f.text_area :BG_COLOR %>
+  </div>
+  <div class="field">
+    <%= f.label :NAME %><br>
+    <%= f.text_area :NAME %>
+  </div>
+  <div class="field">
+    <%= f.label :EXPLAIN %><br>
+    <%= f.text_area :EXPLAIN %>
+  </div>
+  <div class="field">
+    <%= f.label :CHARACTER_LEVEL %><br>
+    <%= f.text_area :CHARACTER_LEVEL %>
+  </div>
+  <div class="field">
+    <%= f.label :IMAGE %><br>
+    <%= f.text_area :IMAGE %>
+  </div>
+  <div class="field">
+    <%= f.label :MISSION %><br>
+    <%= f.text_area :MISSION %>
+  </div>
+  <div class="field">
+    <%= f.label :MONSTER %><br>
+    <%= f.text_area :MONSTER %>
+  </div>
+  <div class="field">
+    <%= f.label :ITEM %><br>
+    <%= f.text_area :ITEM %>
+  </div>
+  <div class="field">
+    <%= f.label :SCENARIO_START %><br>
+    <%= f.text_area :SCENARIO_START %>
+  </div>
+  <div class="field">
+    <%= f.label :SCENARIO_END %><br>
+    <%= f.text_area :SCENARIO_END %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

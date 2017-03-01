@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Short cut no:</strong>
+  <%= @quest_short_cut.SHORT_CUT_NO %>
+</p>
+
+<p>
+  <strong>Short cut type:</strong>
+  <%= @quest_short_cut.SHORT_CUT_TYPE %>
+</p>
+
+<%= link_to 'Edit', edit_quest_short_cut_path(@quest_short_cut) %> |
+<%= link_to 'Back', quest_short_cuts_path %>

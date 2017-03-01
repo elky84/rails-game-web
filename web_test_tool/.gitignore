@@ -1,0 +1,8 @@
+# ignore unity temponary files
+*.user
+
+# ignore json
+#*.json
+
+# ignore Release obj directory
+web_test_tool/obj/

@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Tutorial no:</strong>
+  <%= @tutorial_instance.TUTORIAL_NO %>
+</p>
+
+<p>
+  <strong>User no:</strong>
+  <%= @tutorial_instance.USER_NO %>
+</p>
+
+<p>
+  <strong>Flow no:</strong>
+  <%= @tutorial_instance.FLOW_NO %>
+</p>
+
+<p>
+  <strong>Gacha get instance no:</strong>
+  <%= @tutorial_instance.GACHA_GET_INSTANCE_NO %>
+</p>
+
+<p>
+  <strong>Stage get instance no:</strong>
+  <%= @tutorial_instance.STAGE_GET_INSTANCE_NO %>
+</p>
+
+<%= link_to 'Edit', edit_tutorial_instance_path(@tutorial_instance) %> |
+<%= link_to 'Back', tutorial_instances_path %>

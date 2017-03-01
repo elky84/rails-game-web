@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  QUEST_NO: 1
+  TYPE: MyText
+  QUEST_INFO_ID: 1
+  USER_NO: 1
+  QUEST_VALUE: 1
+  ACTIVE_TIME: 2016-01-06 11:30:29
+  CLEAR: MyText
+  CLEAR_TIME: 2016-01-06 11:30:29
+  QUEST_APPLY_TYPE: MyText
+  GRADE: 1
+  GROUP_ID: 1
+
+two:
+  QUEST_NO: 1
+  TYPE: MyText
+  QUEST_INFO_ID: 1
+  USER_NO: 1
+  QUEST_VALUE: 1
+  ACTIVE_TIME: 2016-01-06 11:30:29
+  CLEAR: MyText
+  CLEAR_TIME: 2016-01-06 11:30:29
+  QUEST_APPLY_TYPE: MyText
+  GRADE: 1
+  GROUP_ID: 1

@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Pvp reward id:</strong>
+  <%= @pvp_reward_info.PVP_REWARD_ID %>
+</p>
+
+<p>
+  <strong>Range type:</strong>
+  <%= @pvp_reward_info.RANGE_TYPE %>
+</p>
+
+<p>
+  <strong>Min:</strong>
+  <%= @pvp_reward_info.MIN %>
+</p>
+
+<p>
+  <strong>Max:</strong>
+  <%= @pvp_reward_info.MAX %>
+</p>
+
+<p>
+  <strong>Reward type and capacity:</strong>
+  <%= @pvp_reward_info.REWARD_TYPE_AND_CAPACITY %>
+</p>
+
+<%= link_to 'Edit', edit_pvp_reward_info_path(@pvp_reward_info) %> |
+<%= link_to 'Back', pvp_reward_infos_path %>

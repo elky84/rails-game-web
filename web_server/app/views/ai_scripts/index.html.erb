@@ -1,0 +1,63 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Ai Scripts</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Index</th>
+      <th>Ai type</th>
+      <th>Protect object name</th>
+      <th>Protect range</th>
+      <th>Search range</th>
+      <th>Search enemy type</th>
+      <th>Idle time stop</th>
+      <th>Idle time random range</th>
+      <th>Attack time stop</th>
+      <th>Idle move range</th>
+      <th>Go away time</th>
+      <th>Go away plus random</th>
+      <th>State stay time</th>
+      <th>Fixed idle stay time</th>
+      <th>Skill use percent</th>
+      <th>Attack after type</th>
+      <th>Is all include phase</th>
+      <th>Is reset under attack</th>
+      <th>Add serch range</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @ai_scripts.each do |ai_script| %>
+      <tr>
+        <td><%= ai_script.index %></td>
+        <td><%= ai_script.ai_type %></td>
+        <td><%= ai_script.protect_object_name %></td>
+        <td><%= ai_script.protect_range %></td>
+        <td><%= ai_script.search_range %></td>
+        <td><%= ai_script.search_enemy_type %></td>
+        <td><%= ai_script.idle_time_stop %></td>
+        <td><%= ai_script.idle_time_random_range %></td>
+        <td><%= ai_script.attack_time_stop %></td>
+        <td><%= ai_script.idle_move_range %></td>
+        <td><%= ai_script.go_away_time %></td>
+        <td><%= ai_script.go_away_plus_random %></td>
+        <td><%= ai_script.state_stay_time %></td>
+        <td><%= ai_script.fixed_idle_stay_time %></td>
+        <td><%= ai_script.skill_use_percent %></td>
+        <td><%= ai_script.attack_after_type %></td>
+        <td><%= ai_script.is_all_include_phase %></td>
+        <td><%= ai_script.is_reset_under_attack %></td>
+        <td><%= ai_script.add_serch_range %></td>
+        <td><%= link_to 'Show', ai_script %></td>
+        <td><%= link_to 'Edit', edit_ai_script_path(ai_script) %></td>
+        <td><%= link_to 'Destroy', ai_script, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Ai script', new_ai_script_path %>

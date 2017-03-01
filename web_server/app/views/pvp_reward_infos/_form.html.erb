@@ -1,0 +1,37 @@
+<%= form_for(@pvp_reward_info) do |f| %>
+  <% if @pvp_reward_info.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@pvp_reward_info.errors.count, "error") %> prohibited this pvp_reward_info from being saved:</h2>
+
+      <ul>
+      <% @pvp_reward_info.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :PVP_REWARD_ID %><br>
+    <%= f.number_field :PVP_REWARD_ID %>
+  </div>
+  <div class="field">
+    <%= f.label :RANGE_TYPE %><br>
+    <%= f.text_area :RANGE_TYPE %>
+  </div>
+  <div class="field">
+    <%= f.label :MIN %><br>
+    <%= f.number_field :MIN %>
+  </div>
+  <div class="field">
+    <%= f.label :MAX %><br>
+    <%= f.number_field :MAX %>
+  </div>
+  <div class="field">
+    <%= f.label :REWARD_TYPE_AND_CAPACITY %><br>
+    <%= f.text_area :REWARD_TYPE_AND_CAPACITY %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

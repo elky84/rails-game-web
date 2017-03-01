@@ -1,0 +1,77 @@
+<%= form_for(@pvp_record_instance) do |f| %>
+  <% if @pvp_record_instance.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@pvp_record_instance.errors.count, "error") %> prohibited this pvp_record_instance from being saved:</h2>
+
+      <ul>
+      <% @pvp_record_instance.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :PVP_RECORD_INSTANCE_NO %><br>
+    <%= f.number_field :PVP_RECORD_INSTANCE_NO %>
+  </div>
+  <div class="field">
+    <%= f.label :SEASON_NUM %><br>
+    <%= f.number_field :SEASON_NUM %>
+  </div>
+  <div class="field">
+    <%= f.label :CHARACTER_NO %><br>
+    <%= f.number_field :CHARACTER_NO %>
+  </div>
+  <div class="field">
+    <%= f.label :RESULT %><br>
+    <%= f.text_area :RESULT %>
+  </div>
+  <div class="field">
+    <%= f.label :RESULT_TIME %><br>
+    <%= f.datetime_select :RESULT_TIME %>
+  </div>
+  <div class="field">
+    <%= f.label :ADD_RATING %><br>
+    <%= f.number_field :ADD_RATING %>
+  </div>
+  <div class="field">
+    <%= f.label :RESULT_RATING %><br>
+    <%= f.number_field :RESULT_RATING %>
+  </div>
+  <div class="field">
+    <%= f.label :MATCH_CHARACTER_NO %><br>
+    <%= f.number_field :MATCH_CHARACTER_NO %>
+  </div>
+  <div class="field">
+    <%= f.label :MATCH_CHR_LV %><br>
+    <%= f.number_field :MATCH_CHR_LV %>
+  </div>
+  <div class="field">
+    <%= f.label :MATCH_CHR_ID %><br>
+    <%= f.number_field :MATCH_CHR_ID %>
+  </div>
+  <div class="field">
+    <%= f.label :MATCH_USER_NICKNAME %><br>
+    <%= f.text_area :MATCH_USER_NICKNAME %>
+  </div>
+  <div class="field">
+    <%= f.label :MATCH_USER_LV %><br>
+    <%= f.number_field :MATCH_USER_LV %>
+  </div>
+  <div class="field">
+    <%= f.label :MATCH_CHR_DEF_POWER %><br>
+    <%= f.text_area :MATCH_CHR_DEF_POWER %>
+  </div>
+  <div class="field">
+    <%= f.label :MATCH_MONSTER_ID %><br>
+    <%= f.text_area :MATCH_MONSTER_ID %>
+  </div>
+  <div class="field">
+    <%= f.label :MATCH_MONSTER_LV %><br>
+    <%= f.text_area :MATCH_MONSTER_LV %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

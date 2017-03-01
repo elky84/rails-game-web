@@ -1,0 +1,39 @@
+<h1>Listing scenario_scripts</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Index</th>
+      <th>Dialogue type</th>
+      <th>Dialogue effect</th>
+      <th>Speech back</th>
+      <th>Character face</th>
+      <th>Face pos</th>
+      <th>Characotr index</th>
+      <th>String index</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @scenario_scripts.each do |scenario_script| %>
+      <tr>
+        <td><%= scenario_script.INDEX %></td>
+        <td><%= scenario_script.DIALOGUE_TYPE %></td>
+        <td><%= scenario_script.DIALOGUE_EFFECT %></td>
+        <td><%= scenario_script.SPEECH_BACK %></td>
+        <td><%= scenario_script.CHARACTER_FACE %></td>
+        <td><%= scenario_script.FACE_POS %></td>
+        <td><%= scenario_script.CHARACOTR_INDEX %></td>
+        <td><%= scenario_script.STRING_INDEX %></td>
+        <td><%= link_to 'Show', scenario_script %></td>
+        <td><%= link_to 'Edit', edit_scenario_script_path(scenario_script) %></td>
+        <td><%= link_to 'Destroy', scenario_script, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Scenario script', new_scenario_script_path %>

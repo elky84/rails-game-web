@@ -1,0 +1,43 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  index: 1
+  ai_type: MyText
+  protect_object_name: MyText
+  protect_range: MyText
+  search_range: MyText
+  search_enemy_type: MyText
+  idle_time_stop: MyText
+  idle_time_random_range: MyText
+  attack_time_stop: MyText
+  idle_move_range: MyText
+  go_away_time: MyText
+  go_away_plus_random: MyText
+  state_stay_time: MyText
+  fixed_idle_stay_time: MyText
+  skill_use_percent: MyText
+  attack_after_type: MyText
+  is_all_include_phase: 1
+  is_reset_under_attack: 1
+  add_serch_range: MyText
+
+two:
+  index: 1
+  ai_type: MyText
+  protect_object_name: MyText
+  protect_range: MyText
+  search_range: MyText
+  search_enemy_type: MyText
+  idle_time_stop: MyText
+  idle_time_random_range: MyText
+  attack_time_stop: MyText
+  idle_move_range: MyText
+  go_away_time: MyText
+  go_away_plus_random: MyText
+  state_stay_time: MyText
+  fixed_idle_stay_time: MyText
+  skill_use_percent: MyText
+  attack_after_type: MyText
+  is_all_include_phase: 1
+  is_reset_under_attack: 1
+  add_serch_range: MyText

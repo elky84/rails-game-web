@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Monster Gen Infos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Index</th>
+      <th>Appear type</th>
+      <th>Position</th>
+      <th>Move from</th>
+      <th>Direction</th>
+      <th>Curve</th>
+      <th>Jump speed</th>
+      <th>Dead after appear</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @monster_gen_infos.each do |monster_gen_info| %>
+      <tr>
+        <td><%= monster_gen_info.INDEX %></td>
+        <td><%= monster_gen_info.APPEAR_TYPE %></td>
+        <td><%= monster_gen_info.POSITION %></td>
+        <td><%= monster_gen_info.MOVE_FROM %></td>
+        <td><%= monster_gen_info.DIRECTION %></td>
+        <td><%= monster_gen_info.CURVE %></td>
+        <td><%= monster_gen_info.JUMP_SPEED %></td>
+        <td><%= monster_gen_info.DEAD_AFTER_APPEAR %></td>
+        <td><%= link_to 'Show', monster_gen_info %></td>
+        <td><%= link_to 'Edit', edit_monster_gen_info_path(monster_gen_info) %></td>
+        <td><%= link_to 'Destroy', monster_gen_info, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Monster gen info', new_monster_gen_info_path %>

@@ -1,0 +1,37 @@
+<%= form_for(@skill_instance) do |f| %>
+  <% if @skill_instance.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@skill_instance.errors.count, "error") %> prohibited this skill_instance from being saved:</h2>
+
+      <ul>
+      <% @skill_instance.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :SKILL_NO %><br>
+    <%= f.number_field :SKILL_NO %>
+  </div>
+  <div class="field">
+    <%= f.label :CHARACTER_NO %><br>
+    <%= f.number_field :CHARACTER_NO %>
+  </div>
+  <div class="field">
+    <%= f.label :SKILL_ID %><br>
+    <%= f.number_field :SKILL_ID %>
+  </div>
+  <div class="field">
+    <%= f.label :SKILL_LEVEL %><br>
+    <%= f.number_field :SKILL_LEVEL %>
+  </div>
+  <div class="field">
+    <%= f.label :SLOT_NO %><br>
+    <%= f.number_field :SLOT_NO %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,121 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Actor Status Scripts</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Index</th>
+      <th>Skill type</th>
+      <th>Scale x</th>
+      <th>Scale y</th>
+      <th>Spine name</th>
+      <th>Ui sprite name</th>
+      <th>Actor name</th>
+      <th>Skill list</th>
+      <th>Random skill list</th>
+      <th>Random skill percent</th>
+      <th>Shadow</th>
+      <th>Shadow scale x</th>
+      <th>Shadow scale y</th>
+      <th>Attack count max</th>
+      <th>Ai index</th>
+      <th>Die animation curve</th>
+      <th>Die animation lenth</th>
+      <th>Die animation speed</th>
+      <th>Hp</th>
+      <th>Mp</th>
+      <th>Attack</th>
+      <th>Defence</th>
+      <th>Hit</th>
+      <th>Avoid</th>
+      <th>Critical hit</th>
+      <th>Critical avoid</th>
+      <th>Critical damage percent</th>
+      <th>Regen health</th>
+      <th>Regen mp</th>
+      <th>Move speed x</th>
+      <th>Move speed z</th>
+      <th>Attack speed</th>
+      <th>Rage base</th>
+      <th>Rage regen</th>
+      <th>Cool time all</th>
+      <th>Resist poison</th>
+      <th>Resist silence</th>
+      <th>Resist stun</th>
+      <th>Resist slow</th>
+      <th>Level</th>
+      <th>Voice</th>
+      <th>Other idle use</th>
+      <th>Actor group</th>
+      <th>Group rank</th>
+      <th>Special skill</th>
+      <th>Special skill percent</th>
+      <th>Down time</th>
+      <th>Home ani</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @actor_status_scripts.each do |actor_status_script| %>
+      <tr>
+        <td><%= actor_status_script.index %></td>
+        <td><%= actor_status_script.SKILL_TYPE %></td>
+        <td><%= actor_status_script.scale_x %></td>
+        <td><%= actor_status_script.scale_y %></td>
+        <td><%= actor_status_script.spine_name %></td>
+        <td><%= actor_status_script.ui_sprite_name %></td>
+        <td><%= actor_status_script.actor_name %></td>
+        <td><%= actor_status_script.skill_list %></td>
+        <td><%= actor_status_script.random_skill_list %></td>
+        <td><%= actor_status_script.random_skill_percent %></td>
+        <td><%= actor_status_script.shadow %></td>
+        <td><%= actor_status_script.shadow_scale_x %></td>
+        <td><%= actor_status_script.shadow_scale_y %></td>
+        <td><%= actor_status_script.attack_count_max %></td>
+        <td><%= actor_status_script.ai_index %></td>
+        <td><%= actor_status_script.die_animation_curve %></td>
+        <td><%= actor_status_script.die_animation_lenth %></td>
+        <td><%= actor_status_script.die_animation_speed %></td>
+        <td><%= actor_status_script.HP %></td>
+        <td><%= actor_status_script.MP %></td>
+        <td><%= actor_status_script.ATTACK %></td>
+        <td><%= actor_status_script.DEFENCE %></td>
+        <td><%= actor_status_script.HIT %></td>
+        <td><%= actor_status_script.AVOID %></td>
+        <td><%= actor_status_script.CRITICAL_HIT %></td>
+        <td><%= actor_status_script.CRITICAL_AVOID %></td>
+        <td><%= actor_status_script.CRITICAL_DAMAGE_PERCENT %></td>
+        <td><%= actor_status_script.REGEN_HEALTH %></td>
+        <td><%= actor_status_script.REGEN_MP %></td>
+        <td><%= actor_status_script.MOVE_SPEED_X %></td>
+        <td><%= actor_status_script.MOVE_SPEED_Z %></td>
+        <td><%= actor_status_script.ATTACK_SPEED %></td>
+        <td><%= actor_status_script.RAGE_BASE %></td>
+        <td><%= actor_status_script.RAGE_REGEN %></td>
+        <td><%= actor_status_script.COOL_TIME_ALL %></td>
+        <td><%= actor_status_script.RESIST_POISON %></td>
+        <td><%= actor_status_script.RESIST_SILENCE %></td>
+        <td><%= actor_status_script.RESIST_STUN %></td>
+        <td><%= actor_status_script.RESIST_SLOW %></td>
+        <td><%= actor_status_script.LEVEL %></td>
+        <td><%= actor_status_script.VOICE %></td>
+        <td><%= actor_status_script.OTHER_IDLE_USE %></td>
+        <td><%= actor_status_script.actor_group_id %></td>
+        <td><%= actor_status_script.group_rank_id %></td>
+        <td><%= actor_status_script.special_skill %></td>
+        <td><%= actor_status_script.special_skill_percent %></td>
+        <td><%= actor_status_script.DOWN_TIME %></td>
+        <td><%= actor_status_script.home_ani %></td>
+        <td><%= link_to 'Show', actor_status_script %></td>
+        <td><%= link_to 'Edit', edit_actor_status_script_path(actor_status_script) %></td>
+        <td><%= link_to 'Destroy', actor_status_script, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Actor status script', new_actor_status_script_path %>

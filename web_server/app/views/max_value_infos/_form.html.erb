@@ -1,0 +1,37 @@
+<%= form_for(@max_value_info) do |f| %>
+  <% if @max_value_info.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@max_value_info.errors.count, "error") %> prohibited this max_value_info from being saved:</h2>
+
+      <ul>
+      <% @max_value_info.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :MAX_VALUE_ID %><br>
+    <%= f.number_field :MAX_VALUE_ID %>
+  </div>
+  <div class="field">
+    <%= f.label :MAX_SLOT_TYPE %><br>
+    <%= f.text_area :MAX_SLOT_TYPE %>
+  </div>
+  <div class="field">
+    <%= f.label :EXT_SLOT %><br>
+    <%= f.number_field :EXT_SLOT %>
+  </div>
+  <div class="field">
+    <%= f.label :NEXT_EXT_SLOT %><br>
+    <%= f.number_field :NEXT_EXT_SLOT %>
+  </div>
+  <div class="field">
+    <%= f.label :NEXT_COST %><br>
+    <%= f.text_area :NEXT_COST %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

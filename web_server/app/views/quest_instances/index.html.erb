@@ -1,0 +1,47 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Quest Instances</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Quest no</th>
+      <th>Type</th>
+      <th>Quest info id</th>
+      <th>User no</th>
+      <th>Quest value</th>
+      <th>Active time</th>
+      <th>Clear</th>
+      <th>Clear time</th>
+      <th>Quest apply type</th>
+      <th>Grade</th>
+      <th>Group id</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @quest_instances.each do |quest_instance| %>
+      <tr>
+        <td><%= quest_instance.QUEST_NO %></td>
+        <td><%= quest_instance.TYPE %></td>
+        <td><%= quest_instance.QUEST_INFO_ID %></td>
+        <td><%= quest_instance.USER_NO %></td>
+        <td><%= quest_instance.QUEST_VALUE %></td>
+        <td><%= quest_instance.ACTIVE_TIME %></td>
+        <td><%= quest_instance.CLEAR %></td>
+        <td><%= quest_instance.CLEAR_TIME %></td>
+        <td><%= quest_instance.QUEST_APPLY_TYPE %></td>
+        <td><%= quest_instance.GRADE %></td>
+        <td><%= quest_instance.GROUP_ID %></td>
+        <td><%= link_to 'Show', quest_instance %></td>
+        <td><%= link_to 'Edit', edit_quest_instance_path(quest_instance) %></td>
+        <td><%= link_to 'Destroy', quest_instance, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Quest instance', new_quest_instance_path %>

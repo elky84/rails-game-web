@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  GROW_ID: 1
+  LEVEL: 1
+  GROW_TYPE_DETAIL: MyText
+  REQUIRE_EXP: 1
+  STATUS_ID: 1
+
+two:
+  GROW_ID: 1
+  LEVEL: 1
+  GROW_TYPE_DETAIL: MyText
+  REQUIRE_EXP: 1
+  STATUS_ID: 1

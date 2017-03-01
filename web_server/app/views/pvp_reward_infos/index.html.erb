@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Pvp Reward Infos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Pvp reward id</th>
+      <th>Range type</th>
+      <th>Min</th>
+      <th>Max</th>
+      <th>Reward type and capacity</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @pvp_reward_infos.each do |pvp_reward_info| %>
+      <tr>
+        <td><%= pvp_reward_info.PVP_REWARD_ID %></td>
+        <td><%= pvp_reward_info.RANGE_TYPE %></td>
+        <td><%= pvp_reward_info.MIN %></td>
+        <td><%= pvp_reward_info.MAX %></td>
+        <td><%= pvp_reward_info.REWARD_TYPE_AND_CAPACITY %></td>
+        <td><%= link_to 'Show', pvp_reward_info %></td>
+        <td><%= link_to 'Edit', edit_pvp_reward_info_path(pvp_reward_info) %></td>
+        <td><%= link_to 'Destroy', pvp_reward_info, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Pvp reward info', new_pvp_reward_info_path %>

@@ -1,0 +1,37 @@
+<%= form_for(@tutorial_instance) do |f| %>
+  <% if @tutorial_instance.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@tutorial_instance.errors.count, "error") %> prohibited this tutorial_instance from being saved:</h2>
+
+      <ul>
+      <% @tutorial_instance.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :TUTORIAL_NO %><br>
+    <%= f.number_field :TUTORIAL_NO %>
+  </div>
+  <div class="field">
+    <%= f.label :USER_NO %><br>
+    <%= f.number_field :USER_NO %>
+  </div>
+  <div class="field">
+    <%= f.label :FLOW_NO %><br>
+    <%= f.text_area :FLOW_NO %>
+  </div>
+  <div class="field">
+    <%= f.label :GACHA_GET_INSTANCE_NO %><br>
+    <%= f.number_field :GACHA_GET_INSTANCE_NO %>
+  </div>
+  <div class="field">
+    <%= f.label :STAGE_GET_INSTANCE_NO %><br>
+    <%= f.number_field :STAGE_GET_INSTANCE_NO %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

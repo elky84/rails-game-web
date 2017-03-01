@@ -1,0 +1,57 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Quest Infos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Quest info id</th>
+      <th>Quest apply type</th>
+      <th>Group id</th>
+      <th>Level limit</th>
+      <th>Next quest id</th>
+      <th>Quest schedule id</th>
+      <th>Quest type id</th>
+      <th>Quest grade type</th>
+      <th>Grade</th>
+      <th>Preview</th>
+      <th>Maxvalue</th>
+      <th>Reward</th>
+      <th>Short cut</th>
+      <th>Complete image</th>
+      <th>Complete scene</th>
+      <th>Complete explan</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @quest_infos.each do |quest_info| %>
+      <tr>
+        <td><%= quest_info.QUEST_INFO_ID %></td>
+        <td><%= quest_info.QUEST_APPLY_TYPE %></td>
+        <td><%= quest_info.GROUP_ID %></td>
+        <td><%= quest_info.LEVEL_LIMIT %></td>
+        <td><%= quest_info.NEXT_QUEST_ID %></td>
+        <td><%= quest_info.QUEST_SCHEDULE_ID %></td>
+        <td><%= quest_info.QUEST_TYPE_ID %></td>
+        <td><%= quest_info.QUEST_GRADE_TYPE %></td>
+        <td><%= quest_info.GRADE %></td>
+        <td><%= quest_info.PREVIEW %></td>
+        <td><%= quest_info.MAXVALUE %></td>
+        <td><%= quest_info.REWARD %></td>
+        <td><%= quest_info.SHORT_CUT %></td>
+        <td><%= quest_info.COMPLETE_IMAGE %></td>
+        <td><%= quest_info.COMPLETE_SCENE %></td>
+        <td><%= quest_info.COMPLETE_EXPLAN %></td>
+        <td><%= link_to 'Show', quest_info %></td>
+        <td><%= link_to 'Edit', edit_quest_info_path(quest_info) %></td>
+        <td><%= link_to 'Destroy', quest_info, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Quest info', new_quest_info_path %>

@@ -1,0 +1,41 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  ITEM_ID: 1
+  ICON: MyText
+  NAME: MyText
+  EXPLAIN: MyText
+  IS_ENCHANT: 1
+  IS_REOPTION: 1
+  IS_SELL: 1
+  LEVEL: 1
+  GRADE: 1
+  LIMIT: MyText
+  CATEGORY: MyText
+  COSTUME_ID: 1
+  DEFAULT_OPTION: MyText
+  ITEM_OPTION_LIST: MyText
+  PRICE: 1
+  VALUE: 1
+  EXPIRE_TYPE: MyText
+  DURABILITY: 1
+
+two:
+  ITEM_ID: 1
+  ICON: MyText
+  NAME: MyText
+  EXPLAIN: MyText
+  IS_ENCHANT: 1
+  IS_REOPTION: 1
+  IS_SELL: 1
+  LEVEL: 1
+  GRADE: 1
+  LIMIT: MyText
+  CATEGORY: MyText
+  COSTUME_ID: 1
+  DEFAULT_OPTION: MyText
+  ITEM_OPTION_LIST: MyText
+  PRICE: 1
+  VALUE: 1
+  EXPIRE_TYPE: MyText
+  DURABILITY: 1

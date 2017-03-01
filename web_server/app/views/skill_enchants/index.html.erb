@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Skill Enchants</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Skill enchant id</th>
+      <th>Enchant num</th>
+      <th>Monster grade</th>
+      <th>Enchant result</th>
+      <th>Enchant percent</th>
+      <th>Equal monster bonus</th>
+      <th>Money</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @skill_enchants.each do |skill_enchant| %>
+      <tr>
+        <td><%= skill_enchant.SKILL_ENCHANT_ID %></td>
+        <td><%= skill_enchant.ENCHANT_NUM %></td>
+        <td><%= skill_enchant.MONSTER_GRADE %></td>
+        <td><%= skill_enchant.ENCHANT_RESULT %></td>
+        <td><%= skill_enchant.ENCHANT_PERCENT %></td>
+        <td><%= skill_enchant.EQUAL_MONSTER_BONUS %></td>
+        <td><%= skill_enchant.MONEY %></td>
+        <td><%= link_to 'Show', skill_enchant %></td>
+        <td><%= link_to 'Edit', edit_skill_enchant_path(skill_enchant) %></td>
+        <td><%= link_to 'Destroy', skill_enchant, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Skill enchant', new_skill_enchant_path %>

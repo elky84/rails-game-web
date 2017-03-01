@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Mastery Resets</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Mastery reset id</th>
+      <th>Cost</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @mastery_resets.each do |mastery_reset| %>
+      <tr>
+        <td><%= mastery_reset.MASTERY_RESET_ID %></td>
+        <td><%= mastery_reset.COST %></td>
+        <td><%= link_to 'Show', mastery_reset %></td>
+        <td><%= link_to 'Edit', edit_mastery_reset_path(mastery_reset) %></td>
+        <td><%= link_to 'Destroy', mastery_reset, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Mastery reset', new_mastery_reset_path %>

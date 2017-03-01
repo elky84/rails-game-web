@@ -1,0 +1,25 @@
+<%= form_for(@gacha_machine) do |f| %>
+  <% if @gacha_machine.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@gacha_machine.errors.count, "error") %> prohibited this gacha_machine from being saved:</h2>
+
+      <ul>
+      <% @gacha_machine.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :GACHA_MACHINE_ID %><br>
+    <%= f.number_field :GACHA_MACHINE_ID %>
+  </div>
+  <div class="field">
+    <%= f.label :GACHA_MACHINE_TYPE %><br>
+    <%= f.text_area :GACHA_MACHINE_TYPE %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Gacha Machines</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Gacha machine id</th>
+      <th>Gacha machine type</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @gacha_machines.each do |gacha_machine| %>
+      <tr>
+        <td><%= gacha_machine.GACHA_MACHINE_ID %></td>
+        <td><%= gacha_machine.GACHA_MACHINE_TYPE %></td>
+        <td><%= link_to 'Show', gacha_machine %></td>
+        <td><%= link_to 'Edit', edit_gacha_machine_path(gacha_machine) %></td>
+        <td><%= link_to 'Destroy', gacha_machine, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Gacha machine', new_gacha_machine_path %>

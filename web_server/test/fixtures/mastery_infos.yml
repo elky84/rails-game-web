@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  MASTERY_ID: 1
+  MASTERY_TYPE: MyText
+  GRADE: 1
+  NAME: MyText
+  EXPLAIN: MyText
+  MAX_LEVEL: 1
+  OPTION_ID: MyText
+  OPTION_EFFECT: MyText
+  EFFECT_TARGET: MyText
+  PRE_LEVEL: 1
+  PRE_CONDITION: 1
+  ICON: MyText
+
+two:
+  MASTERY_ID: 1
+  MASTERY_TYPE: MyText
+  GRADE: 1
+  NAME: MyText
+  EXPLAIN: MyText
+  MAX_LEVEL: 1
+  OPTION_ID: MyText
+  OPTION_EFFECT: MyText
+  EFFECT_TARGET: MyText
+  PRE_LEVEL: 1
+  PRE_CONDITION: 1
+  ICON: MyText

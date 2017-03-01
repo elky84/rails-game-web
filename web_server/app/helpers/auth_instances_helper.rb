@@ -1,0 +1,2 @@
+module AuthInstancesHelper
+end

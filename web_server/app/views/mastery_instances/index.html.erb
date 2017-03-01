@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Mastery Instances</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Mastery no</th>
+      <th>Group no</th>
+      <th>User no</th>
+      <th>Character no</th>
+      <th>Mastery</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @mastery_instances.each do |mastery_instance| %>
+      <tr>
+        <td><%= mastery_instance.MASTERY_NO %></td>
+        <td><%= mastery_instance.GROUP_NO %></td>
+        <td><%= mastery_instance.USER_NO %></td>
+        <td><%= mastery_instance.CHARACTER_NO %></td>
+        <td><%= mastery_instance.MASTERY %></td>
+        <td><%= link_to 'Show', mastery_instance %></td>
+        <td><%= link_to 'Edit', edit_mastery_instance_path(mastery_instance) %></td>
+        <td><%= link_to 'Destroy', mastery_instance, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Mastery instance', new_mastery_instance_path %>

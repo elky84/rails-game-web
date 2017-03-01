@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  TUTORIAL_NO: 1
+  USER_NO: 1
+  FLOW_NO: MyText
+  GACHA_GET_INSTANCE_NO: 1
+  STAGE_GET_INSTANCE_NO: 1
+
+two:
+  TUTORIAL_NO: 1
+  USER_NO: 1
+  FLOW_NO: MyText
+  GACHA_GET_INSTANCE_NO: 1
+  STAGE_GET_INSTANCE_NO: 1

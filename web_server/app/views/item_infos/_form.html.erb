@@ -1,0 +1,89 @@
+<%= form_for(@item_info) do |f| %>
+  <% if @item_info.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@item_info.errors.count, "error") %> prohibited this item_info from being saved:</h2>
+
+      <ul>
+      <% @item_info.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :ITEM_ID %><br>
+    <%= f.number_field :ITEM_ID %>
+  </div>
+  <div class="field">
+    <%= f.label :ICON %><br>
+    <%= f.text_area :ICON %>
+  </div>
+  <div class="field">
+    <%= f.label :NAME %><br>
+    <%= f.text_area :NAME %>
+  </div>
+  <div class="field">
+    <%= f.label :EXPLAIN %><br>
+    <%= f.text_area :EXPLAIN %>
+  </div>
+  <div class="field">
+    <%= f.label :IS_ENCHANT %><br>
+    <%= f.number_field :IS_ENCHANT %>
+  </div>
+  <div class="field">
+    <%= f.label :IS_REOPTION %><br>
+    <%= f.number_field :IS_REOPTION %>
+  </div>
+  <div class="field">
+    <%= f.label :IS_SELL %><br>
+    <%= f.number_field :IS_SELL %>
+  </div>
+  <div class="field">
+    <%= f.label :LEVEL %><br>
+    <%= f.number_field :LEVEL %>
+  </div>
+  <div class="field">
+    <%= f.label :GRADE %><br>
+    <%= f.number_field :GRADE %>
+  </div>
+  <div class="field">
+    <%= f.label :LIMIT %><br>
+    <%= f.text_area :LIMIT %>
+  </div>
+  <div class="field">
+    <%= f.label :CATEGORY %><br>
+    <%= f.text_area :CATEGORY %>
+  </div>
+  <div class="field">
+    <%= f.label :COSTUME_ID %><br>
+    <%= f.number_field :COSTUME_ID %>
+  </div>
+  <div class="field">
+    <%= f.label :DEFAULT_OPTION %><br>
+    <%= f.text_area :DEFAULT_OPTION %>
+  </div>
+  <div class="field">
+    <%= f.label :ITEM_OPTION_LIST %><br>
+    <%= f.text_area :ITEM_OPTION_LIST %>
+  </div>
+  <div class="field">
+    <%= f.label :PRICE %><br>
+    <%= f.number_field :PRICE %>
+  </div>
+  <div class="field">
+    <%= f.label :VALUE %><br>
+    <%= f.number_field :VALUE %>
+  </div>
+  <div class="field">
+    <%= f.label :EXPIRE_TYPE %><br>
+    <%= f.text_area :EXPIRE_TYPE %>
+  </div>
+  <div class="field">
+    <%= f.label :DURABILITY %><br>
+    <%= f.number_field :DURABILITY %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

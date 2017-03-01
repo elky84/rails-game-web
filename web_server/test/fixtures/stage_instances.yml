@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  STAGE_PROGRESS_NO: 1
+  USER_NO: 1
+  CHARACTER_NO: 1
+  PARTY_MONSTER_ID: MyText
+  STAGE_ID: 1
+  CLEAR_EXP_NO: MyText
+  CLEAR_MONEY_NO: MyText
+  CLEAR_REWARD_NO: MyText
+  START_DATE: MyText
+
+two:
+  STAGE_PROGRESS_NO: 1
+  USER_NO: 1
+  CHARACTER_NO: 1
+  PARTY_MONSTER_ID: MyText
+  STAGE_ID: 1
+  CLEAR_EXP_NO: MyText
+  CLEAR_MONEY_NO: MyText
+  CLEAR_REWARD_NO: MyText
+  START_DATE: MyText

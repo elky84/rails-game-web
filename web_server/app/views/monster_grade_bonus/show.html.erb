@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Grade:</strong>
+  <%= @monster_grade_bonu.GRADE %>
+</p>
+
+<p>
+  <strong>Status id:</strong>
+  <%= @monster_grade_bonu.STATUS_ID %>
+</p>
+
+<%= link_to 'Edit', edit_monster_grade_bonu_path(@monster_grade_bonu) %> |
+<%= link_to 'Back', monster_grade_bonus_path %>

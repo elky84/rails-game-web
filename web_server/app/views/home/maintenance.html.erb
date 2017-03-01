@@ -1,0 +1,36 @@
+﻿<div align="left" style="padding:10px;" class="container">
+<h1>Maintenance</h1>
+
+<% time_str = DateTime.current %><%= time_str %><br><br>
+
+<b>NOTICE</b>
+<form action="/notice/save" method="get">
+	NOTICE_TYPE
+	<select name="notice_type">
+		<option value="MAINTENANCE" selected>점검</option>
+		<option value="LOGIN">로그인</option>
+	</select>
+
+	<br>
+	CONTENT
+	<input type="input" name="content" value= "" >	
+	
+	<br>
+	START_DATE
+	<input type="date" name="start_date" value= <%=time_str.to_date %> >
+	<input type="time" name="start_time" value= <%="00:00:00 +0000"%> >
+	
+	<br>
+	END_DATE
+	<input type="date" name="end_date" value= <%=time_str.to_date%> >
+	<input type="time" name="end_time" value= <%=time_str.to_time.strftime("%T")%> >
+
+	<input type="submit" value="apply">
+</form>
+<br>
+
+<b>NOTICE LIST</b>
+<form action="/notice_instances" method="get">		
+	<input type="submit" value="find">
+</form>
+<br>

@@ -1,0 +1,49 @@
+<%= form_for(@monster_gen_info) do |f| %>
+  <% if @monster_gen_info.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@monster_gen_info.errors.count, "error") %> prohibited this monster_gen_info from being saved:</h2>
+
+      <ul>
+      <% @monster_gen_info.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :INDEX %><br>
+    <%= f.number_field :INDEX %>
+  </div>
+  <div class="field">
+    <%= f.label :APPEAR_TYPE %><br>
+    <%= f.text_area :APPEAR_TYPE %>
+  </div>
+  <div class="field">
+    <%= f.label :POSITION %><br>
+    <%= f.text_area :POSITION %>
+  </div>
+  <div class="field">
+    <%= f.label :MOVE_FROM %><br>
+    <%= f.text_area :MOVE_FROM %>
+  </div>
+  <div class="field">
+    <%= f.label :DIRECTION %><br>
+    <%= f.number_field :DIRECTION %>
+  </div>
+  <div class="field">
+    <%= f.label :CURVE %><br>
+    <%= f.number_field :CURVE %>
+  </div>
+  <div class="field">
+    <%= f.label :JUMP_SPEED %><br>
+    <%= f.text_area :JUMP_SPEED %>
+  </div>
+  <div class="field">
+    <%= f.label :DEAD_AFTER_APPEAR %><br>
+    <%= f.number_field :DEAD_AFTER_APPEAR %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,45 @@
+<%= form_for(@skill_enchant) do |f| %>
+  <% if @skill_enchant.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@skill_enchant.errors.count, "error") %> prohibited this skill_enchant from being saved:</h2>
+
+      <ul>
+      <% @skill_enchant.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :SKILL_ENCHANT_ID %><br>
+    <%= f.number_field :SKILL_ENCHANT_ID %>
+  </div>
+  <div class="field">
+    <%= f.label :ENCHANT_NUM %><br>
+    <%= f.number_field :ENCHANT_NUM %>
+  </div>
+  <div class="field">
+    <%= f.label :MONSTER_GRADE %><br>
+    <%= f.number_field :MONSTER_GRADE %>
+  </div>
+  <div class="field">
+    <%= f.label :ENCHANT_RESULT %><br>
+    <%= f.text_area :ENCHANT_RESULT %>
+  </div>
+  <div class="field">
+    <%= f.label :ENCHANT_PERCENT %><br>
+    <%= f.text_area :ENCHANT_PERCENT %>
+  </div>
+  <div class="field">
+    <%= f.label :EQUAL_MONSTER_BONUS %><br>
+    <%= f.text_area :EQUAL_MONSTER_BONUS %>
+  </div>
+  <div class="field">
+    <%= f.label :MONEY %><br>
+    <%= f.number_field :MONEY %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

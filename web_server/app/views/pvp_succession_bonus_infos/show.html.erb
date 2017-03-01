@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Pvp succession bonus id:</strong>
+  <%= @pvp_succession_bonus_info.PVP_SUCCESSION_BONUS_ID %>
+</p>
+
+<p>
+  <strong>Bonus point:</strong>
+  <%= @pvp_succession_bonus_info.BONUS_POINT %>
+</p>
+
+<%= link_to 'Edit', edit_pvp_succession_bonus_info_path(@pvp_succession_bonus_info) %> |
+<%= link_to 'Back', pvp_succession_bonus_infos_path %>

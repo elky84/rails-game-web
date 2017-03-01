@@ -1,0 +1,2 @@
+module ItemGenerateHelper
+end

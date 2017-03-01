@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  FRIEND_NO: 1
+  USER_NO: 1
+  FRIEND_USER_NO: 1
+  STATE: 1
+  PRESENT_DATE: MyString
+
+two:
+  FRIEND_NO: 1
+  USER_NO: 1
+  FRIEND_USER_NO: 1
+  STATE: 1
+  PRESENT_DATE: MyString

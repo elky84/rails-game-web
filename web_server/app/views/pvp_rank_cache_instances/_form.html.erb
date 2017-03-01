@@ -1,0 +1,33 @@
+<%= form_for(@pvp_rank_cache_instance) do |f| %>
+  <% if @pvp_rank_cache_instance.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@pvp_rank_cache_instance.errors.count, "error") %> prohibited this pvp_rank_cache_instance from being saved:</h2>
+
+      <ul>
+      <% @pvp_rank_cache_instance.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :PVP_RANK_CACHE_INSTANCE_NO %><br>
+    <%= f.number_field :PVP_RANK_CACHE_INSTANCE_NO %>
+  </div>
+  <div class="field">
+    <%= f.label :RANK %><br>
+    <%= f.number_field :RANK %>
+  </div>
+  <div class="field">
+    <%= f.label :CHARACTER_NO %><br>
+    <%= f.number_field :CHARACTER_NO %>
+  </div>
+  <div class="field">
+    <%= f.label :RATING %><br>
+    <%= f.number_field :RATING %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

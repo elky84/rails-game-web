@@ -1,0 +1,59 @@
+﻿<div align="center" style="padding:10px;" class="container">
+<h1>Log</h1>
+<% time_str = DateTime.current %><%= time_str %><br><br>
+
+<b>LOG</b>
+<form action="/log/find_by_nickname" method="get">
+	NICKNAME
+	<input type="input" name="nickname" value= "" >
+	
+	<input type="submit" value="find">
+</form>
+<br>
+
+<b>LOG_ACTION</b>
+<form action="/log/find_by_action" method="get">
+	NICKNAME
+	<input type="input" name="nickname" value= "" >
+
+	<br>
+	TYPE
+	<select name="log_action">
+		<option value="QUEST" selected>임무</option>
+		<option value="STAGE">지역</option>
+		<option value="ITEM">아이템</option>
+		<option value="SKILL">스킬</option>
+	</select>
+	
+	<input type="submit" value="find">
+</form>
+<br>
+
+
+<b>PAYMENT</b>
+<form action="/log/payment" method="get">
+	NICKNAME
+	<input type="input" name="nickname" value= "" >
+
+	<input type="submit" value="find">
+</form>
+<br>
+
+
+<b>PAYMENT_LIST</b>
+<form action="/log/payment_list" method="get">
+	START_DATE
+	<input type="date" name="start_date" value= <%=time_str.to_date %> >
+	<input type="time" name="start_time" value= <%="00:00:00 +0000"%> >
+	
+	END_DATE
+	<input type="date" name="end_date" value= <%=time_str.to_date%> >
+	<input type="time" name="end_time" value= <%=time_str.to_time.strftime("%T")%> >
+
+	<input type="submit" value="find">
+</form>
+<br>
+
+<br>
+
+</div>

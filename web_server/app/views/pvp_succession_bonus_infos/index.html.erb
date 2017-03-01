@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Pvp Succession Bonus Infos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Pvp succession bonus id</th>
+      <th>Bonus point</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @pvp_succession_bonus_infos.each do |pvp_succession_bonus_info| %>
+      <tr>
+        <td><%= pvp_succession_bonus_info.PVP_SUCCESSION_BONUS_ID %></td>
+        <td><%= pvp_succession_bonus_info.BONUS_POINT %></td>
+        <td><%= link_to 'Show', pvp_succession_bonus_info %></td>
+        <td><%= link_to 'Edit', edit_pvp_succession_bonus_info_path(pvp_succession_bonus_info) %></td>
+        <td><%= link_to 'Destroy', pvp_succession_bonus_info, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Pvp succession bonus info', new_pvp_succession_bonus_info_path %>

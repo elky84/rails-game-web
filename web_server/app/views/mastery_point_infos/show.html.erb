@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Mastery point:</strong>
+  <%= @mastery_point_info.MASTERY_POINT %>
+</p>
+
+<p>
+  <strong>Price type:</strong>
+  <%= @mastery_point_info.PRICE_TYPE %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @mastery_point_info.PRICE %>
+</p>
+
+<%= link_to 'Edit', edit_mastery_point_info_path(@mastery_point_info) %> |
+<%= link_to 'Back', mastery_point_infos_path %>

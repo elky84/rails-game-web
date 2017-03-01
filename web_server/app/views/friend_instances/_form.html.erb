@@ -1,0 +1,53 @@
+<%= form_for(@friend_instance) do |f| %>
+  <% if @friend_instance.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@friend_instance.errors.count, "error") %> prohibited this friend_instance from being saved:</h2>
+
+      <ul>
+      <% @friend_instance.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :FRIEND_NO %><br>
+    <%= f.number_field :FRIEND_NO %>
+  </div>
+  <div class="field">
+    <%= f.label :USER_NO %><br>
+    <%= f.number_field :USER_NO %>
+  </div>
+  <div class="field">
+    <%= f.label :FRIEND_USER_NO %><br>
+    <%= f.number_field :FRIEND_USER_NO %>
+  </div>
+  <div class="field">
+    <%= f.label :STATE %><br>
+    <%= f.number_field :STATE %>
+  </div>
+  <div class="field">
+    <%= f.label :USER_SEND_POINT_DATE %><br>
+    <%= f.datetime_select :USER_SEND_POINT_DATE %>
+  </div>
+  <div class="field">
+    <%= f.label :FRIEND_USER_SEND_POINT_DATE %><br>
+    <%= f.datetime_select :FRIEND_USER_SEND_POINT_DATE %>
+  </div>
+  <div class="field">
+    <%= f.label :USER_ADV_TOGETHER_DATE %><br>
+    <%= f.datetime_select :USER_ADV_TOGETHER_DATE %>
+  </div>
+  <div class="field">
+    <%= f.label :FRIEND_USER_ADV_TOGETHER_DATE %><br>
+    <%= f.datetime_select :FRIEND_USER_ADV_TOGETHER_DATE %>
+  </div>
+  <div class="field">
+    <%= f.label :IS_BOT %><br>
+    <%= f.number_field :IS_BOT %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

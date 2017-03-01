@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  GRADE: 1
+  STATUS_ID: 1
+
+two:
+  GRADE: 1
+  STATUS_ID: 1

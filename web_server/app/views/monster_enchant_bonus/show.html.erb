@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Monster type:</strong>
+  <%= @monster_enchant_bonu.MONSTER_TYPE %>
+</p>
+
+<p>
+  <strong>Status id:</strong>
+  <%= @monster_enchant_bonu.STATUS_ID %>
+</p>
+
+<%= link_to 'Edit', edit_monster_enchant_bonu_path(@monster_enchant_bonu) %> |
+<%= link_to 'Back', monster_enchant_bonus_path %>

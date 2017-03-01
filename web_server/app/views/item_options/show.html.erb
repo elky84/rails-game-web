@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Item option id:</strong>
+  <%= @item_option.ITEM_OPTION_ID %>
+</p>
+
+<p>
+  <strong>Option id:</strong>
+  <%= @item_option.OPTION_ID %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @item_option.DESCRIPTION %>
+</p>
+
+<p>
+  <strong>Grade:</strong>
+  <%= @item_option.GRADE %>
+</p>
+
+<p>
+  <strong>Detail id:</strong>
+  <%= @item_option.DETAIL_ID %>
+</p>
+
+<p>
+  <strong>Min:</strong>
+  <%= @item_option.MIN %>
+</p>
+
+<p>
+  <strong>Max:</strong>
+  <%= @item_option.MAX %>
+</p>
+
+<%= link_to 'Edit', edit_item_option_path(@item_option) %> |
+<%= link_to 'Back', item_options_path %>

@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Condition id:</strong>
+  <%= @condition.CONDITION_ID %>
+</p>
+
+<p>
+  <strong>Condition effect:</strong>
+  <%= @condition.CONDITION_EFFECT %>
+</p>
+
+<p>
+  <strong>Condition info:</strong>
+  <%= @condition.CONDITION_INFO %>
+</p>
+
+<p>
+  <strong>Percent:</strong>
+  <%= @condition.PERCENT %>
+</p>
+
+<p>
+  <strong>Condition apply type:</strong>
+  <%= @condition.CONDITION_APPLY_TYPE %>
+</p>
+
+<%= link_to 'Edit', edit_condition_path(@condition) %> |
+<%= link_to 'Back', conditions_path %>

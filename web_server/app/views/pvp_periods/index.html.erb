@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Pvp Periods</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Pvp period id</th>
+      <th>Season num</th>
+      <th>Start date</th>
+      <th>End date</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @pvp_periods.each do |pvp_period| %>
+      <tr>
+        <td><%= pvp_period.PVP_PERIOD_ID %></td>
+        <td><%= pvp_period.SEASON_NUM %></td>
+        <td><%= pvp_period.START_DATE %></td>
+        <td><%= pvp_period.END_DATE %></td>
+        <td><%= link_to 'Show', pvp_period %></td>
+        <td><%= link_to 'Edit', edit_pvp_period_path(pvp_period) %></td>
+        <td><%= link_to 'Destroy', pvp_period, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Pvp period', new_pvp_period_path %>

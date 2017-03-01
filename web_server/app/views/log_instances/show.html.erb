@@ -1,0 +1,59 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Log no:</strong>
+  <%= @log_instance.LOG_NO %>
+</p>
+
+<p>
+  <strong>User no:</strong>
+  <%= @log_instance.USER_NO %>
+</p>
+
+<p>
+  <strong>Character no:</strong>
+  <%= @log_instance.CHARACTER_NO %>
+</p>
+
+<p>
+  <strong>Log type:</strong>
+  <%= @log_instance.LOG_TYPE %>
+</p>
+
+<p>
+  <strong>Value:</strong>
+  <%= @log_instance.VALUE %>
+</p>
+
+<p>
+  <strong>Cash:</strong>
+  <%= @log_instance.CASH %>
+</p>
+
+<p>
+  <strong>Money:</strong>
+  <%= @log_instance.MONEY %>
+</p>
+
+<p>
+  <strong>User lv:</strong>
+  <%= @log_instance.USER_LV %>
+</p>
+
+<p>
+  <strong>Exp:</strong>
+  <%= @log_instance.EXP %>
+</p>
+
+<p>
+  <strong>Action time:</strong>
+  <%= @log_instance.ACTION_TIME %>
+</p>
+
+<p>
+  <strong>Ip:</strong>
+  <%= @log_instance.IP %>
+</p>
+
+<%= link_to 'Edit', edit_log_instance_path(@log_instance) %> |
+<%= link_to 'Back', log_instances_path %>

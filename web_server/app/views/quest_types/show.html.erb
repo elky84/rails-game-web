@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Quest type id:</strong>
+  <%= @quest_type.QUEST_TYPE_ID %>
+</p>
+
+<p>
+  <strong>Quest icon:</strong>
+  <%= @quest_type.QUEST_ICON %>
+</p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @quest_type.TYPE %>
+</p>
+
+<p>
+  <strong>Quest name:</strong>
+  <%= @quest_type.QUEST_NAME %>
+</p>
+
+<p>
+  <strong>Quest explain:</strong>
+  <%= @quest_type.QUEST_EXPLAIN %>
+</p>
+
+<p>
+  <strong>Guide char image:</strong>
+  <%= @quest_type.GUIDE_CHAR_IMAGE %>
+</p>
+
+<p>
+  <strong>Quest complete explain:</strong>
+  <%= @quest_type.QUEST_COMPLETE_EXPLAIN %>
+</p>
+
+<%= link_to 'Edit', edit_quest_type_path(@quest_type) %> |
+<%= link_to 'Back', quest_types_path %>

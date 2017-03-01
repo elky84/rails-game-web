@@ -1,0 +1,83 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing User Instances</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>User no</th>
+      <th>User id</th>
+      <th>User lv</th>
+      <th>Exp</th>
+      <th>Nickname</th>
+      <th>Cash</th>
+      <th>Money</th>
+      <th>Stamina adventure time</th>
+      <th>Stamina adventure</th>
+      <th>Stamina special time</th>
+      <th>Stamina special</th>
+      <th>Stamina pvp time</th>
+      <th>Stamina pvp</th>
+      <th>Friend point</th>
+      <th>Postbox slot</th>
+      <th>Cache monster slot</th>
+      <th>Ext monster slot</th>
+      <th>Cache item slot</th>
+      <th>Ext item slot</th>
+      <th>Cache friend slot</th>
+      <th>Ext friend count</th>
+      <th>Mastery reset count</th>
+      <th>Lastest active time</th>
+      <th>Permission</th>
+      <th>Lastest chr id</th>
+      <th>Lastest chr lv</th>
+      <th>Mastery point</th>
+      <th>Infi tower floor</th>
+      <th>Friend delete count</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @user_instances.each do |user_instance| %>
+      <tr>
+        <td><%= user_instance.USER_NO %></td>
+        <td><%= user_instance.USER_ID %></td>
+        <td><%= user_instance.USER_LV %></td>
+        <td><%= user_instance.EXP %></td>
+        <td><%= user_instance.NICKNAME %></td>
+        <td><%= user_instance.CASH %></td>
+        <td><%= user_instance.MONEY %></td>
+        <td><%= user_instance.STAMINA_ADVENTURE_TIME %></td>
+        <td><%= user_instance.STAMINA_ADVENTURE %></td>
+        <td><%= user_instance.STAMINA_SPECIAL_TIME %></td>
+        <td><%= user_instance.STAMINA_SPECIAL %></td>
+        <td><%= user_instance.STAMINA_PVP_TIME %></td>
+        <td><%= user_instance.STAMINA_PVP %></td>
+        <td><%= user_instance.FRIEND_POINT %></td>
+        <td><%= user_instance.POSTBOX_SLOT %></td>
+        <td><%= user_instance.CACHE_MONSTER_SLOT %></td>
+        <td><%= user_instance.EXT_MONSTER_SLOT %></td>
+        <td><%= user_instance.CACHE_ITEM_SLOT %></td>
+        <td><%= user_instance.EXT_ITEM_SLOT %></td>
+        <td><%= user_instance.CACHE_FRIEND_SLOT %></td>
+        <td><%= user_instance.EXT_FRIEND_COUNT %></td>
+        <td><%= user_instance.MASTERY_RESET_COUNT %></td>
+        <td><%= user_instance.LASTEST_ACTIVE_TIME %></td>
+        <td><%= user_instance.PERMISSION %></td>
+        <td><%= user_instance.LASTEST_CHR_ID %></td>
+        <td><%= user_instance.LASTEST_CHR_LV %></td>
+        <td><%= user_instance.MASTERY_POINT %></td>
+        <td><%= user_instance.INFI_TOWER_FLOOR %></td>
+        <td><%= user_instance.FRIEND_DELETE_COUNT %></td>
+        <td><%= link_to 'Show', user_instance %></td>
+        <td><%= link_to 'Edit', edit_user_instance_path(user_instance) %></td>
+        <td><%= link_to 'Destroy', user_instance, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New User instance', new_user_instance_path %>

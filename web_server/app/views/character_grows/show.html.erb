@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Grow id:</strong>
+  <%= @character_grow.GROW_ID %>
+</p>
+
+<p>
+  <strong>Level:</strong>
+  <%= @character_grow.LEVEL %>
+</p>
+
+<p>
+  <strong>Grow type detail:</strong>
+  <%= @character_grow.GROW_TYPE_DETAIL %>
+</p>
+
+<p>
+  <strong>Require exp:</strong>
+  <%= @character_grow.REQUIRE_EXP %>
+</p>
+
+<p>
+  <strong>Status id:</strong>
+  <%= @character_grow.STATUS_ID %>
+</p>
+
+<%= link_to 'Edit', edit_character_grow_path(@character_grow) %> |
+<%= link_to 'Back', character_grows_path %>

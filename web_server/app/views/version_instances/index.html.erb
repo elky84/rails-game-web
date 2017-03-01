@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Version Instances</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Value</th>
+      <th>Explain</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @version_instances.each do |version_instance| %>
+      <tr>
+        <td><%= version_instance.VALUE %></td>
+        <td><%= version_instance.EXPLAIN %></td>
+        <td><%= link_to 'Show', version_instance %></td>
+        <td><%= link_to 'Edit', edit_version_instance_path(version_instance) %></td>
+        <td><%= link_to 'Destroy', version_instance, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Version instance', new_version_instance_path %>

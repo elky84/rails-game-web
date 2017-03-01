@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Skill no:</strong>
+  <%= @skill_instance.SKILL_NO %>
+</p>
+
+<p>
+  <strong>Character no:</strong>
+  <%= @skill_instance.CHARACTER_NO %>
+</p>
+
+<p>
+  <strong>Skill id:</strong>
+  <%= @skill_instance.SKILL_ID %>
+</p>
+
+<p>
+  <strong>Skill level:</strong>
+  <%= @skill_instance.SKILL_LEVEL %>
+</p>
+
+<p>
+  <strong>Slot no:</strong>
+  <%= @skill_instance.SLOT_NO %>
+</p>
+
+<%= link_to 'Edit', edit_skill_instance_path(@skill_instance) %> |
+<%= link_to 'Back', skill_instances_path %>

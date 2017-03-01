@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Item Enchants</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Item enchant id</th>
+      <th>Item category</th>
+      <th>Level</th>
+      <th>Grade</th>
+      <th>Enchant</th>
+      <th>Enchant probability</th>
+      <th>Money</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @item_enchants.each do |item_enchant| %>
+      <tr>
+        <td><%= item_enchant.ITEM_ENCHANT_ID %></td>
+        <td><%= item_enchant.ITEM_CATEGORY %></td>
+        <td><%= item_enchant.LEVEL %></td>
+        <td><%= item_enchant.GRADE %></td>
+        <td><%= item_enchant.ENCHANT %></td>
+        <td><%= item_enchant.ENCHANT_PROBABILITY %></td>
+        <td><%= item_enchant.MONEY %></td>
+        <td><%= link_to 'Show', item_enchant %></td>
+        <td><%= link_to 'Edit', edit_item_enchant_path(item_enchant) %></td>
+        <td><%= link_to 'Destroy', item_enchant, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Item enchant', new_item_enchant_path %>

@@ -1,0 +1,47 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  SKILL_ID: 1
+  CHARACTER_TYPE: MyText
+  SKILL_CATEGORY: MyText
+  TYPE: MyText
+  LEVEL: 1
+  LEARN_LEVEL: 1
+  SKILL_GROUP_ID: 1
+  PRE_SKILL: MyText
+  PASSIVE_APPLY_SKILL: MyText
+  LEARN_CONDITION: MyText
+  ICON: MyText
+  NAME: MyText
+  EXPLAIN: MyText
+  ACTIVE_ID: 1
+  TRIGGER: MyText
+  SKILL_REACTION_ID: MyText
+  RANGE_CHECK_REACTION_INDEX: 1
+  SKILL_OPTION_ID: MyText
+  POWER: MyText
+  SPEND_MP: MyText
+  SPEND_HP: MyText
+
+two:
+  SKILL_ID: 1
+  CHARACTER_TYPE: MyText
+  SKILL_CATEGORY: MyText
+  TYPE: MyText
+  LEVEL: 1
+  LEARN_LEVEL: 1
+  SKILL_GROUP_ID: 1
+  PRE_SKILL: MyText
+  PASSIVE_APPLY_SKILL: MyText
+  LEARN_CONDITION: MyText
+  ICON: MyText
+  NAME: MyText
+  EXPLAIN: MyText
+  ACTIVE_ID: 1
+  TRIGGER: MyText
+  SKILL_REACTION_ID: MyText
+  RANGE_CHECK_REACTION_INDEX: 1
+  SKILL_OPTION_ID: MyText
+  POWER: MyText
+  SPEND_MP: MyText
+  SPEND_HP: MyText

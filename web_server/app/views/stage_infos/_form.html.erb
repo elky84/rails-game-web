@@ -1,0 +1,141 @@
+<%= form_for(@stage_info) do |f| %>
+  <% if @stage_info.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@stage_info.errors.count, "error") %> prohibited this stage_info from being saved:</h2>
+
+      <ul>
+      <% @stage_info.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :STAGE_ID %><br>
+    <%= f.number_field :STAGE_ID %>
+  </div>
+  <div class="field">
+    <%= f.label :AREA_ID %><br>
+    <%= f.number_field :AREA_ID %>
+  </div>
+  <div class="field">
+    <%= f.label :STAGE_NUMBER %><br>
+    <%= f.text_area :STAGE_NUMBER %>
+  </div>
+  <div class="field">
+    <%= f.label :OPEN %><br>
+    <%= f.text_area :OPEN %>
+  </div>
+  <div class="field">
+    <%= f.label :TYPE %><br>
+    <%= f.text_area :TYPE %>
+  </div>
+  <div class="field">
+    <%= f.label :LEVEL %><br>
+    <%= f.text_area :LEVEL %>
+  </div>
+  <div class="field">
+    <%= f.label :COORDINATE %><br>
+    <%= f.text_area :COORDINATE %>
+  </div>
+  <div class="field">
+    <%= f.label :BGM %><br>
+    <%= f.text_area :BGM %>
+  </div>
+  <div class="field">
+    <%= f.label :BG_COLOR %><br>
+    <%= f.text_area :BG_COLOR %>
+  </div>
+  <div class="field">
+    <%= f.label :NAME %><br>
+    <%= f.text_area :NAME %>
+  </div>
+  <div class="field">
+    <%= f.label :EXPLAIN %><br>
+    <%= f.text_area :EXPLAIN %>
+  </div>
+  <div class="field">
+    <%= f.label :CHARACTER_LEVEL %><br>
+    <%= f.text_area :CHARACTER_LEVEL %>
+  </div>
+  <div class="field">
+    <%= f.label :STAMINA %><br>
+    <%= f.text_area :STAMINA %>
+  </div>
+  <div class="field">
+    <%= f.label :PHASE %><br>
+    <%= f.text_area :PHASE %>
+  </div>
+  <div class="field">
+    <%= f.label :MONSTER %><br>
+    <%= f.text_area :MONSTER %>
+  </div>
+  <div class="field">
+    <%= f.label :ITEM %><br>
+    <%= f.text_area :ITEM %>
+  </div>
+  <div class="field">
+    <%= f.label :STAGE_ICON %><br>
+    <%= f.text_area :STAGE_ICON %>
+  </div>
+  <div class="field">
+    <%= f.label :CLEAR_SCORE %><br>
+    <%= f.text_area :CLEAR_SCORE %>
+  </div>
+  <div class="field">
+    <%= f.label :CLEAR_EXP %><br>
+    <%= f.text_area :CLEAR_EXP %>
+  </div>
+  <div class="field">
+    <%= f.label :CLEAR_MONEY %><br>
+    <%= f.text_area :CLEAR_MONEY %>
+  </div>
+  <div class="field">
+    <%= f.label :CLEAR_1_REWARD %><br>
+    <%= f.text_area :CLEAR_1_REWARD %>
+  </div>
+  <div class="field">
+    <%= f.label :CLEAR_1_REWARD_PROBABILITY %><br>
+    <%= f.text_area :CLEAR_1_REWARD_PROBABILITY %>
+  </div>
+  <div class="field">
+    <%= f.label :CLEAR_2_REWARD %><br>
+    <%= f.text_area :CLEAR_2_REWARD %>
+  </div>
+  <div class="field">
+    <%= f.label :CLEAR_2_REWARD_PROBABILITY %><br>
+    <%= f.text_area :CLEAR_2_REWARD_PROBABILITY %>
+  </div>
+  <div class="field">
+    <%= f.label :CLEAR_3_REWARD %><br>
+    <%= f.text_area :CLEAR_3_REWARD %>
+  </div>
+  <div class="field">
+    <%= f.label :CLEAR_3_REWARD_PROBABILITY %><br>
+    <%= f.text_area :CLEAR_3_REWARD_PROBABILITY %>
+  </div>
+  <div class="field">
+    <%= f.label :START_SCENARIO %><br>
+    <%= f.text_area :START_SCENARIO %>
+  </div>
+  <div class="field">
+    <%= f.label :END_SCENARIO %><br>
+    <%= f.text_area :END_SCENARIO %>
+  </div>
+  <div class="field">
+    <%= f.label :BG_PREFEB %><br>
+    <%= f.text_area :BG_PREFEB %>
+  </div>
+  <div class="field">
+    <%= f.label :INFI_TOWER_SP_REWARD %><br>
+    <%= f.text_area :INFI_TOWER_SP_REWARD %>
+  </div>
+  <div class="field">
+    <%= f.label :INFI_TOWER_PREVIEW %><br>
+    <%= f.text_area :INFI_TOWER_PREVIEW %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

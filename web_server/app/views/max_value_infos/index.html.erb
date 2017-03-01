@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Max Value Infos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Max value id</th>
+      <th>Max slot type</th>
+      <th>Ext slot</th>
+      <th>Next ext slot</th>
+      <th>Next cost</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @max_value_infos.each do |max_value_info| %>
+      <tr>
+        <td><%= max_value_info.MAX_VALUE_ID %></td>
+        <td><%= max_value_info.MAX_SLOT_TYPE %></td>
+        <td><%= max_value_info.EXT_SLOT %></td>
+        <td><%= max_value_info.NEXT_EXT_SLOT %></td>
+        <td><%= max_value_info.NEXT_COST %></td>
+        <td><%= link_to 'Show', max_value_info %></td>
+        <td><%= link_to 'Edit', edit_max_value_info_path(max_value_info) %></td>
+        <td><%= link_to 'Destroy', max_value_info, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Max value info', new_max_value_info_path %>

@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  REPORT_NO: 1
+  USER_NO: 1
+  CHARACTER_NO: 1
+  REPORT_TYPE: MyText
+  VALUE: MyText
+  USER_LV: 1
+  EXP: 1
+  ACTION_TIME: 2016-01-11 11:18:01
+  IP: MyText
+
+two:
+  REPORT_NO: 1
+  USER_NO: 1
+  CHARACTER_NO: 1
+  REPORT_TYPE: MyText
+  VALUE: MyText
+  USER_LV: 1
+  EXP: 1
+  ACTION_TIME: 2016-01-11 11:18:01
+  IP: MyText

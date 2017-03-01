@@ -1,0 +1,2 @@
+module MasteryInstancesHelper
+end

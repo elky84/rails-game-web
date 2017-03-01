@@ -1,0 +1,2 @@
+module UserInstancesHelper
+end

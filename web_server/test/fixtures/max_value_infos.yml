@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  MAX_VALUE_ID: 1
+  MAX_SLOT_TYPE: MyText
+  EXT_SLOT: 1
+  NEXT_EXT_SLOT: 1
+  NEXT_COST: MyText
+
+two:
+  MAX_VALUE_ID: 1
+  MAX_SLOT_TYPE: MyText
+  EXT_SLOT: 1
+  NEXT_EXT_SLOT: 1
+  NEXT_COST: MyText

@@ -1,0 +1,45 @@
+<%= form_for(@item_option) do |f| %>
+  <% if @item_option.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@item_option.errors.count, "error") %> prohibited this item_option from being saved:</h2>
+
+      <ul>
+      <% @item_option.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :ITEM_OPTION_ID %><br>
+    <%= f.number_field :ITEM_OPTION_ID %>
+  </div>
+  <div class="field">
+    <%= f.label :OPTION_ID %><br>
+    <%= f.number_field :OPTION_ID %>
+  </div>
+  <div class="field">
+    <%= f.label :DESCRIPTION %><br>
+    <%= f.text_area :DESCRIPTION %>
+  </div>
+  <div class="field">
+    <%= f.label :GRADE %><br>
+    <%= f.text_area :GRADE %>
+  </div>
+  <div class="field">
+    <%= f.label :DETAIL_ID %><br>
+    <%= f.number_field :DETAIL_ID %>
+  </div>
+  <div class="field">
+    <%= f.label :MIN %><br>
+    <%= f.number_field :MIN %>
+  </div>
+  <div class="field">
+    <%= f.label :MAX %><br>
+    <%= f.number_field :MAX %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,164 @@
+﻿<div align="left" style="padding:10px;" class="container">
+<h1>Event</h1>
+
+<% time_str = DateTime.current %><%= time_str %><br><br>
+
+<!-- 
+<b>MONEY</b>
+<form action="/statistics/average" method="get">
+	VALUE
+	<input type="input" name="date" value= "" >
+	
+	START_DATE
+	<input type="date" name="start_date" value= <%=time_str.to_date %> >
+	<input type="time" name="start_time" value= <%="00:00:00 +0000"%> >
+	
+	END_DATE
+	<input type="date" name="end_date" value= <%=time_str.to_date%> >
+	<input type="time" name="end_time" value= <%=time_str.to_time.strftime("%T")%> >
+	
+	<input type="submit" value="apply">
+</form>
+<br>
+
+<b>EXP</b>
+<form action="/statistics/average" method="get">
+	VALUE
+	<input type="input" name="date" value= "" >
+	
+	START_DATE
+	<input type="date" name="start_date" value= <%=time_str.to_date %> >
+	<input type="time" name="start_time" value= <%="00:00:00 +0000"%> >
+	
+	END_DATE
+	<input type="date" name="end_date" value= <%=time_str.to_date%> >
+	<input type="time" name="end_time" value= <%=time_str.to_time.strftime("%T")%> >
+
+	<input type="submit" value="apply">
+</form>
+<br>
+
+<b>SKILL_ENCAHNT</b>
+<form action="/statistics/average" method="get">
+	VALUE
+	<input type="input" name="date" value= "" >
+	
+	START_DATE
+	<input type="date" name="start_date" value= <%=time_str.to_date %> >
+	<input type="time" name="start_time" value= <%="00:00:00 +0000"%> >
+	
+	END_DATE
+	<input type="date" name="end_date" value= <%=time_str.to_date%> >
+	<input type="time" name="end_time" value= <%=time_str.to_time.strftime("%T")%> >
+
+	
+	<input type="submit" value="apply">
+</form>
+<br>
+
+
+
+<b>MONSTER_ENCHANT</b>
+<form action="/statistics/average" method="get">
+	VALUE
+	<input type="input" name="date" value= "" >
+	
+	START_DATE
+	<input type="date" name="start_date" value= <%=time_str.to_date %> >
+	<input type="time" name="start_time" value= <%="00:00:00 +0000"%> >
+	
+	END_DATE
+	<input type="date" name="end_date" value= <%=time_str.to_date%> >
+	<input type="time" name="end_time" value= <%=time_str.to_time.strftime("%T")%> >
+
+	<input type="submit" value="apply">
+</form>
+<br>
+
+
+<b>MONSTER_EVOLUTION</b>
+<form action="/statistics/average" method="get">
+	VALUE
+	<input type="input" name="date" value= "" >
+	
+	START_DATE
+	<input type="date" name="start_date" value= <%=time_str.to_date %> >
+	<input type="time" name="start_time" value= <%="00:00:00 +0000"%> >
+	
+	END_DATE
+	<input type="date" name="end_date" value= <%=time_str.to_date%> >
+	<input type="time" name="end_time" value= <%=time_str.to_time.strftime("%T")%> >
+
+	<input type="submit" value="apply">
+</form>
+<br> -->
+
+
+
+<b>EVENT [LOGIN]</b>
+<form action="/event/save" method="get">
+	<input type="hidden" name="event_type" value= "LOGIN" >
+
+	REWARD
+	<select name="type">
+		<option value="GOLD" selected>엽전</option>
+		<option value="DIAMOND">다이아몬드</option>
+		<option value="MONSTER">요괴</option>
+		<option value="ITEM">아이템</option>
+		<option value="STAMINA_PVP">PVP 행동력</option>
+		<option value="STAMINA_ADVENTURE">모험 행동력</option>
+		<option value="STAMINA_SPECIAL">스페셜 행동력</option>
+		<option value="GACHA">가챠</option>
+		<option value="EXP">경험치</option>
+		<option value="FRIEND_POINT">우정포인트</option>
+	</select>
+
+	<br>
+	VALUE
+	<input type="input" name="value" value= "" >	
+	
+	<br>
+	START_DATE
+	<input type="date" name="start_date" value= <%=time_str.to_date %> >
+	<input type="time" name="start_time" value= <%="00:00:00 +0000"%> >
+	
+	<br>
+	END_DATE
+	<input type="date" name="end_date" value= <%=time_str.to_date%> >
+	<input type="time" name="end_time" value= <%=time_str.to_time.strftime("%T")%> >
+
+	<input type="submit" value="apply">
+</form>
+<br>
+
+<b>EVENT LIST</b>
+<form action="/event_instances" method="get">		
+	<input type="submit" value="find">
+</form>
+<br>
+
+
+
+<!-- <b>GACHA_EVENT</b>
+<form action="/statistics/average" method="get">
+	GACHA_ID
+	<input type="input" name="date" value= "" >
+
+	VALUE
+	<input type="input" name="date" value= "" >
+	
+	START_DATE
+	<input type="date" name="start_date" value= <%=time_str.to_date %> >
+	<input type="time" name="start_time" value= <%="00:00:00 +0000"%> >
+	
+	END_DATE
+	<input type="date" name="end_date" value= <%=time_str.to_date%> >
+	<input type="time" name="end_time" value= <%=time_str.to_time.strftime("%T")%> >
+
+	
+	<input type="submit" value="apply">
+</form>
+<br>
+
+</div>
+-->

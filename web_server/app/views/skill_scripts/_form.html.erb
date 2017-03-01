@@ -1,0 +1,101 @@
+<%= form_for(@skill_script) do |f| %>
+  <% if @skill_script.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@skill_script.errors.count, "error") %> prohibited this skill_script from being saved:</h2>
+
+      <ul>
+      <% @skill_script.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :SKILL_ID %><br>
+    <%= f.number_field :SKILL_ID %>
+  </div>
+  <div class="field">
+    <%= f.label :CHARACTER_TYPE %><br>
+    <%= f.text_area :CHARACTER_TYPE %>
+  </div>
+  <div class="field">
+    <%= f.label :SKILL_CATEGORY %><br>
+    <%= f.text_area :SKILL_CATEGORY %>
+  </div>
+  <div class="field">
+    <%= f.label :TYPE %><br>
+    <%= f.text_area :TYPE %>
+  </div>
+  <div class="field">
+    <%= f.label :LEVEL %><br>
+    <%= f.number_field :LEVEL %>
+  </div>
+  <div class="field">
+    <%= f.label :LEARN_LEVEL %><br>
+    <%= f.number_field :LEARN_LEVEL %>
+  </div>
+  <div class="field">
+    <%= f.label :SKILL_GROUP_ID %><br>
+    <%= f.number_field :SKILL_GROUP_ID %>
+  </div>
+  <div class="field">
+    <%= f.label :PRE_SKILL %><br>
+    <%= f.text_area :PRE_SKILL %>
+  </div>
+  <div class="field">
+    <%= f.label :PASSIVE_APPLY_SKILL %><br>
+    <%= f.text_area :PASSIVE_APPLY_SKILL %>
+  </div>
+  <div class="field">
+    <%= f.label :LEARN_CONDITION %><br>
+    <%= f.text_area :LEARN_CONDITION %>
+  </div>
+  <div class="field">
+    <%= f.label :ICON %><br>
+    <%= f.text_area :ICON %>
+  </div>
+  <div class="field">
+    <%= f.label :NAME %><br>
+    <%= f.text_area :NAME %>
+  </div>
+  <div class="field">
+    <%= f.label :EXPLAIN %><br>
+    <%= f.text_area :EXPLAIN %>
+  </div>
+  <div class="field">
+    <%= f.label :ACTIVE_ID %><br>
+    <%= f.number_field :ACTIVE_ID %>
+  </div>
+  <div class="field">
+    <%= f.label :TRIGGER %><br>
+    <%= f.text_area :TRIGGER %>
+  </div>
+  <div class="field">
+    <%= f.label :SKILL_REACTION_ID %><br>
+    <%= f.text_area :SKILL_REACTION_ID %>
+  </div>
+  <div class="field">
+    <%= f.label :RANGE_CHECK_REACTION_INDEX %><br>
+    <%= f.number_field :RANGE_CHECK_REACTION_INDEX %>
+  </div>
+  <div class="field">
+    <%= f.label :SKILL_OPTION_ID %><br>
+    <%= f.text_area :SKILL_OPTION_ID %>
+  </div>
+  <div class="field">
+    <%= f.label :POWER %><br>
+    <%= f.text_area :POWER %>
+  </div>
+  <div class="field">
+    <%= f.label :SPEND_MP %><br>
+    <%= f.text_area :SPEND_MP %>
+  </div>
+  <div class="field">
+    <%= f.label :SPEND_HP %><br>
+    <%= f.text_area :SPEND_HP %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

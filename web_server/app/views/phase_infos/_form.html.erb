@@ -1,0 +1,81 @@
+<%= form_for(@phase_info) do |f| %>
+  <% if @phase_info.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@phase_info.errors.count, "error") %> prohibited this phase_info from being saved:</h2>
+
+      <ul>
+      <% @phase_info.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :PHASE_ID %><br>
+    <%= f.number_field :PHASE_ID %>
+  </div>
+  <div class="field">
+    <%= f.label :INIT_POS %><br>
+    <%= f.text_area :INIT_POS %>
+  </div>
+  <div class="field">
+    <%= f.label :MOVE_TIME %><br>
+    <%= f.text_area :MOVE_TIME %>
+  </div>
+  <div class="field">
+    <%= f.label :CLEAR %><br>
+    <%= f.text_area :CLEAR %>
+  </div>
+  <div class="field">
+    <%= f.label :WAIT_TIME %><br>
+    <%= f.text_area :WAIT_TIME %>
+  </div>
+  <div class="field">
+    <%= f.label :STAY_TIME %><br>
+    <%= f.text_area :STAY_TIME %>
+  </div>
+  <div class="field">
+    <%= f.label :MONSTER %><br>
+    <%= f.text_area :MONSTER %>
+  </div>
+  <div class="field">
+    <%= f.label :MONSTER_GEN_INFO %><br>
+    <%= f.text_area :MONSTER_GEN_INFO %>
+  </div>
+  <div class="field">
+    <%= f.label :MONSTER_LV %><br>
+    <%= f.text_area :MONSTER_LV %>
+  </div>
+  <div class="field">
+    <%= f.label :APPEAR_SPEED %><br>
+    <%= f.text_area :APPEAR_SPEED %>
+  </div>
+  <div class="field">
+    <%= f.label :APPEAR_TIME %><br>
+    <%= f.text_area :APPEAR_TIME %>
+  </div>
+  <div class="field">
+    <%= f.label :TEAM_INDEX %><br>
+    <%= f.text_area :TEAM_INDEX %>
+  </div>
+  <div class="field">
+    <%= f.label :START_SCENARIO %><br>
+    <%= f.text_area :START_SCENARIO %>
+  </div>
+  <div class="field">
+    <%= f.label :END_SCENARIO %><br>
+    <%= f.text_area :END_SCENARIO %>
+  </div>
+  <div class="field">
+    <%= f.label :IS_BOSS_PHASE %><br>
+    <%= f.number_field :IS_BOSS_PHASE %>
+  </div>
+  <div class="field">
+    <%= f.label :PHASE_WIDTH %><br>
+    <%= f.text_area :PHASE_WIDTH %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

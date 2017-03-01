@@ -1,0 +1,37 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  MONSTER_NO: 1
+  USER_NO: 1
+  MONSTER_ID: 1
+  LEVEL: 1
+  EXP: 1
+  HP: 1
+  MP: 1
+  ATTACK: 1
+  DEFENCE: 1
+  CRITICAL_HIT: MyString
+  CRITICAL_AVOID: MyString
+  CRITICAL_DAMAGE_PERCENT: 1
+  ATTACK_SPEED: MyString
+  MOVE_SPEED: MyString
+  REGEN_HEALTH: 1
+  REGEN_MP: 1
+
+two:
+  MONSTER_NO: 1
+  USER_NO: 1
+  MONSTER_ID: 1
+  LEVEL: 1
+  EXP: 1
+  HP: 1
+  MP: 1
+  ATTACK: 1
+  DEFENCE: 1
+  CRITICAL_HIT: MyString
+  CRITICAL_AVOID: MyString
+  CRITICAL_DAMAGE_PERCENT: 1
+  ATTACK_SPEED: MyString
+  MOVE_SPEED: MyString
+  REGEN_HEALTH: 1
+  REGEN_MP: 1

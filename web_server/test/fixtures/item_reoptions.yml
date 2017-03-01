@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  ITEM_REOPTION_ID: 1
+  ITEM_CATEGORY: MyText
+  GRADE: 1
+  LEVEL: 1
+  MONEY: MyText
+
+two:
+  ITEM_REOPTION_ID: 1
+  ITEM_CATEGORY: MyText
+  GRADE: 1
+  LEVEL: 1
+  MONEY: MyText

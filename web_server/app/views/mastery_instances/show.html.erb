@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Mastery no:</strong>
+  <%= @mastery_instance.MASTERY_NO %>
+</p>
+
+<p>
+  <strong>Group no:</strong>
+  <%= @mastery_instance.GROUP_NO %>
+</p>
+
+<p>
+  <strong>User no:</strong>
+  <%= @mastery_instance.USER_NO %>
+</p>
+
+<p>
+  <strong>Character no:</strong>
+  <%= @mastery_instance.CHARACTER_NO %>
+</p>
+
+<p>
+  <strong>Mastery:</strong>
+  <%= @mastery_instance.MASTERY %>
+</p>
+
+<%= link_to 'Edit', edit_mastery_instance_path(@mastery_instance) %> |
+<%= link_to 'Back', mastery_instances_path %>

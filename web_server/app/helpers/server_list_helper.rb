@@ -1,0 +1,2 @@
+module ServerListHelper
+end

@@ -1,0 +1,49 @@
+<%= form_for(@scenario_script) do |f| %>
+  <% if @scenario_script.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@scenario_script.errors.count, "error") %> prohibited this scenario_script from being saved:</h2>
+
+      <ul>
+      <% @scenario_script.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :INDEX %><br>
+    <%= f.number_field :INDEX %>
+  </div>
+  <div class="field">
+    <%= f.label :DIALOGUE_TYPE %><br>
+    <%= f.text_field :DIALOGUE_TYPE %>
+  </div>
+  <div class="field">
+    <%= f.label :DIALOGUE_EFFECT %><br>
+    <%= f.text_field :DIALOGUE_EFFECT %>
+  </div>
+  <div class="field">
+    <%= f.label :SPEECH_BACK %><br>
+    <%= f.text_field :SPEECH_BACK %>
+  </div>
+  <div class="field">
+    <%= f.label :CHARACTER_FACE %><br>
+    <%= f.text_field :CHARACTER_FACE %>
+  </div>
+  <div class="field">
+    <%= f.label :FACE_POS %><br>
+    <%= f.text_field :FACE_POS %>
+  </div>
+  <div class="field">
+    <%= f.label :CHARACOTR_INDEX %><br>
+    <%= f.number_field :CHARACOTR_INDEX %>
+  </div>
+  <div class="field">
+    <%= f.label :STRING_INDEX %><br>
+    <%= f.number_field :STRING_INDEX %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

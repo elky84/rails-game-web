@@ -1,0 +1,37 @@
+<%= form_for(@condition) do |f| %>
+  <% if @condition.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@condition.errors.count, "error") %> prohibited this condition from being saved:</h2>
+
+      <ul>
+      <% @condition.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :CONDITION_ID %><br>
+    <%= f.number_field :CONDITION_ID %>
+  </div>
+  <div class="field">
+    <%= f.label :CONDITION_EFFECT %><br>
+    <%= f.text_area :CONDITION_EFFECT %>
+  </div>
+  <div class="field">
+    <%= f.label :CONDITION_INFO %><br>
+    <%= f.text_area :CONDITION_INFO %>
+  </div>
+  <div class="field">
+    <%= f.label :PERCENT %><br>
+    <%= f.number_field :PERCENT %>
+  </div>
+  <div class="field">
+    <%= f.label :CONDITION_APPLY_TYPE %><br>
+    <%= f.text_area :CONDITION_APPLY_TYPE %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

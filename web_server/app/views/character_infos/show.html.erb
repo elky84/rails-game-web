@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Character id:</strong>
+  <%= @character_info.CHARACTER_ID %>
+</p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @character_info.TYPE %>
+</p>
+
+<p>
+  <strong>Grow type detail:</strong>
+  <%= @character_info.GROW_TYPE_DETAIL %>
+</p>
+
+<p>
+  <strong>Equip type:</strong>
+  <%= @character_info.EQUIP_TYPE %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @character_info.NAME %>
+</p>
+
+<p>
+  <strong>Explain:</strong>
+  <%= @character_info.EXPLAIN %>
+</p>
+
+<p>
+  <strong>Actor id:</strong>
+  <%= @character_info.ACTOR_ID %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @character_info.PRICE %>
+</p>
+
+<p>
+  <strong>Release:</strong>
+  <%= @character_info.RELEASE %>
+</p>
+
+<%= link_to 'Edit', edit_character_info_path(@character_info) %> |
+<%= link_to 'Back', character_infos_path %>

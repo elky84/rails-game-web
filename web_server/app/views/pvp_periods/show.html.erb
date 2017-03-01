@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Pvp period id:</strong>
+  <%= @pvp_period.PVP_PERIOD_ID %>
+</p>
+
+<p>
+  <strong>Season num:</strong>
+  <%= @pvp_period.SEASON_NUM %>
+</p>
+
+<p>
+  <strong>Start date:</strong>
+  <%= @pvp_period.START_DATE %>
+</p>
+
+<p>
+  <strong>End date:</strong>
+  <%= @pvp_period.END_DATE %>
+</p>
+
+<%= link_to 'Edit', edit_pvp_period_path(@pvp_period) %> |
+<%= link_to 'Back', pvp_periods_path %>

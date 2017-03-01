@@ -1,0 +1,1 @@
+call ruby Validate_all.rb

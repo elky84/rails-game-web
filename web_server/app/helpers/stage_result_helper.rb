@@ -1,0 +1,2 @@
+module StageResultHelper
+end

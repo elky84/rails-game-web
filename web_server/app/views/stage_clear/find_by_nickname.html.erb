@@ -1,0 +1,35 @@
+<h1>Listing stage_clear_instances</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>User no</th>
+      <th>Character no</th>
+      <th>Play stage</th>
+      <th>Clear stage</th>
+      <th>Stage score</th>
+      <th>Last date</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @stage_clear_instances.each do |stage_clear_instance| %>
+      <tr>
+        <td><%= stage_clear_instance.USER_NO %></td>
+        <td><%= stage_clear_instance.CHARACTER_NO %></td>
+        <td><%= stage_clear_instance.PLAY_STAGE %></td>
+        <td><%= stage_clear_instance.CLEAR_STAGE %></td>
+        <td><%= stage_clear_instance.STAGE_SCORE %></td>
+        <td><%= stage_clear_instance.LAST_DATE %></td>
+        <td><%= link_to 'Show', stage_clear_instance %></td>
+        <td><%= link_to 'Edit', edit_stage_clear_instance_path(stage_clear_instance) %></td>
+        <td><%= link_to 'Destroy', stage_clear_instance, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Stage clear instance', new_stage_clear_instance_path %>

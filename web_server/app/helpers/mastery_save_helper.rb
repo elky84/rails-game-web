@@ -1,0 +1,2 @@
+module MasterySaveHelper
+end

@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Pvp Rank Cache Instances</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Pvp rank cache instance no</th>
+      <th>Rank</th>
+      <th>Character no</th>
+      <th>Rating</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @pvp_rank_cache_instances.each do |pvp_rank_cache_instance| %>
+      <tr>
+        <td><%= pvp_rank_cache_instance.PVP_RANK_CACHE_INSTANCE_NO %></td>
+        <td><%= pvp_rank_cache_instance.RANK %></td>
+        <td><%= pvp_rank_cache_instance.CHARACTER_NO %></td>
+        <td><%= pvp_rank_cache_instance.RATING %></td>
+        <td><%= link_to 'Show', pvp_rank_cache_instance %></td>
+        <td><%= link_to 'Edit', edit_pvp_rank_cache_instance_path(pvp_rank_cache_instance) %></td>
+        <td><%= link_to 'Destroy', pvp_rank_cache_instance, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Pvp rank cache instance', new_pvp_rank_cache_instance_path %>

@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  INDEX: 1
+  SERVER_TYPE: MyText
+  ADDRESS: MyText
+  NAME: MyText
+  CU: 1
+  RU: 1
+
+two:
+  INDEX: 1
+  SERVER_TYPE: MyText
+  ADDRESS: MyText
+  NAME: MyText
+  CU: 1
+  RU: 1

@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Quest Types</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Quest type id</th>
+      <th>Quest icon</th>
+      <th>Type</th>
+      <th>Quest name</th>
+      <th>Quest explain</th>
+      <th>Guide char image</th>
+      <th>Quest complete explain</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @quest_types.each do |quest_type| %>
+      <tr>
+        <td><%= quest_type.QUEST_TYPE_ID %></td>
+        <td><%= quest_type.QUEST_ICON %></td>
+        <td><%= quest_type.TYPE %></td>
+        <td><%= quest_type.QUEST_NAME %></td>
+        <td><%= quest_type.QUEST_EXPLAIN %></td>
+        <td><%= quest_type.GUIDE_CHAR_IMAGE %></td>
+        <td><%= quest_type.QUEST_COMPLETE_EXPLAIN %></td>
+        <td><%= link_to 'Show', quest_type %></td>
+        <td><%= link_to 'Edit', edit_quest_type_path(quest_type) %></td>
+        <td><%= link_to 'Destroy', quest_type, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Quest type', new_quest_type_path %>

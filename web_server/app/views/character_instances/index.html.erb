@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Character Instances</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Character no</th>
+      <th>User no</th>
+      <th>Character id</th>
+      <th>Level</th>
+      <th>Exp</th>
+      <th>Lastest active time</th>
+      <th>Mastery group id</th>
+      <th>Party monster id</th>
+      <th>Stage instance no</th>
+      <th>Costume id</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @character_instances.each do |character_instance| %>
+      <tr>
+        <td><%= character_instance.CHARACTER_NO %></td>
+        <td><%= character_instance.USER_NO %></td>
+        <td><%= character_instance.CHARACTER_ID %></td>
+        <td><%= character_instance.LEVEL %></td>
+        <td><%= character_instance.EXP %></td>
+        <td><%= character_instance.LASTEST_ACTIVE_TIME %></td>
+        <td><%= character_instance.MASTERY_GROUP_ID %></td>
+        <td><%= character_instance.PARTY_MONSTER_ID %></td>
+        <td><%= character_instance.STAGE_INSTANCE_NO %></td>
+        <td><%= character_instance.COSTUME_ID %></td>
+        <td><%= link_to 'Show', character_instance %></td>
+        <td><%= link_to 'Edit', edit_character_instance_path(character_instance) %></td>
+        <td><%= link_to 'Destroy', character_instance, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Character instance', new_character_instance_path %>

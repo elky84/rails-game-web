@@ -1,0 +1,43 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Monster Infos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Monster id</th>
+      <th>Monster type</th>
+      <th>Monster grade</th>
+      <th>Grow type</th>
+      <th>Grow type detail</th>
+      <th>Monster price</th>
+      <th>Actor id</th>
+      <th>Skin num</th>
+      <th>Gacha speech</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @monster_infos.each do |monster_info| %>
+      <tr>
+        <td><%= monster_info.MONSTER_ID %></td>
+        <td><%= monster_info.MONSTER_TYPE %></td>
+        <td><%= monster_info.MONSTER_GRADE %></td>
+        <td><%= monster_info.GROW_TYPE %></td>
+        <td><%= monster_info.GROW_TYPE_DETAIL %></td>
+        <td><%= monster_info.MONSTER_PRICE %></td>
+        <td><%= monster_info.ACTOR_ID %></td>
+        <td><%= monster_info.SKIN_NUM %></td>
+        <td><%= monster_info.GACHA_SPEECH %></td>
+        <td><%= link_to 'Show', monster_info %></td>
+        <td><%= link_to 'Edit', edit_monster_info_path(monster_info) %></td>
+        <td><%= link_to 'Destroy', monster_info, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Monster info', new_monster_info_path %>

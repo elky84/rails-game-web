@@ -1,0 +1,12 @@
+ log4r_config:
+   loggers:
+   - name: "sunbee_rails"
+     outputters:
+     - sunbee_rails
+   outputters:
+   - name: sunbee_rails
+     type: StdoutOutputter
+     default: true
+     formatter:
+       type: PatternFormatter
+       pattern: '%d [%l] - sunbee_rails'

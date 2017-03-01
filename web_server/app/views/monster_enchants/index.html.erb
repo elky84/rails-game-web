@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Monster Enchants</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Monster enchant id</th>
+      <th>Monster grade</th>
+      <th>Enchant result</th>
+      <th>Enchant percent</th>
+      <th>Equal monster skill bonus</th>
+      <th>Base exp</th>
+      <th>Level bonus exp</th>
+      <th>Equal monster exp bonus</th>
+      <th>Base money</th>
+      <th>Level money</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @monster_enchants.each do |monster_enchant| %>
+      <tr>
+        <td><%= monster_enchant.MONSTER_ENCHANT_ID %></td>
+        <td><%= monster_enchant.MONSTER_GRADE %></td>
+        <td><%= monster_enchant.ENCHANT_RESULT %></td>
+        <td><%= monster_enchant.ENCHANT_PERCENT %></td>
+        <td><%= monster_enchant.EQUAL_MONSTER_SKILL_BONUS %></td>
+        <td><%= monster_enchant.BASE_EXP %></td>
+        <td><%= monster_enchant.LEVEL_BONUS_EXP %></td>
+        <td><%= monster_enchant.EQUAL_MONSTER_EXP_BONUS %></td>
+        <td><%= monster_enchant.BASE_MONEY %></td>
+        <td><%= monster_enchant.LEVEL_MONEY %></td>
+        <td><%= link_to 'Show', monster_enchant %></td>
+        <td><%= link_to 'Edit', edit_monster_enchant_path(monster_enchant) %></td>
+        <td><%= link_to 'Destroy', monster_enchant, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Monster enchant', new_monster_enchant_path %>

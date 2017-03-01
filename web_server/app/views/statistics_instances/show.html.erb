@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Statistics no:</strong>
+  <%= @statistics_instance.STATISTICS_NO %>
+</p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @statistics_instance.TYPE %>
+</p>
+
+<p>
+  <strong>Value:</strong>
+  <%= @statistics_instance.VALUE %>
+</p>
+
+<p>
+  <strong>Info:</strong>
+  <%= @statistics_instance.INFO %>
+</p>
+
+<p>
+  <strong>User lv:</strong>
+  <%= @statistics_instance.USER_LV %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @statistics_instance.DATE %>
+</p>
+
+<%= link_to 'Edit', edit_statistics_instance_path(@statistics_instance) %> |
+<%= link_to 'Back', statistics_instances_path %>

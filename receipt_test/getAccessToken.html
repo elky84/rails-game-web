@@ -1,0 +1,16 @@
+<html>
+	<form action="https://accounts.google.com/o/oauth2/token" method="post">
+
+		<!-- code는 AuthCode를 받아 사용합니다. 1회용코드 -->
+		<input type="hidden" name="code" value="4/rHcztEeLlgU7e5oNhIwFUPLVjSj1jPhouDzxXEdn7Wo">
+
+		<!-- 구글 개발자콘솔에서 생성한 id, secret, redirect_uri -->
+		<input type="hidden" name="client_id" value="515113257841-a5lbsj4tdcpbu4erdh6slts3du61moj6.apps.googleusercontent.com">
+		<input type="hidden" name="client_secret" value="RywDLGvTDQcyIcGwlz7nnr0t">
+		<input type="hidden" name="redirect_uri" value="urn:ietf:wg:oauth:2.0:oob">
+
+		<input type="hidden" name="grant_type" value="authorization_code">	
+Get AccessToken!!
+		<input type="submit" value="Submit">
+	</form>
+</html>

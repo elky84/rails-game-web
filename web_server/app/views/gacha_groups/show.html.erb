@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Gacha group id:</strong>
+  <%= @gacha_group.GACHA_GROUP_ID %>
+</p>
+
+<p>
+  <strong>Group reward:</strong>
+  <%= @gacha_group.GROUP_REWARD %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @gacha_group.DESCRIPTION %>
+</p>
+
+<%= link_to 'Edit', edit_gacha_group_path(@gacha_group) %> |
+<%= link_to 'Back', gacha_groups_path %>

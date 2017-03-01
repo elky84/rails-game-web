@@ -1,0 +1,33 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  REGION_ID: 1
+  OPEN: MyText
+  CATEGORY: MyText
+  IMAGE: MyText
+  NAME: MyText
+  EXPLAIN: MyText
+  LEVEL: MyText
+  NORMAL_STAGE: MyText
+  HARD_STAGE: MyText
+  HELL_STAGE: MyText
+  MONSTER: MyText
+  ITEM: MyText
+  SCENARIO_START: MyText
+  SCENARIO_END: MyText
+
+two:
+  REGION_ID: 1
+  OPEN: MyText
+  CATEGORY: MyText
+  IMAGE: MyText
+  NAME: MyText
+  EXPLAIN: MyText
+  LEVEL: MyText
+  NORMAL_STAGE: MyText
+  HARD_STAGE: MyText
+  HELL_STAGE: MyText
+  MONSTER: MyText
+  ITEM: MyText
+  SCENARIO_START: MyText
+  SCENARIO_END: MyText

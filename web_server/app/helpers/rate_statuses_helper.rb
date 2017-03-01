@@ -1,0 +1,2 @@
+module RateStatusesHelper
+end

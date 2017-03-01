@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  COUPON_INDEX: 1
+  REWARD: MyText
+  COUPON_STRING: MyText
+  SERVER_INDEX: 1
+  USER_NO: 1
+  TIME: MyText
+  COUPON_GROUP: MyText
+
+two:
+  COUPON_INDEX: 1
+  REWARD: MyText
+  COUPON_STRING: MyText
+  SERVER_INDEX: 1
+  USER_NO: 1
+  TIME: MyText
+  COUPON_GROUP: MyText

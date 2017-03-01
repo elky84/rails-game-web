@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  GACHA_GROUP_ID: 1
+  GROUP_REWARD: MyText
+  DESCRIPTION: MyText
+
+two:
+  GACHA_GROUP_ID: 1
+  GROUP_REWARD: MyText
+  DESCRIPTION: MyText

@@ -1,0 +1,65 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Shop Items</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Shop item id</th>
+      <th>Hide</th>
+      <th>Gift</th>
+      <th>Store</th>
+      <th>Icon</th>
+      <th>Price type</th>
+      <th>Character level</th>
+      <th>Price</th>
+      <th>Shop category</th>
+      <th>Capacity</th>
+      <th>Item id</th>
+      <th>Gacha</th>
+      <th>Bonus string</th>
+      <th>Bonus id</th>
+      <th>Name</th>
+      <th>Explain</th>
+      <th>Start date</th>
+      <th>End date</th>
+      <th>Nstore pid</th>
+      <th>Play pid</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @shop_items.each do |shop_item| %>
+      <tr>
+        <td><%= shop_item.SHOP_ITEM_ID %></td>
+        <td><%= shop_item.HIDE %></td>
+        <td><%= shop_item.GIFT %></td>
+        <td><%= shop_item.STORE %></td>
+        <td><%= shop_item.ICON %></td>
+        <td><%= shop_item.PRICE_TYPE %></td>
+        <td><%= shop_item.CHARACTER_LEVEL %></td>
+        <td><%= shop_item.PRICE %></td>
+        <td><%= shop_item.SHOP_CATEGORY %></td>
+        <td><%= shop_item.CAPACITY %></td>
+        <td><%= shop_item.ITEM_ID %></td>
+        <td><%= shop_item.GACHA %></td>
+        <td><%= shop_item.BONUS_STRING %></td>
+        <td><%= shop_item.BONUS_ID %></td>
+        <td><%= shop_item.NAME %></td>
+        <td><%= shop_item.EXPLAIN %></td>
+        <td><%= shop_item.START_DATE %></td>
+        <td><%= shop_item.END_DATE %></td>
+        <td><%= shop_item.NSTORE_PID %></td>
+        <td><%= shop_item.PLAY_PID %></td>
+        <td><%= link_to 'Show', shop_item %></td>
+        <td><%= link_to 'Edit', edit_shop_item_path(shop_item) %></td>
+        <td><%= link_to 'Destroy', shop_item, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Shop item', new_shop_item_path %>

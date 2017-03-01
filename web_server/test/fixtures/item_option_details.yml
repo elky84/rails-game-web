@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  ITEM_OPTION_DETAIL_ID: 1
+  PARAMETER_ID: 1
+  CONDITION_ID: 1
+  OPTION_INFO: MyString
+  UI_SCRIPT: MyString
+
+two:
+  ITEM_OPTION_DETAIL_ID: 1
+  PARAMETER_ID: 1
+  CONDITION_ID: 1
+  OPTION_INFO: MyString
+  UI_SCRIPT: MyString

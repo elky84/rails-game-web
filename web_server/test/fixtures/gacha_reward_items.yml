@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  GACHA_REWARD_ITEM_ID: 1
+  ITEM_ID: 1
+
+two:
+  GACHA_REWARD_ITEM_ID: 1
+  ITEM_ID: 1

@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  INDEX: 1
+  APPEAR_TYPE: MyText
+  POSITION: MyText
+  MOVE_FROM: MyText
+  DIRECTION: 1
+  CURVE: 1
+  JUMP_SPEED: MyText
+  DEAD_AFTER_APPEAR: 1
+
+two:
+  INDEX: 1
+  APPEAR_TYPE: MyText
+  POSITION: MyText
+  MOVE_FROM: MyText
+  DIRECTION: 1
+  CURVE: 1
+  JUMP_SPEED: MyText
+  DEAD_AFTER_APPEAR: 1

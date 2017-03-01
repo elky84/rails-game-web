@@ -1,0 +1,61 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Item Infos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Item id</th>
+      <th>Icon</th>
+      <th>Name</th>
+      <th>Explain</th>
+      <th>Is enchant</th>
+      <th>Is reoption</th>
+      <th>Is sell</th>
+      <th>Level</th>
+      <th>Grade</th>
+      <th>Limit</th>
+      <th>Category</th>
+      <th>Costume id</th>
+      <th>Default option</th>
+      <th>Item option list</th>
+      <th>Price</th>
+      <th>Value</th>
+      <th>Expire type</th>
+      <th>Durability</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @item_infos.each do |item_info| %>
+      <tr>
+        <td><%= item_info.ITEM_ID %></td>
+        <td><%= item_info.ICON %></td>
+        <td><%= item_info.NAME %></td>
+        <td><%= item_info.EXPLAIN %></td>
+        <td><%= item_info.IS_ENCHANT %></td>
+        <td><%= item_info.IS_REOPTION %></td>
+        <td><%= item_info.IS_SELL %></td>
+        <td><%= item_info.LEVEL %></td>
+        <td><%= item_info.GRADE %></td>
+        <td><%= item_info.LIMIT %></td>
+        <td><%= item_info.CATEGORY %></td>
+        <td><%= item_info.COSTUME_ID %></td>
+        <td><%= item_info.DEFAULT_OPTION %></td>
+        <td><%= item_info.ITEM_OPTION_LIST %></td>
+        <td><%= item_info.PRICE %></td>
+        <td><%= item_info.VALUE %></td>
+        <td><%= item_info.EXPIRE_TYPE %></td>
+        <td><%= item_info.DURABILITY %></td>
+        <td><%= link_to 'Show', item_info %></td>
+        <td><%= link_to 'Edit', edit_item_info_path(item_info) %></td>
+        <td><%= link_to 'Destroy', item_info, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Item info', new_item_info_path %>

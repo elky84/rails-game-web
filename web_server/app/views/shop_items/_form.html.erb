@@ -1,0 +1,97 @@
+<%= form_for(@shop_item) do |f| %>
+  <% if @shop_item.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@shop_item.errors.count, "error") %> prohibited this shop_item from being saved:</h2>
+
+      <ul>
+      <% @shop_item.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :SHOP_ITEM_ID %><br>
+    <%= f.number_field :SHOP_ITEM_ID %>
+  </div>
+  <div class="field">
+    <%= f.label :HIDE %><br>
+    <%= f.number_field :HIDE %>
+  </div>
+  <div class="field">
+    <%= f.label :GIFT %><br>
+    <%= f.number_field :GIFT %>
+  </div>
+  <div class="field">
+    <%= f.label :STORE %><br>
+    <%= f.text_area :STORE %>
+  </div>
+  <div class="field">
+    <%= f.label :ICON %><br>
+    <%= f.text_area :ICON %>
+  </div>
+  <div class="field">
+    <%= f.label :PRICE_TYPE %><br>
+    <%= f.text_area :PRICE_TYPE %>
+  </div>
+  <div class="field">
+    <%= f.label :CHARACTER_LEVEL %><br>
+    <%= f.number_field :CHARACTER_LEVEL %>
+  </div>
+  <div class="field">
+    <%= f.label :PRICE %><br>
+    <%= f.number_field :PRICE %>
+  </div>
+  <div class="field">
+    <%= f.label :SHOP_CATEGORY %><br>
+    <%= f.text_area :SHOP_CATEGORY %>
+  </div>
+  <div class="field">
+    <%= f.label :CAPACITY %><br>
+    <%= f.number_field :CAPACITY %>
+  </div>
+  <div class="field">
+    <%= f.label :ITEM_ID %><br>
+    <%= f.number_field :ITEM_ID %>
+  </div>
+  <div class="field">
+    <%= f.label :GACHA %><br>
+    <%= f.number_field :GACHA %>
+  </div>
+  <div class="field">
+    <%= f.label :BONUS_STRING %><br>
+    <%= f.text_area :BONUS_STRING %>
+  </div>
+  <div class="field">
+    <%= f.label :BONUS_ID %><br>
+    <%= f.text_area :BONUS_ID %>
+  </div>
+  <div class="field">
+    <%= f.label :NAME %><br>
+    <%= f.text_area :NAME %>
+  </div>
+  <div class="field">
+    <%= f.label :EXPLAIN %><br>
+    <%= f.text_area :EXPLAIN %>
+  </div>
+  <div class="field">
+    <%= f.label :START_DATE %><br>
+    <%= f.datetime_select :START_DATE %>
+  </div>
+  <div class="field">
+    <%= f.label :END_DATE %><br>
+    <%= f.datetime_select :END_DATE %>
+  </div>
+  <div class="field">
+    <%= f.label :NSTORE_PID %><br>
+    <%= f.text_area :NSTORE_PID %>
+  </div>
+  <div class="field">
+    <%= f.label :PLAY_PID %><br>
+    <%= f.text_area :PLAY_PID %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

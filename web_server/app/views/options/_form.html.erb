@@ -1,0 +1,53 @@
+<%= form_for(@option) do |f| %>
+  <% if @option.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@option.errors.count, "error") %> prohibited this option from being saved:</h2>
+
+      <ul>
+      <% @option.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :OPTION_ID %><br>
+    <%= f.number_field :OPTION_ID %>
+  </div>
+  <div class="field">
+    <%= f.label :CONDITION_ID %><br>
+    <%= f.number_field :CONDITION_ID %>
+  </div>
+  <div class="field">
+    <%= f.label :PARAMETER_ID %><br>
+    <%= f.text_area :PARAMETER_ID %>
+  </div>
+  <div class="field">
+    <%= f.label :DESCRIPTION %><br>
+    <%= f.text_area :DESCRIPTION %>
+  </div>
+  <div class="field">
+    <%= f.label :UI_SCRIPT %><br>
+    <%= f.text_area :UI_SCRIPT %>
+  </div>
+  <div class="field">
+    <%= f.label :VALUE %><br>
+    <%= f.text_area :VALUE %>
+  </div>
+  <div class="field">
+    <%= f.label :MAX_VALUE %><br>
+    <%= f.text_area :MAX_VALUE %>
+  </div>
+  <div class="field">
+    <%= f.label :RANDON_ACTIVITY %><br>
+    <%= f.number_field :RANDON_ACTIVITY %>
+  </div>
+  <div class="field">
+    <%= f.label :PERCENT %><br>
+    <%= f.number_field :PERCENT %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

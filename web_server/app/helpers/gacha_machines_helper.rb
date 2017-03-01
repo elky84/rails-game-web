@@ -1,0 +1,2 @@
+module GachaMachinesHelper
+end

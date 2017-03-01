@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  PVP_RANK_CACHE_INSTANCE_NO: 1
+  RANK: 1
+  CHARACTER_NO: 1
+  RATING: 1
+
+two:
+  PVP_RANK_CACHE_INSTANCE_NO: 1
+  RANK: 1
+  CHARACTER_NO: 1
+  RATING: 1

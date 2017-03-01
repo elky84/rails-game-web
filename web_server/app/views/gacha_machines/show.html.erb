@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Gacha machine id:</strong>
+  <%= @gacha_machine.GACHA_MACHINE_ID %>
+</p>
+
+<p>
+  <strong>Gacha machine type:</strong>
+  <%= @gacha_machine.GACHA_MACHINE_TYPE %>
+</p>
+
+<%= link_to 'Edit', edit_gacha_machine_path(@gacha_machine) %> |
+<%= link_to 'Back', gacha_machines_path %>

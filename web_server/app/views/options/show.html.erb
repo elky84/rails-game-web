@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Option id:</strong>
+  <%= @option.OPTION_ID %>
+</p>
+
+<p>
+  <strong>Condition id:</strong>
+  <%= @option.CONDITION_ID %>
+</p>
+
+<p>
+  <strong>Parameter id:</strong>
+  <%= @option.PARAMETER_ID %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @option.DESCRIPTION %>
+</p>
+
+<p>
+  <strong>Ui script:</strong>
+  <%= @option.UI_SCRIPT %>
+</p>
+
+<p>
+  <strong>Value:</strong>
+  <%= @option.VALUE %>
+</p>
+
+<p>
+  <strong>Max value:</strong>
+  <%= @option.MAX_VALUE %>
+</p>
+
+<p>
+  <strong>Randon activity:</strong>
+  <%= @option.RANDON_ACTIVITY %>
+</p>
+
+<p>
+  <strong>Percent:</strong>
+  <%= @option.PERCENT %>
+</p>
+
+<%= link_to 'Edit', edit_option_path(@option) %> |
+<%= link_to 'Back', options_path %>

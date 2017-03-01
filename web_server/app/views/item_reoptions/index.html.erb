@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Item Reoptions</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Item reoption id</th>
+      <th>Item category</th>
+      <th>Grade</th>
+      <th>Level</th>
+      <th>Money</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @item_reoptions.each do |item_reoption| %>
+      <tr>
+        <td><%= item_reoption.ITEM_REOPTION_ID %></td>
+        <td><%= item_reoption.ITEM_CATEGORY %></td>
+        <td><%= item_reoption.GRADE %></td>
+        <td><%= item_reoption.LEVEL %></td>
+        <td><%= item_reoption.MONEY %></td>
+        <td><%= link_to 'Show', item_reoption %></td>
+        <td><%= link_to 'Edit', edit_item_reoption_path(item_reoption) %></td>
+        <td><%= link_to 'Destroy', item_reoption, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Item reoption', new_item_reoption_path %>

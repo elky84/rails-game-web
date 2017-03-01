@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  ITEM_ENCHANT_ID: 1
+  ITEM_CATEGORY: MyText
+  LEVEL: 1
+  GRADE: 1
+  ENCHANT: 1
+  ENCHANT_PROBABILITY: MyText
+  MONEY: 1
+
+two:
+  ITEM_ENCHANT_ID: 1
+  ITEM_CATEGORY: MyText
+  LEVEL: 1
+  GRADE: 1
+  ENCHANT: 1
+  ENCHANT_PROBABILITY: MyText
+  MONEY: 1

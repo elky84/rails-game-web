@@ -1,0 +1,29 @@
+<%= form_for(@gacha_group) do |f| %>
+  <% if @gacha_group.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@gacha_group.errors.count, "error") %> prohibited this gacha_group from being saved:</h2>
+
+      <ul>
+      <% @gacha_group.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :GACHA_GROUP_ID %><br>
+    <%= f.number_field :GACHA_GROUP_ID %>
+  </div>
+  <div class="field">
+    <%= f.label :GROUP_REWARD %><br>
+    <%= f.text_area :GROUP_REWARD %>
+  </div>
+  <div class="field">
+    <%= f.label :DESCRIPTION %><br>
+    <%= f.text_area :DESCRIPTION %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

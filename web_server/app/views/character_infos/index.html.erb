@@ -1,0 +1,43 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Character Infos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Character id</th>
+      <th>Type</th>
+      <th>Grow type detail</th>
+      <th>Equip type</th>
+      <th>Name</th>
+      <th>Explain</th>
+      <th>Actor id</th>
+      <th>Price</th>
+      <th>Release</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @character_infos.each do |character_info| %>
+      <tr>
+        <td><%= character_info.CHARACTER_ID %></td>
+        <td><%= character_info.TYPE %></td>
+        <td><%= character_info.GROW_TYPE_DETAIL %></td>
+        <td><%= character_info.EQUIP_TYPE %></td>
+        <td><%= character_info.NAME %></td>
+        <td><%= character_info.EXPLAIN %></td>
+        <td><%= character_info.ACTOR_ID %></td>
+        <td><%= character_info.PRICE %></td>
+        <td><%= character_info.RELEASE %></td>
+        <td><%= link_to 'Show', character_info %></td>
+        <td><%= link_to 'Edit', edit_character_info_path(character_info) %></td>
+        <td><%= link_to 'Destroy', character_info, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Character info', new_character_info_path %>

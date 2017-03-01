@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Item enchant id:</strong>
+  <%= @item_enchant.ITEM_ENCHANT_ID %>
+</p>
+
+<p>
+  <strong>Item category:</strong>
+  <%= @item_enchant.ITEM_CATEGORY %>
+</p>
+
+<p>
+  <strong>Level:</strong>
+  <%= @item_enchant.LEVEL %>
+</p>
+
+<p>
+  <strong>Grade:</strong>
+  <%= @item_enchant.GRADE %>
+</p>
+
+<p>
+  <strong>Enchant:</strong>
+  <%= @item_enchant.ENCHANT %>
+</p>
+
+<p>
+  <strong>Enchant probability:</strong>
+  <%= @item_enchant.ENCHANT_PROBABILITY %>
+</p>
+
+<p>
+  <strong>Money:</strong>
+  <%= @item_enchant.MONEY %>
+</p>
+
+<%= link_to 'Edit', edit_item_enchant_path(@item_enchant) %> |
+<%= link_to 'Back', item_enchants_path %>

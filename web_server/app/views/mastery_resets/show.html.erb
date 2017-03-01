@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Mastery reset id:</strong>
+  <%= @mastery_reset.MASTERY_RESET_ID %>
+</p>
+
+<p>
+  <strong>Cost:</strong>
+  <%= @mastery_reset.COST %>
+</p>
+
+<%= link_to 'Edit', edit_mastery_reset_path(@mastery_reset) %> |
+<%= link_to 'Back', mastery_resets_path %>

@@ -1,0 +1,96 @@
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+
+<% 
+	def Groupping( logs )
+		log_group = {}
+		logs.each do |log|
+			if log_group[log.DATE] == nil
+				log_group[log.DATE] = Array.new
+			end
+			log_group[log.DATE].push(log)
+		end
+		return log_group
+	end
+%>
+
+<% def insertGraph( divid, title )
+	log_group = Groupping( @statistics_instances )
+%>
+
+<% log_group.each do |type_name, value| %>
+	<div id="<%= type_name %>"></div>	
+<% end %>
+
+<script type="text/javascript">
+	google.load('visualization', '1.0', {'packages':['corechart']});
+	google.setOnLoadCallback(drawVisualization);
+
+	function drawChart(type_name, value) 
+	{		
+		<% log_group.each do |type_name, value| %>
+			var data = new google.visualization.DataTable();
+			data.addColumn('string', 'TYPE');
+			data.addColumn('number', 'VALUE');
+			data.addColumn({type:'string', role:'annotation'});
+			data.addRows([
+				<% value.each do |log| %>
+					[ '<%= log.INFO %>',
+					<%= log.VALUE %> 
+					'<%= log.INFO %>'], 
+				<% end %>
+			]);
+
+			 // Set chart options
+			var options = {'title':'<%= title %>',
+						hAxis: {title:'<%= type_name %>'},
+						height: <%=value.count%> * 40,
+						bar: {groupWidth: "95%"},
+						legend: { position: "none" },
+						 };
+
+			// Instantiate and draw our chart, passing in some options.
+			var chart = new google.visualization.BarChart(document.getElementById( '<%= type_name %>' ));
+			chart.draw(data, options);
+		<% end %>
+	}
+
+	function drawVisualization() 
+	{
+		drawChart();
+	}
+</script>
+
+<% end %>
+
+
+<!-- <% insertGraph( "chart_Statistics_div", "Statistics" ) %> -->
+
+<table>
+  <thead>
+    <tr>
+      <th>Statistics no</th>
+      <th>Type</th>
+      <th>Value</th>
+      <th>Info</th>
+      <th>Date</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @statistics_instances.each do |statistics_instance| %>
+      <tr>
+        <td><%= statistics_instance.STATISTICS_NO %></td>
+        <td><%= statistics_instance.TYPE %></td>
+        <td><%= statistics_instance.VALUE %></td>
+        <td><%= statistics_instance.INFO %></td>
+        <td><%= statistics_instance.DATE %></td>
+        <td><%= link_to 'Show', statistics_instance %></td>
+        <td><%= link_to 'Edit', edit_statistics_instance_path(statistics_instance) %></td>
+        <td><%= link_to 'Destroy', statistics_instance, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br />

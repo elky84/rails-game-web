@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  INDEX: 1
+  DIALOGUE_TYPE: MyString
+  DIALOGUE_EFFECT: MyString
+  SPEECH_BACK: MyString
+  CHARACTER_FACE: MyString
+  FACE_POS: MyString
+  CHARACOTR_INDEX: 1
+  STRING_INDEX: 1
+
+two:
+  INDEX: 1
+  DIALOGUE_TYPE: MyString
+  DIALOGUE_EFFECT: MyString
+  SPEECH_BACK: MyString
+  CHARACTER_FACE: MyString
+  FACE_POS: MyString
+  CHARACOTR_INDEX: 1
+  STRING_INDEX: 1

@@ -1,0 +1,29 @@
+<%= form_for(@user_grow) do |f| %>
+  <% if @user_grow.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@user_grow.errors.count, "error") %> prohibited this user_grow from being saved:</h2>
+
+      <ul>
+      <% @user_grow.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :GROW_ID %><br>
+    <%= f.number_field :GROW_ID %>
+  </div>
+  <div class="field">
+    <%= f.label :LEVEL %><br>
+    <%= f.number_field :LEVEL %>
+  </div>
+  <div class="field">
+    <%= f.label :REQUIRE_EXP %><br>
+    <%= f.number_field :REQUIRE_EXP %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

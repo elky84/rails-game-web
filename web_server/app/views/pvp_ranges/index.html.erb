@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Pvp Ranges</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Pvp range id</th>
+      <th>Rating</th>
+      <th>Rank</th>
+      <th>Add rank</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @pvp_ranges.each do |pvp_range| %>
+      <tr>
+        <td><%= pvp_range.PVP_RANGE_ID %></td>
+        <td><%= pvp_range.RATING %></td>
+        <td><%= pvp_range.RANK %></td>
+        <td><%= pvp_range.ADD_RANK %></td>
+        <td><%= link_to 'Show', pvp_range %></td>
+        <td><%= link_to 'Edit', edit_pvp_range_path(pvp_range) %></td>
+        <td><%= link_to 'Destroy', pvp_range, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Pvp range', new_pvp_range_path %>

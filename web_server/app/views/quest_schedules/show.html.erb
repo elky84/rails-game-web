@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Quest schedule id:</strong>
+  <%= @quest_schedule.QUEST_SCHEDULE_ID %>
+</p>
+
+<p>
+  <strong>Quest schedule type:</strong>
+  <%= @quest_schedule.QUEST_SCHEDULE_TYPE %>
+</p>
+
+<p>
+  <strong>Odd or even:</strong>
+  <%= @quest_schedule.ODD_OR_EVEN %>
+</p>
+
+<p>
+  <strong>Start:</strong>
+  <%= @quest_schedule.START %>
+</p>
+
+<p>
+  <strong>End:</strong>
+  <%= @quest_schedule.END %>
+</p>
+
+<p>
+  <strong>Explain:</strong>
+  <%= @quest_schedule.EXPLAIN %>
+</p>
+
+<%= link_to 'Edit', edit_quest_schedule_path(@quest_schedule) %> |
+<%= link_to 'Back', quest_schedules_path %>

@@ -1,0 +1,33 @@
+<%= form_for(@auth_instance) do |f| %>
+  <% if @auth_instance.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@auth_instance.errors.count, "error") %> prohibited this auth_instance from being saved:</h2>
+
+      <ul>
+      <% @auth_instance.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :USER_NO %><br>
+    <%= f.number_field :USER_NO %>
+  </div>
+  <div class="field">
+    <%= f.label :PRIVATE_KEY %><br>
+    <%= f.text_area :PRIVATE_KEY %>
+  </div>
+  <div class="field">
+    <%= f.label :IP %><br>
+    <%= f.text_area :IP %>
+  </div>
+  <div class="field">
+    <%= f.label :AUTH_KEY %><br>
+    <%= f.text_area :AUTH_KEY %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

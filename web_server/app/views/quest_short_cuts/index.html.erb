@@ -1,0 +1,27 @@
+<h1>Listing quest_short_cuts</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Short cut no</th>
+      <th>Short cut type</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @quest_short_cuts.each do |quest_short_cut| %>
+      <tr>
+        <td><%= quest_short_cut.SHORT_CUT_NO %></td>
+        <td><%= quest_short_cut.SHORT_CUT_TYPE %></td>
+        <td><%= link_to 'Show', quest_short_cut %></td>
+        <td><%= link_to 'Edit', edit_quest_short_cut_path(quest_short_cut) %></td>
+        <td><%= link_to 'Destroy', quest_short_cut, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Quest short cut', new_quest_short_cut_path %>

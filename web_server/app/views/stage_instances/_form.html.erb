@@ -1,0 +1,53 @@
+<%= form_for(@stage_instance) do |f| %>
+  <% if @stage_instance.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@stage_instance.errors.count, "error") %> prohibited this stage_instance from being saved:</h2>
+
+      <ul>
+      <% @stage_instance.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :STAGE_PROGRESS_NO %><br>
+    <%= f.number_field :STAGE_PROGRESS_NO %>
+  </div>
+  <div class="field">
+    <%= f.label :USER_NO %><br>
+    <%= f.number_field :USER_NO %>
+  </div>
+  <div class="field">
+    <%= f.label :CHARACTER_NO %><br>
+    <%= f.number_field :CHARACTER_NO %>
+  </div>
+  <div class="field">
+    <%= f.label :PARTY_MONSTER_ID %><br>
+    <%= f.text_area :PARTY_MONSTER_ID %>
+  </div>
+  <div class="field">
+    <%= f.label :STAGE_ID %><br>
+    <%= f.number_field :STAGE_ID %>
+  </div>
+  <div class="field">
+    <%= f.label :CLEAR_EXP_NO %><br>
+    <%= f.text_area :CLEAR_EXP_NO %>
+  </div>
+  <div class="field">
+    <%= f.label :CLEAR_MONEY_NO %><br>
+    <%= f.text_area :CLEAR_MONEY_NO %>
+  </div>
+  <div class="field">
+    <%= f.label :CLEAR_REWARD_NO %><br>
+    <%= f.text_area :CLEAR_REWARD_NO %>
+  </div>
+  <div class="field">
+    <%= f.label :START_DATE %><br>
+    <%= f.text_area :START_DATE %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

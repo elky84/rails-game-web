@@ -1,0 +1,2 @@
+module FriendInstancesHelper
+end

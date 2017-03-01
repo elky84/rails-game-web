@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  QUEST_SCHEDULE_ID: 1
+  QUEST_SCHEDULE_TYPE: MyText
+  ODD_OR_EVEN: MyText
+  START: 2016-01-06 11:30:47
+  END: 2016-01-06 11:30:47
+  EXPLAIN: MyText
+
+two:
+  QUEST_SCHEDULE_ID: 1
+  QUEST_SCHEDULE_TYPE: MyText
+  ODD_OR_EVEN: MyText
+  START: 2016-01-06 11:30:47
+  END: 2016-01-06 11:30:47
+  EXPLAIN: MyText

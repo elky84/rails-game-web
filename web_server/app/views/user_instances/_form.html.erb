@@ -1,0 +1,133 @@
+<%= form_for(@user_instance) do |f| %>
+  <% if @user_instance.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@user_instance.errors.count, "error") %> prohibited this user_instance from being saved:</h2>
+
+      <ul>
+      <% @user_instance.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :USER_NO %><br>
+    <%= f.number_field :USER_NO %>
+  </div>
+  <div class="field">
+    <%= f.label :USER_ID %><br>
+    <%= f.text_area :USER_ID %>
+  </div>
+  <div class="field">
+    <%= f.label :USER_LV %><br>
+    <%= f.number_field :USER_LV %>
+  </div>
+  <div class="field">
+    <%= f.label :EXP %><br>
+    <%= f.number_field :EXP %>
+  </div>
+  <div class="field">
+    <%= f.label :NICKNAME %><br>
+    <%= f.text_area :NICKNAME %>
+  </div>
+  <div class="field">
+    <%= f.label :CASH %><br>
+    <%= f.number_field :CASH %>
+  </div>
+  <div class="field">
+    <%= f.label :MONEY %><br>
+    <%= f.number_field :MONEY %>
+  </div>
+  <div class="field">
+    <%= f.label :STAMINA_ADVENTURE_TIME %><br>
+    <%= f.datetime_select :STAMINA_ADVENTURE_TIME %>
+  </div>
+  <div class="field">
+    <%= f.label :STAMINA_ADVENTURE %><br>
+    <%= f.number_field :STAMINA_ADVENTURE %>
+  </div>
+  <div class="field">
+    <%= f.label :STAMINA_SPECIAL_TIME %><br>
+    <%= f.datetime_select :STAMINA_SPECIAL_TIME %>
+  </div>
+  <div class="field">
+    <%= f.label :STAMINA_SPECIAL %><br>
+    <%= f.number_field :STAMINA_SPECIAL %>
+  </div>
+  <div class="field">
+    <%= f.label :STAMINA_PVP_TIME %><br>
+    <%= f.datetime_select :STAMINA_PVP_TIME %>
+  </div>
+  <div class="field">
+    <%= f.label :STAMINA_PVP %><br>
+    <%= f.number_field :STAMINA_PVP %>
+  </div>
+  <div class="field">
+    <%= f.label :FRIEND_POINT %><br>
+    <%= f.number_field :FRIEND_POINT %>
+  </div>
+  <div class="field">
+    <%= f.label :POSTBOX_SLOT %><br>
+    <%= f.number_field :POSTBOX_SLOT %>
+  </div>
+  <div class="field">
+    <%= f.label :CACHE_MONSTER_SLOT %><br>
+    <%= f.number_field :CACHE_MONSTER_SLOT %>
+  </div>
+  <div class="field">
+    <%= f.label :EXT_MONSTER_SLOT %><br>
+    <%= f.number_field :EXT_MONSTER_SLOT %>
+  </div>
+  <div class="field">
+    <%= f.label :CACHE_ITEM_SLOT %><br>
+    <%= f.number_field :CACHE_ITEM_SLOT %>
+  </div>
+  <div class="field">
+    <%= f.label :EXT_ITEM_SLOT %><br>
+    <%= f.number_field :EXT_ITEM_SLOT %>
+  </div>
+  <div class="field">
+    <%= f.label :CACHE_FRIEND_SLOT %><br>
+    <%= f.number_field :CACHE_FRIEND_SLOT %>
+  </div>
+  <div class="field">
+    <%= f.label :EXT_FRIEND_COUNT %><br>
+    <%= f.number_field :EXT_FRIEND_COUNT %>
+  </div>
+  <div class="field">
+    <%= f.label :MASTERY_RESET_COUNT %><br>
+    <%= f.number_field :MASTERY_RESET_COUNT %>
+  </div>
+  <div class="field">
+    <%= f.label :LASTEST_ACTIVE_TIME %><br>
+    <%= f.datetime_select :LASTEST_ACTIVE_TIME %>
+  </div>
+  <div class="field">
+    <%= f.label :PERMISSION %><br>
+    <%= f.text_area :PERMISSION %>
+  </div>
+  <div class="field">
+    <%= f.label :LASTEST_CHR_ID %><br>
+    <%= f.number_field :LASTEST_CHR_ID %>
+  </div>
+  <div class="field">
+    <%= f.label :LASTEST_CHR_LV %><br>
+    <%= f.number_field :LASTEST_CHR_LV %>
+  </div>
+  <div class="field">
+    <%= f.label :MASTERY_POINT %><br>
+    <%= f.number_field :MASTERY_POINT %>
+  </div>
+  <div class="field">
+    <%= f.label :INFI_TOWER_FLOOR %><br>
+    <%= f.number_field :INFI_TOWER_FLOOR %>
+  </div>
+  <div class="field">
+    <%= f.label :FRIEND_DELETE_COUNT %><br>
+    <%= f.number_field :FRIEND_DELETE_COUNT %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

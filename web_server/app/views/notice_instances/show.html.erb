@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Notice no:</strong>
+  <%= @notice_instance.NOTICE_NO %>
+</p>
+
+<p>
+  <strong>Notice type:</strong>
+  <%= @notice_instance.NOTICE_TYPE %>
+</p>
+
+<p>
+  <strong>Content:</strong>
+  <%= @notice_instance.CONTENT %>
+</p>
+
+<p>
+  <strong>Start date:</strong>
+  <%= @notice_instance.START_DATE %>
+</p>
+
+<p>
+  <strong>End date:</strong>
+  <%= @notice_instance.END_DATE %>
+</p>
+
+<%= link_to 'Edit', edit_notice_instance_path(@notice_instance) %> |
+<%= link_to 'Back', notice_instances_path %>

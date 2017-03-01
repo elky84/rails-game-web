@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  CHARACTER_ID: 1
+  TYPE: MyText
+  GROW_TYPE_DETAIL: MyText
+  EQUIP_TYPE: MyText
+  NAME: MyText
+  EXPLAIN: MyText
+  ACTOR_ID: 1
+  PRICE: 1
+  RELEASE: 1
+
+two:
+  CHARACTER_ID: 1
+  TYPE: MyText
+  GROW_TYPE_DETAIL: MyText
+  EQUIP_TYPE: MyText
+  NAME: MyText
+  EXPLAIN: MyText
+  ACTOR_ID: 1
+  PRICE: 1
+  RELEASE: 1

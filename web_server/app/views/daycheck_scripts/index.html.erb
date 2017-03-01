@@ -1,0 +1,35 @@
+<h1>Listing daycheck_scripts</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Daycheck id</th>
+      <th>User type</th>
+      <th>Day</th>
+      <th>Reward</th>
+      <th>Ui label</th>
+      <th>Icon</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @daycheck_scripts.each do |daycheck_script| %>
+      <tr>
+        <td><%= daycheck_script.DAYCHECK_ID %></td>
+        <td><%= daycheck_script.USER_TYPE %></td>
+        <td><%= daycheck_script.DAY %></td>
+        <td><%= daycheck_script.REWARD %></td>
+        <td><%= daycheck_script.UI_LABEL %></td>
+        <td><%= daycheck_script.ICON %></td>
+        <td><%= link_to 'Show', daycheck_script %></td>
+        <td><%= link_to 'Edit', edit_daycheck_script_path(daycheck_script) %></td>
+        <td><%= link_to 'Destroy', daycheck_script, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Daycheck script', new_daycheck_script_path %>

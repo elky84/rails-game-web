@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Parameter id:</strong>
+  <%= @parameter.PARAMETER_ID %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @parameter.NAME %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @parameter.DESCRIPTION %>
+</p>
+
+<p>
+  <strong>Explain:</strong>
+  <%= @parameter.EXPLAIN %>
+</p>
+
+<p>
+  <strong>Apply stat:</strong>
+  <%= @parameter.APPLY_STAT %>
+</p>
+
+<%= link_to 'Edit', edit_parameter_path(@parameter) %> |
+<%= link_to 'Back', parameters_path %>

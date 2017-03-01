@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Daycheck id:</strong>
+  <%= @daycheck_script.DAYCHECK_ID %>
+</p>
+
+<p>
+  <strong>User type:</strong>
+  <%= @daycheck_script.USER_TYPE %>
+</p>
+
+<p>
+  <strong>Day:</strong>
+  <%= @daycheck_script.DAY %>
+</p>
+
+<p>
+  <strong>Reward:</strong>
+  <%= @daycheck_script.REWARD %>
+</p>
+
+<p>
+  <strong>Ui label:</strong>
+  <%= @daycheck_script.UI_LABEL %>
+</p>
+
+<p>
+  <strong>Icon:</strong>
+  <%= @daycheck_script.ICON %>
+</p>
+
+<%= link_to 'Edit', edit_daycheck_script_path(@daycheck_script) %> |
+<%= link_to 'Back', daycheck_scripts_path %>

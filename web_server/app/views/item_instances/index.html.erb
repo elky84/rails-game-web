@@ -1,0 +1,59 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Item Instances</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Item no</th>
+      <th>Item id</th>
+      <th>User no</th>
+      <th>Character no</th>
+      <th>Start date</th>
+      <th>End date</th>
+      <th>Item name</th>
+      <th>Level</th>
+      <th>Grade</th>
+      <th>Limit</th>
+      <th>Value</th>
+      <th>Default option</th>
+      <th>Option list</th>
+      <th>Slot type</th>
+      <th>Expire type</th>
+      <th>Durability</th>
+      <th>Enchant</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @item_instances.each do |item_instance| %>
+      <tr>
+        <td><%= item_instance.ITEM_NO %></td>
+        <td><%= item_instance.ITEM_ID %></td>
+        <td><%= item_instance.USER_NO %></td>
+        <td><%= item_instance.CHARACTER_NO %></td>
+        <td><%= item_instance.START_DATE %></td>
+        <td><%= item_instance.END_DATE %></td>
+        <td><%= item_instance.ITEM_NAME %></td>
+        <td><%= item_instance.LEVEL %></td>
+        <td><%= item_instance.GRADE %></td>
+        <td><%= item_instance.LIMIT %></td>
+        <td><%= item_instance.VALUE %></td>
+        <td><%= item_instance.DEFAULT_OPTION %></td>
+        <td><%= item_instance.OPTION_LIST %></td>
+        <td><%= item_instance.SLOT_TYPE %></td>
+        <td><%= item_instance.EXPIRE_TYPE %></td>
+        <td><%= item_instance.DURABILITY %></td>
+        <td><%= item_instance.ENCHANT %></td>
+        <td><%= link_to 'Show', item_instance %></td>
+        <td><%= link_to 'Edit', edit_item_instance_path(item_instance) %></td>
+        <td><%= link_to 'Destroy', item_instance, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Item instance', new_item_instance_path %>

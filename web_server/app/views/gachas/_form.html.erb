@@ -1,0 +1,37 @@
+<%= form_for(@gacha) do |f| %>
+  <% if @gacha.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@gacha.errors.count, "error") %> prohibited this gacha from being saved:</h2>
+
+      <ul>
+      <% @gacha.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :GACHA_ID %><br>
+    <%= f.number_field :GACHA_ID %>
+  </div>
+  <div class="field">
+    <%= f.label :GACHA_MACHINE_TYPE %><br>
+    <%= f.number_field :GACHA_MACHINE_TYPE %>
+  </div>
+  <div class="field">
+    <%= f.label :GROUP_ID %><br>
+    <%= f.text_area :GROUP_ID %>
+  </div>
+  <div class="field">
+    <%= f.label :REWARD_PROBABILITY %><br>
+    <%= f.text_area :REWARD_PROBABILITY %>
+  </div>
+  <div class="field">
+    <%= f.label :GACHA_NAME %><br>
+    <%= f.text_area :GACHA_NAME %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

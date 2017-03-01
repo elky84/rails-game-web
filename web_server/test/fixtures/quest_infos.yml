@@ -1,0 +1,37 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  QUEST_INFO_ID: 1
+  QUEST_APPLY_TYPE: MyText
+  GROUP_ID: 1
+  LEVEL_LIMIT: 1
+  NEXT_QUEST_ID: 1
+  QUEST_SCHEDULE_ID: 1
+  QUEST_TYPE_ID: 1
+  QUEST_GRADE_TYPE: MyText
+  GRADE: 1
+  PREVIEW: MyText
+  MAXVALUE: 1
+  REWARD: MyText
+  SHORT_CUT: 1
+  COMPLETE_IMAGE: MyText
+  COMPLETE_SCENE: MyText
+  COMPLETE_EXPLAN: MyText
+
+two:
+  QUEST_INFO_ID: 1
+  QUEST_APPLY_TYPE: MyText
+  GROUP_ID: 1
+  LEVEL_LIMIT: 1
+  NEXT_QUEST_ID: 1
+  QUEST_SCHEDULE_ID: 1
+  QUEST_TYPE_ID: 1
+  QUEST_GRADE_TYPE: MyText
+  GRADE: 1
+  PREVIEW: MyText
+  MAXVALUE: 1
+  REWARD: MyText
+  SHORT_CUT: 1
+  COMPLETE_IMAGE: MyText
+  COMPLETE_SCENE: MyText
+  COMPLETE_EXPLAN: MyText

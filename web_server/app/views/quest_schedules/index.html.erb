@@ -1,0 +1,37 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Quest Schedules</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Quest schedule id</th>
+      <th>Quest schedule type</th>
+      <th>Odd or even</th>
+      <th>Start</th>
+      <th>End</th>
+      <th>Explain</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @quest_schedules.each do |quest_schedule| %>
+      <tr>
+        <td><%= quest_schedule.QUEST_SCHEDULE_ID %></td>
+        <td><%= quest_schedule.QUEST_SCHEDULE_TYPE %></td>
+        <td><%= quest_schedule.ODD_OR_EVEN %></td>
+        <td><%= quest_schedule.START %></td>
+        <td><%= quest_schedule.END %></td>
+        <td><%= quest_schedule.EXPLAIN %></td>
+        <td><%= link_to 'Show', quest_schedule %></td>
+        <td><%= link_to 'Edit', edit_quest_schedule_path(quest_schedule) %></td>
+        <td><%= link_to 'Destroy', quest_schedule, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Quest schedule', new_quest_schedule_path %>

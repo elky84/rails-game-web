@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Stage progress no:</strong>
+  <%= @stage_instance.STAGE_PROGRESS_NO %>
+</p>
+
+<p>
+  <strong>User no:</strong>
+  <%= @stage_instance.USER_NO %>
+</p>
+
+<p>
+  <strong>Character no:</strong>
+  <%= @stage_instance.CHARACTER_NO %>
+</p>
+
+<p>
+  <strong>Party monster id:</strong>
+  <%= @stage_instance.PARTY_MONSTER_ID %>
+</p>
+
+<p>
+  <strong>Stage id:</strong>
+  <%= @stage_instance.STAGE_ID %>
+</p>
+
+<p>
+  <strong>Clear exp no:</strong>
+  <%= @stage_instance.CLEAR_EXP_NO %>
+</p>
+
+<p>
+  <strong>Clear money no:</strong>
+  <%= @stage_instance.CLEAR_MONEY_NO %>
+</p>
+
+<p>
+  <strong>Clear reward no:</strong>
+  <%= @stage_instance.CLEAR_REWARD_NO %>
+</p>
+
+<p>
+  <strong>Start date:</strong>
+  <%= @stage_instance.START_DATE %>
+</p>
+
+<%= link_to 'Edit', edit_stage_instance_path(@stage_instance) %> |
+<%= link_to 'Back', stage_instances_path %>

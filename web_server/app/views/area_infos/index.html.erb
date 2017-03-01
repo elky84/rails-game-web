@@ -1,0 +1,55 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Area Infos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Area id</th>
+      <th>Open</th>
+      <th>Start date</th>
+      <th>End date</th>
+      <th>Area type</th>
+      <th>Bg color</th>
+      <th>Name</th>
+      <th>Explain</th>
+      <th>Character level</th>
+      <th>Image</th>
+      <th>Mission</th>
+      <th>Monster</th>
+      <th>Item</th>
+      <th>Scenario start</th>
+      <th>Scenario end</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @area_infos.each do |area_info| %>
+      <tr>
+        <td><%= area_info.AREA_ID %></td>
+        <td><%= area_info.OPEN %></td>
+        <td><%= area_info.START_DATE %></td>
+        <td><%= area_info.END_DATE %></td>
+        <td><%= area_info.AREA_TYPE %></td>
+        <td><%= area_info.BG_COLOR %></td>
+        <td><%= area_info.NAME %></td>
+        <td><%= area_info.EXPLAIN %></td>
+        <td><%= area_info.CHARACTER_LEVEL %></td>
+        <td><%= area_info.IMAGE %></td>
+        <td><%= area_info.MISSION %></td>
+        <td><%= area_info.MONSTER %></td>
+        <td><%= area_info.ITEM %></td>
+        <td><%= area_info.SCENARIO_START %></td>
+        <td><%= area_info.SCENARIO_END %></td>
+        <td><%= link_to 'Show', area_info %></td>
+        <td><%= link_to 'Edit', edit_area_info_path(area_info) %></td>
+        <td><%= link_to 'Destroy', area_info, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Area info', new_area_info_path %>

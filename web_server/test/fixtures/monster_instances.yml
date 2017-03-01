@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  MONSTER_NO: 1
+  USER_NO: 1
+  CHARACTER_NO: 1
+  MONSTER_ID: 1
+  GROW_TYPE_DETAIL: MyText
+  LEVEL: 1
+  EXP: 1
+  SKILL: MyText
+  TEAM_SLOT: 1
+  NEW: 1
+
+two:
+  MONSTER_NO: 1
+  USER_NO: 1
+  CHARACTER_NO: 1
+  MONSTER_ID: 1
+  GROW_TYPE_DETAIL: MyText
+  LEVEL: 1
+  EXP: 1
+  SKILL: MyText
+  TEAM_SLOT: 1
+  NEW: 1

@@ -1,0 +1,53 @@
+<%= form_for(@report_instance) do |f| %>
+  <% if @report_instance.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@report_instance.errors.count, "error") %> prohibited this report_instance from being saved:</h2>
+
+      <ul>
+      <% @report_instance.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :REPORT_NO %><br>
+    <%= f.number_field :REPORT_NO %>
+  </div>
+  <div class="field">
+    <%= f.label :USER_NO %><br>
+    <%= f.number_field :USER_NO %>
+  </div>
+  <div class="field">
+    <%= f.label :CHARACTER_NO %><br>
+    <%= f.number_field :CHARACTER_NO %>
+  </div>
+  <div class="field">
+    <%= f.label :REPORT_TYPE %><br>
+    <%= f.text_area :REPORT_TYPE %>
+  </div>
+  <div class="field">
+    <%= f.label :VALUE %><br>
+    <%= f.text_area :VALUE %>
+  </div>
+  <div class="field">
+    <%= f.label :USER_LV %><br>
+    <%= f.number_field :USER_LV %>
+  </div>
+  <div class="field">
+    <%= f.label :EXP %><br>
+    <%= f.number_field :EXP %>
+  </div>
+  <div class="field">
+    <%= f.label :ACTION_TIME %><br>
+    <%= f.datetime_select :ACTION_TIME %>
+  </div>
+  <div class="field">
+    <%= f.label :IP %><br>
+    <%= f.text_area :IP %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

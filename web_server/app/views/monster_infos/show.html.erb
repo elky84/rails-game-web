@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Monster id:</strong>
+  <%= @monster_info.MONSTER_ID %>
+</p>
+
+<p>
+  <strong>Monster type:</strong>
+  <%= @monster_info.MONSTER_TYPE %>
+</p>
+
+<p>
+  <strong>Monster grade:</strong>
+  <%= @monster_info.MONSTER_GRADE %>
+</p>
+
+<p>
+  <strong>Grow type:</strong>
+  <%= @monster_info.GROW_TYPE %>
+</p>
+
+<p>
+  <strong>Grow type detail:</strong>
+  <%= @monster_info.GROW_TYPE_DETAIL %>
+</p>
+
+<p>
+  <strong>Monster price:</strong>
+  <%= @monster_info.MONSTER_PRICE %>
+</p>
+
+<p>
+  <strong>Actor id:</strong>
+  <%= @monster_info.ACTOR_ID %>
+</p>
+
+<p>
+  <strong>Skin num:</strong>
+  <%= @monster_info.SKIN_NUM %>
+</p>
+
+<p>
+  <strong>Gacha speech:</strong>
+  <%= @monster_info.GACHA_SPEECH %>
+</p>
+
+<%= link_to 'Edit', edit_monster_info_path(@monster_info) %> |
+<%= link_to 'Back', monster_infos_path %>

@@ -1,0 +1,41 @@
+<%= form_for(@server_list) do |f| %>
+  <% if @server_list.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@server_list.errors.count, "error") %> prohibited this server_list from being saved:</h2>
+
+      <ul>
+      <% @server_list.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :INDEX %><br>
+    <%= f.number_field :INDEX %>
+  </div>
+  <div class="field">
+    <%= f.label :SERVER_TYPE %><br>
+    <%= f.text_area :SERVER_TYPE %>
+  </div>
+  <div class="field">
+    <%= f.label :ADDRESS %><br>
+    <%= f.text_area :ADDRESS %>
+  </div>
+  <div class="field">
+    <%= f.label :NAME %><br>
+    <%= f.text_area :NAME %>
+  </div>
+  <div class="field">
+    <%= f.label :CU %><br>
+    <%= f.number_field :CU %>
+  </div>
+  <div class="field">
+    <%= f.label :RU %><br>
+    <%= f.number_field :RU %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Connect restrict id:</strong>
+  <%= @connect_restrict.CONNECT_RESTRICT_ID %>
+</p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @connect_restrict.TYPE %>
+</p>
+
+<p>
+  <strong>Value:</strong>
+  <%= @connect_restrict.VALUE %>
+</p>
+
+<%= link_to 'Edit', edit_connect_restrict_path(@connect_restrict) %> |
+<%= link_to 'Back', connect_restricts_path %>

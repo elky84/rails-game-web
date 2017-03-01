@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Coupon index:</strong>
+  <%= @coupon_instance.COUPON_INDEX %>
+</p>
+
+<p>
+  <strong>Reward:</strong>
+  <%= @coupon_instance.REWARD %>
+</p>
+
+<p>
+  <strong>Coupon string:</strong>
+  <%= @coupon_instance.COUPON_STRING %>
+</p>
+
+<p>
+  <strong>Server index:</strong>
+  <%= @coupon_instance.SERVER_INDEX %>
+</p>
+
+<p>
+  <strong>User no:</strong>
+  <%= @coupon_instance.USER_NO %>
+</p>
+
+<p>
+  <strong>Time:</strong>
+  <%= @coupon_instance.TIME %>
+</p>
+
+<p>
+  <strong>Coupon group:</strong>
+  <%= @coupon_instance.COUPON_GROUP %>
+</p>
+
+<%= link_to 'Edit', edit_coupon_instance_path(@coupon_instance) %> |
+<%= link_to 'Back', coupon_instances_path %>

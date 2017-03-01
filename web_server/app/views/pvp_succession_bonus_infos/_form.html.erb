@@ -1,0 +1,25 @@
+<%= form_for(@pvp_succession_bonus_info) do |f| %>
+  <% if @pvp_succession_bonus_info.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@pvp_succession_bonus_info.errors.count, "error") %> prohibited this pvp_succession_bonus_info from being saved:</h2>
+
+      <ul>
+      <% @pvp_succession_bonus_info.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :PVP_SUCCESSION_BONUS_ID %><br>
+    <%= f.number_field :PVP_SUCCESSION_BONUS_ID %>
+  </div>
+  <div class="field">
+    <%= f.label :BONUS_POINT %><br>
+    <%= f.number_field :BONUS_POINT %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

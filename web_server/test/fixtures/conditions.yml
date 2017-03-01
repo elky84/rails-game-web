@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  CONDITION_ID: 1
+  CONDITION_EFFECT: MyText
+  CONDITION_INFO: MyText
+  PERCENT: 1
+  CONDITION_APPLY_TYPE: MyText
+
+two:
+  CONDITION_ID: 1
+  CONDITION_EFFECT: MyText
+  CONDITION_INFO: MyText
+  PERCENT: 1
+  CONDITION_APPLY_TYPE: MyText

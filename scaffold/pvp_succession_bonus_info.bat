@@ -1,0 +1,7 @@
+cd ..\web_server
+call rails generate scaffold pvp_succession_bonus_info  PVP_SUCCESSION_BONUS_ID:integer:index BONUS_POINT:integer --force
+cd ..\scaffold
+call ruby modify_create_method.rb pvp_succession_bonus_info PVP_SUCCESSION_BONUS_ID
+call ruby modify_before_action.rb pvp_succession_bonus_info PVP_SUCCESSION_BONUS_ID
+call ruby modify_index_method.rb pvp_succession_bonus_info PVP_SUCCESSION_BONUS_ID
+call ruby modify_model.rb pvp_succession_bonus_info PVP_SUCCESSION_BONUS_ID

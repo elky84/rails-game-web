@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Index:</strong>
+  <%= @monster_gen_info.INDEX %>
+</p>
+
+<p>
+  <strong>Appear type:</strong>
+  <%= @monster_gen_info.APPEAR_TYPE %>
+</p>
+
+<p>
+  <strong>Position:</strong>
+  <%= @monster_gen_info.POSITION %>
+</p>
+
+<p>
+  <strong>Move from:</strong>
+  <%= @monster_gen_info.MOVE_FROM %>
+</p>
+
+<p>
+  <strong>Direction:</strong>
+  <%= @monster_gen_info.DIRECTION %>
+</p>
+
+<p>
+  <strong>Curve:</strong>
+  <%= @monster_gen_info.CURVE %>
+</p>
+
+<p>
+  <strong>Jump speed:</strong>
+  <%= @monster_gen_info.JUMP_SPEED %>
+</p>
+
+<p>
+  <strong>Dead after appear:</strong>
+  <%= @monster_gen_info.DEAD_AFTER_APPEAR %>
+</p>
+
+<%= link_to 'Edit', edit_monster_gen_info_path(@monster_gen_info) %> |
+<%= link_to 'Back', monster_gen_infos_path %>

@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  SKILL_NO: 1
+  CHARACTER_NO: 1
+  SKILL_ID: 1
+  SKILL_LEVEL: 1
+  SLOT_NO: 1
+
+two:
+  SKILL_NO: 1
+  CHARACTER_NO: 1
+  SKILL_ID: 1
+  SKILL_LEVEL: 1
+  SLOT_NO: 1

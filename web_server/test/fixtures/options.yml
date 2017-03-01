@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  OPTION_ID: 1
+  CONDITION_ID: 1
+  PARAMETER_ID: MyText
+  DESCRIPTION: MyText
+  UI_SCRIPT: MyText
+  VALUE: MyText
+  MAX_VALUE: MyText
+  RANDON_ACTIVITY: 1
+  PERCENT: 1
+
+two:
+  OPTION_ID: 1
+  CONDITION_ID: 1
+  PARAMETER_ID: MyText
+  DESCRIPTION: MyText
+  UI_SCRIPT: MyText
+  VALUE: MyText
+  MAX_VALUE: MyText
+  RANDON_ACTIVITY: 1
+  PERCENT: 1

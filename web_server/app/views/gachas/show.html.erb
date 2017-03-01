@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Gacha id:</strong>
+  <%= @gacha.GACHA_ID %>
+</p>
+
+<p>
+  <strong>Gacha machine type:</strong>
+  <%= @gacha.GACHA_MACHINE_TYPE %>
+</p>
+
+<p>
+  <strong>Group id:</strong>
+  <%= @gacha.GROUP_ID %>
+</p>
+
+<p>
+  <strong>Reward probability:</strong>
+  <%= @gacha.REWARD_PROBABILITY %>
+</p>
+
+<p>
+  <strong>Gacha name:</strong>
+  <%= @gacha.GACHA_NAME %>
+</p>
+
+<%= link_to 'Edit', edit_gacha_path(@gacha) %> |
+<%= link_to 'Back', gachas_path %>

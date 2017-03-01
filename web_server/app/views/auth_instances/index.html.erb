@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Auth Instances</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>User no</th>
+      <th>Private key</th>
+      <th>Ip</th>
+      <th>Auth key</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @auth_instances.each do |auth_instance| %>
+      <tr>
+        <td><%= auth_instance.USER_NO %></td>
+        <td><%= auth_instance.PRIVATE_KEY %></td>
+        <td><%= auth_instance.IP %></td>
+        <td><%= auth_instance.AUTH_KEY %></td>
+        <td><%= link_to 'Show', auth_instance %></td>
+        <td><%= link_to 'Edit', edit_auth_instance_path(auth_instance) %></td>
+        <td><%= link_to 'Destroy', auth_instance, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Auth instance', new_auth_instance_path %>

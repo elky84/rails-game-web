@@ -1,0 +1,45 @@
+<%= form_for(@item_enchant_effect) do |f| %>
+  <% if @item_enchant_effect.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@item_enchant_effect.errors.count, "error") %> prohibited this item_enchant_effect from being saved:</h2>
+
+      <ul>
+      <% @item_enchant_effect.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :ITEM_ENCHANT_EFFECT_ID %><br>
+    <%= f.number_field :ITEM_ENCHANT_EFFECT_ID %>
+  </div>
+  <div class="field">
+    <%= f.label :ITEM_CATEGORY %><br>
+    <%= f.text_area :ITEM_CATEGORY %>
+  </div>
+  <div class="field">
+    <%= f.label :LEVEL %><br>
+    <%= f.number_field :LEVEL %>
+  </div>
+  <div class="field">
+    <%= f.label :GRADE %><br>
+    <%= f.number_field :GRADE %>
+  </div>
+  <div class="field">
+    <%= f.label :ENCHANT %><br>
+    <%= f.number_field :ENCHANT %>
+  </div>
+  <div class="field">
+    <%= f.label :BASIC_EFFECT %><br>
+    <%= f.text_area :BASIC_EFFECT %>
+  </div>
+  <div class="field">
+    <%= f.label :BONUS_EFFECT %><br>
+    <%= f.text_area :BONUS_EFFECT %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

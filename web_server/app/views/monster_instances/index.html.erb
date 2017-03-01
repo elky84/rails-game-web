@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Monster Instances</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Monster no</th>
+      <th>User no</th>
+      <th>Character no</th>
+      <th>Monster id</th>
+      <th>Grow type detail</th>
+      <th>Level</th>
+      <th>Exp</th>
+      <th>Skill</th>
+      <th>Team slot</th>
+      <th>New</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @monster_instances.each do |monster_instance| %>
+      <tr>
+        <td><%= monster_instance.MONSTER_NO %></td>
+        <td><%= monster_instance.USER_NO %></td>
+        <td><%= monster_instance.CHARACTER_NO %></td>
+        <td><%= monster_instance.MONSTER_ID %></td>
+        <td><%= monster_instance.GROW_TYPE_DETAIL %></td>
+        <td><%= monster_instance.LEVEL %></td>
+        <td><%= monster_instance.EXP %></td>
+        <td><%= monster_instance.SKILL %></td>
+        <td><%= monster_instance.TEAM_SLOT %></td>
+        <td><%= monster_instance.NEW %></td>
+        <td><%= link_to 'Show', monster_instance %></td>
+        <td><%= link_to 'Edit', edit_monster_instance_path(monster_instance) %></td>
+        <td><%= link_to 'Destroy', monster_instance, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Monster instance', new_monster_instance_path %>

@@ -1,0 +1,33 @@
+<%= form_for(@pvp_range) do |f| %>
+  <% if @pvp_range.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@pvp_range.errors.count, "error") %> prohibited this pvp_range from being saved:</h2>
+
+      <ul>
+      <% @pvp_range.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :PVP_RANGE_ID %><br>
+    <%= f.number_field :PVP_RANGE_ID %>
+  </div>
+  <div class="field">
+    <%= f.label :RATING %><br>
+    <%= f.number_field :RATING %>
+  </div>
+  <div class="field">
+    <%= f.label :RANK %><br>
+    <%= f.number_field :RANK %>
+  </div>
+  <div class="field">
+    <%= f.label :ADD_RANK %><br>
+    <%= f.number_field :ADD_RANK %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,57 @@
+<%= form_for(@monster_enchant) do |f| %>
+  <% if @monster_enchant.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@monster_enchant.errors.count, "error") %> prohibited this monster_enchant from being saved:</h2>
+
+      <ul>
+      <% @monster_enchant.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :MONSTER_ENCHANT_ID %><br>
+    <%= f.number_field :MONSTER_ENCHANT_ID %>
+  </div>
+  <div class="field">
+    <%= f.label :MONSTER_GRADE %><br>
+    <%= f.number_field :MONSTER_GRADE %>
+  </div>
+  <div class="field">
+    <%= f.label :ENCHANT_RESULT %><br>
+    <%= f.text_area :ENCHANT_RESULT %>
+  </div>
+  <div class="field">
+    <%= f.label :ENCHANT_PERCENT %><br>
+    <%= f.text_area :ENCHANT_PERCENT %>
+  </div>
+  <div class="field">
+    <%= f.label :EQUAL_MONSTER_SKILL_BONUS %><br>
+    <%= f.text_area :EQUAL_MONSTER_SKILL_BONUS %>
+  </div>
+  <div class="field">
+    <%= f.label :BASE_EXP %><br>
+    <%= f.text_area :BASE_EXP %>
+  </div>
+  <div class="field">
+    <%= f.label :LEVEL_BONUS_EXP %><br>
+    <%= f.text_area :LEVEL_BONUS_EXP %>
+  </div>
+  <div class="field">
+    <%= f.label :EQUAL_MONSTER_EXP_BONUS %><br>
+    <%= f.text_area :EQUAL_MONSTER_EXP_BONUS %>
+  </div>
+  <div class="field">
+    <%= f.label :BASE_MONEY %><br>
+    <%= f.number_field :BASE_MONEY %>
+  </div>
+  <div class="field">
+    <%= f.label :LEVEL_MONEY %><br>
+    <%= f.number_field :LEVEL_MONEY %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

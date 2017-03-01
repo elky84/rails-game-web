@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  SKILL_ENCHANT_ID: 1
+  ENCHANT_NUM: 1
+  MONSTER_GRADE: 1
+  ENCHANT_RESULT: MyText
+  ENCHANT_PERCENT: MyText
+  EQUAL_MONSTER_BONUS: MyText
+  MONEY: 1
+
+two:
+  SKILL_ENCHANT_ID: 1
+  ENCHANT_NUM: 1
+  MONSTER_GRADE: 1
+  ENCHANT_RESULT: MyText
+  ENCHANT_PERCENT: MyText
+  EQUAL_MONSTER_BONUS: MyText
+  MONEY: 1

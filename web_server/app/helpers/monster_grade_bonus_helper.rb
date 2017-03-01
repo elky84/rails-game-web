@@ -1,0 +1,2 @@
+module MonsterGradeBonusHelper
+end

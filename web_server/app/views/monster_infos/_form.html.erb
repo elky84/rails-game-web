@@ -1,0 +1,53 @@
+<%= form_for(@monster_info) do |f| %>
+  <% if @monster_info.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@monster_info.errors.count, "error") %> prohibited this monster_info from being saved:</h2>
+
+      <ul>
+      <% @monster_info.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :MONSTER_ID %><br>
+    <%= f.number_field :MONSTER_ID %>
+  </div>
+  <div class="field">
+    <%= f.label :MONSTER_TYPE %><br>
+    <%= f.text_area :MONSTER_TYPE %>
+  </div>
+  <div class="field">
+    <%= f.label :MONSTER_GRADE %><br>
+    <%= f.number_field :MONSTER_GRADE %>
+  </div>
+  <div class="field">
+    <%= f.label :GROW_TYPE %><br>
+    <%= f.text_area :GROW_TYPE %>
+  </div>
+  <div class="field">
+    <%= f.label :GROW_TYPE_DETAIL %><br>
+    <%= f.text_area :GROW_TYPE_DETAIL %>
+  </div>
+  <div class="field">
+    <%= f.label :MONSTER_PRICE %><br>
+    <%= f.number_field :MONSTER_PRICE %>
+  </div>
+  <div class="field">
+    <%= f.label :ACTOR_ID %><br>
+    <%= f.number_field :ACTOR_ID %>
+  </div>
+  <div class="field">
+    <%= f.label :SKIN_NUM %><br>
+    <%= f.number_field :SKIN_NUM %>
+  </div>
+  <div class="field">
+    <%= f.label :GACHA_SPEECH %><br>
+    <%= f.text_area :GACHA_SPEECH %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

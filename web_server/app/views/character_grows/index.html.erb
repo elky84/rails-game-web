@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Character Grows</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Grow id</th>
+      <th>Level</th>
+      <th>Grow type detail</th>
+      <th>Require exp</th>
+      <th>Status id</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @character_grows.each do |character_grow| %>
+      <tr>
+        <td><%= character_grow.GROW_ID %></td>
+        <td><%= character_grow.LEVEL %></td>
+        <td><%= character_grow.GROW_TYPE_DETAIL %></td>
+        <td><%= character_grow.REQUIRE_EXP %></td>
+        <td><%= character_grow.STATUS_ID %></td>
+        <td><%= link_to 'Show', character_grow %></td>
+        <td><%= link_to 'Edit', edit_character_grow_path(character_grow) %></td>
+        <td><%= link_to 'Destroy', character_grow, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Character grow', new_character_grow_path %>

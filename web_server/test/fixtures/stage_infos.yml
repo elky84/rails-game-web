@@ -1,0 +1,67 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  STAGE_ID: 1
+  AREA_ID: 1
+  STAGE_NUMBER: MyText
+  OPEN: MyText
+  TYPE: MyText
+  LEVEL: MyText
+  COORDINATE: MyText
+  BGM: MyText
+  BG_COLOR: MyText
+  NAME: MyText
+  EXPLAIN: MyText
+  CHARACTER_LEVEL: MyText
+  STAMINA: MyText
+  PHASE: MyText
+  MONSTER: MyText
+  ITEM: MyText
+  STAGE_ICON: MyText
+  CLEAR_SCORE: MyText
+  CLEAR_EXP: MyText
+  CLEAR_MONEY: MyText
+  CLEAR_1_REWARD: MyText
+  CLEAR_1_REWARD_PROBABILITY: MyText
+  CLEAR_2_REWARD: MyText
+  CLEAR_2_REWARD_PROBABILITY: MyText
+  CLEAR_3_REWARD: MyText
+  CLEAR_3_REWARD_PROBABILITY: MyText
+  START_SCENARIO: MyText
+  END_SCENARIO: MyText
+  BG_PREFEB: MyText
+  INFI_TOWER_SP_REWARD: MyText
+  INFI_TOWER_PREVIEW: MyText
+
+two:
+  STAGE_ID: 1
+  AREA_ID: 1
+  STAGE_NUMBER: MyText
+  OPEN: MyText
+  TYPE: MyText
+  LEVEL: MyText
+  COORDINATE: MyText
+  BGM: MyText
+  BG_COLOR: MyText
+  NAME: MyText
+  EXPLAIN: MyText
+  CHARACTER_LEVEL: MyText
+  STAMINA: MyText
+  PHASE: MyText
+  MONSTER: MyText
+  ITEM: MyText
+  STAGE_ICON: MyText
+  CLEAR_SCORE: MyText
+  CLEAR_EXP: MyText
+  CLEAR_MONEY: MyText
+  CLEAR_1_REWARD: MyText
+  CLEAR_1_REWARD_PROBABILITY: MyText
+  CLEAR_2_REWARD: MyText
+  CLEAR_2_REWARD_PROBABILITY: MyText
+  CLEAR_3_REWARD: MyText
+  CLEAR_3_REWARD_PROBABILITY: MyText
+  START_SCENARIO: MyText
+  END_SCENARIO: MyText
+  BG_PREFEB: MyText
+  INFI_TOWER_SP_REWARD: MyText
+  INFI_TOWER_PREVIEW: MyText

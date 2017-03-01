@@ -1,0 +1,402 @@
+﻿<div align="center" style="padding:10px;" class="container">
+<h3>Mail</h3>
+<% time_str = DateTime.current %><%= time_str %><br><br>
+
+<b>SEND</b>
+<form action="/mail/send_mail" method="get">
+	NICKNAME
+	<input type="input" name="nickname" value= "" >
+	
+	<input type="hidden" name="sender_user_no" value= "1" >
+	<input type="hidden" name="character_no" value= "1" >
+	
+	<br>
+	TITLE
+	<input type="input" name="title" value= "" >
+
+	<br>
+	CONTENT
+	<input type="input" name="content" value= "" >
+	
+		<br>
+	TYPE
+	<select name="type1">
+		<option value="GOLD" selected>엽전</option>
+		<option value="DIAMOND">다이아몬드</option>
+		<option value="MONSTER">요괴</option>
+        <option value="ITEM">아이템</option>
+        <option value="STAMINA_PVP">PVP 행동력</option>
+        <option value="STAMINA_ADVENTURE">모험 행동력</option>
+        <option value="STAMINA_SPECIAL">스페셜 행동력</option>
+        <option value="GACHA">가챠</option>
+        <option value="EXP">경험치</option>
+        <option value="FRIEND_POINT">곡옥</option>
+	</select>
+	VALUE
+	<input type="number" name="value1" value= "1" >
+
+	<br>
+	TYPE
+	<select name="type2">
+		<option value="GOLD" selected>엽전</option>
+		<option value="DIAMOND">다이아몬드</option>
+		<option value="MONSTER">요괴</option>
+        <option value="ITEM">아이템</option>
+        <option value="STAMINA_PVP">PVP 행동력</option>
+        <option value="STAMINA_ADVENTURE">모험 행동력</option>
+        <option value="STAMINA_SPECIAL">스페셜 행동력</option>
+        <option value="GACHA">가챠</option>
+        <option value="EXP">경험치</option>
+        <option value="FRIEND_POINT">곡옥</option>
+	</select>
+	VALUE
+	<input type="number" name="value2" value= "" >
+
+	<br>
+	TYPE
+	<select name="type3">
+		<option value="GOLD" selected>엽전</option>
+		<option value="DIAMOND">다이아몬드</option>
+		<option value="MONSTER">요괴</option>
+        <option value="ITEM">아이템</option>
+        <option value="STAMINA_PVP">PVP 행동력</option>
+        <option value="STAMINA_ADVENTURE">모험 행동력</option>
+        <option value="STAMINA_SPECIAL">스페셜 행동력</option>
+        <option value="GACHA">가챠</option>
+        <option value="EXP">경험치</option>
+        <option value="FRIEND_POINT">곡옥</option>
+	</select>
+	VALUE
+	<input type="number" name="value3" value= "" >
+
+	<br>
+	TYPE
+	<select name="type4">
+		<option value="GOLD" selected>엽전</option>
+		<option value="DIAMOND">다이아몬드</option>
+		<option value="MONSTER">요괴</option>
+        <option value="ITEM">아이템</option>
+        <option value="STAMINA_PVP">PVP 행동력</option>
+        <option value="STAMINA_ADVENTURE">모험 행동력</option>
+        <option value="STAMINA_SPECIAL">스페셜 행동력</option>
+        <option value="GACHA">가챠</option>
+        <option value="EXP">경험치</option>
+        <option value="FRIEND_POINT">곡옥</option>
+	</select>
+	VALUE
+	<input type="number" name="value4" value= "" >
+
+	<br>
+	TYPE
+	<select name="type5">
+		<option value="GOLD" selected>엽전</option>
+		<option value="DIAMOND">다이아몬드</option>
+		<option value="MONSTER">요괴</option>
+        <option value="ITEM">아이템</option>
+        <option value="STAMINA_PVP">PVP 행동력</option>
+        <option value="STAMINA_ADVENTURE">모험 행동력</option>
+        <option value="STAMINA_SPECIAL">스페셜 행동력</option>
+        <option value="GACHA">가챠</option>
+        <option value="EXP">경험치</option>
+        <option value="FRIEND_POINT">곡옥</option>
+	</select>
+	VALUE
+	<input type="number" name="value5" value= "" >
+
+	<br>
+	TYPE
+	<select name="type6">
+		<option value="GOLD" selected>엽전</option>
+		<option value="DIAMOND">다이아몬드</option>
+		<option value="MONSTER">요괴</option>
+        <option value="ITEM">아이템</option>
+        <option value="STAMINA_PVP">PVP 행동력</option>
+        <option value="STAMINA_ADVENTURE">모험 행동력</option>
+        <option value="STAMINA_SPECIAL">스페셜 행동력</option>
+        <option value="GACHA">가챠</option>
+        <option value="EXP">경험치</option>
+        <option value="FRIEND_POINT">곡옥</option>
+	</select>
+	VALUE
+	<input type="number" name="value6" value= "" >
+	
+	
+	<br>
+	TYPE
+	<select name="type7">
+		<option value="GOLD" selected>엽전</option>
+		<option value="DIAMOND">다이아몬드</option>
+		<option value="MONSTER">요괴</option>
+        <option value="ITEM">아이템</option>
+        <option value="STAMINA_PVP">PVP 행동력</option>
+        <option value="STAMINA_ADVENTURE">모험 행동력</option>
+        <option value="STAMINA_SPECIAL">스페셜 행동력</option>
+        <option value="GACHA">가챠</option>
+        <option value="EXP">경험치</option>
+        <option value="FRIEND_POINT">곡옥</option>
+	</select>
+	VALUE
+	<input type="number" name="value7" value= "" >
+	
+	
+	<br>
+	TYPE
+	<select name="type8">
+		<option value="GOLD" selected>엽전</option>
+		<option value="DIAMOND">다이아몬드</option>
+		<option value="MONSTER">요괴</option>
+        <option value="ITEM">아이템</option>
+        <option value="STAMINA_PVP">PVP 행동력</option>
+        <option value="STAMINA_ADVENTURE">모험 행동력</option>
+        <option value="STAMINA_SPECIAL">스페셜 행동력</option>
+        <option value="GACHA">가챠</option>
+        <option value="EXP">경험치</option>
+        <option value="FRIEND_POINT">곡옥</option>
+	</select>
+	VALUE
+	<input type="number" name="value8" value= "" >
+	
+	
+	<br>
+	TYPE
+	<select name="type9">
+		<option value="GOLD" selected>엽전</option>
+		<option value="DIAMOND">다이아몬드</option>
+		<option value="MONSTER">요괴</option>
+        <option value="ITEM">아이템</option>
+        <option value="STAMINA_PVP">PVP 행동력</option>
+        <option value="STAMINA_ADVENTURE">모험 행동력</option>
+        <option value="STAMINA_SPECIAL">스페셜 행동력</option>
+        <option value="GACHA">가챠</option>
+        <option value="EXP">경험치</option>
+        <option value="FRIEND_POINT">곡옥</option>
+	</select>
+	VALUE
+	<input type="number" name="value9" value= "" >
+	
+	
+	<br>
+	TYPE
+	<select name="type10">
+		<option value="GOLD" selected>엽전</option>
+		<option value="DIAMOND">다이아몬드</option>
+		<option value="MONSTER">요괴</option>
+        <option value="ITEM">아이템</option>
+        <option value="STAMINA_PVP">PVP 행동력</option>
+        <option value="STAMINA_ADVENTURE">모험 행동력</option>
+        <option value="STAMINA_SPECIAL">스페셜 행동력</option>
+        <option value="GACHA">가챠</option>
+        <option value="EXP">경험치</option>
+        <option value="FRIEND_POINT">곡옥</option>
+	</select>
+	VALUE
+	<input type="number" name="value10" value= "" >
+	
+	<br>
+	<input type="submit" value="send">
+</form>
+<br>
+
+<b>SEND_LIST</b>
+<form action="/mail/send_mail_list" method="get">
+	NICKNAME_LIST [구분자 ,]
+	<input type="input" name="nickname" value= "" >
+	
+	<input type="hidden" name="sender_user_no" value= "1" >
+	<input type="hidden" name="character_no" value= "1" >
+	
+	<br>
+	TITLE
+	<input type="input" name="title" value= "" >
+
+	<br>
+	CONTENT
+	<input type="input" name="content" value= "" >
+	
+		<br>
+	TYPE
+	<select name="type1">
+		<option value="GOLD" selected>엽전</option>
+		<option value="DIAMOND">다이아몬드</option>
+		<option value="MONSTER">요괴</option>
+        <option value="ITEM">아이템</option>
+        <option value="STAMINA_PVP">PVP 행동력</option>
+        <option value="STAMINA_ADVENTURE">모험 행동력</option>
+        <option value="STAMINA_SPECIAL">스페셜 행동력</option>
+        <option value="GACHA">가챠</option>
+        <option value="EXP">경험치</option>
+        <option value="FRIEND_POINT">곡옥</option>
+	</select>
+	VALUE
+	<input type="number" name="value1" value= "1" >
+
+	<br>
+	TYPE
+	<select name="type2">
+		<option value="GOLD" selected>엽전</option>
+		<option value="DIAMOND">다이아몬드</option>
+		<option value="MONSTER">요괴</option>
+        <option value="ITEM">아이템</option>
+        <option value="STAMINA_PVP">PVP 행동력</option>
+        <option value="STAMINA_ADVENTURE">모험 행동력</option>
+        <option value="STAMINA_SPECIAL">스페셜 행동력</option>
+        <option value="GACHA">가챠</option>
+        <option value="EXP">경험치</option>
+        <option value="FRIEND_POINT">곡옥</option>
+	</select>
+	VALUE
+	<input type="number" name="value2" value= "" >
+
+	<br>
+	TYPE
+	<select name="type3">
+		<option value="GOLD" selected>엽전</option>
+		<option value="DIAMOND">다이아몬드</option>
+		<option value="MONSTER">요괴</option>
+        <option value="ITEM">아이템</option>
+        <option value="STAMINA_PVP">PVP 행동력</option>
+        <option value="STAMINA_ADVENTURE">모험 행동력</option>
+        <option value="STAMINA_SPECIAL">스페셜 행동력</option>
+        <option value="GACHA">가챠</option>
+        <option value="EXP">경험치</option>
+        <option value="FRIEND_POINT">곡옥</option>
+	</select>
+	VALUE
+	<input type="number" name="value3" value= "" >
+
+	<br>
+	TYPE
+	<select name="type4">
+		<option value="GOLD" selected>엽전</option>
+		<option value="DIAMOND">다이아몬드</option>
+		<option value="MONSTER">요괴</option>
+        <option value="ITEM">아이템</option>
+        <option value="STAMINA_PVP">PVP 행동력</option>
+        <option value="STAMINA_ADVENTURE">모험 행동력</option>
+        <option value="STAMINA_SPECIAL">스페셜 행동력</option>
+        <option value="GACHA">가챠</option>
+        <option value="EXP">경험치</option>
+        <option value="FRIEND_POINT">곡옥</option>
+	</select>
+	VALUE
+	<input type="number" name="value4" value= "" >
+
+	<br>
+	TYPE
+	<select name="type5">
+		<option value="GOLD" selected>엽전</option>
+		<option value="DIAMOND">다이아몬드</option>
+		<option value="MONSTER">요괴</option>
+        <option value="ITEM">아이템</option>
+        <option value="STAMINA_PVP">PVP 행동력</option>
+        <option value="STAMINA_ADVENTURE">모험 행동력</option>
+        <option value="STAMINA_SPECIAL">스페셜 행동력</option>
+        <option value="GACHA">가챠</option>
+        <option value="EXP">경험치</option>
+        <option value="FRIEND_POINT">곡옥</option>
+	</select>
+	VALUE
+	<input type="number" name="value5" value= "" >
+	
+
+	
+	<br>
+	TYPE
+	<select name="type6">
+		<option value="GOLD" selected>엽전</option>
+		<option value="DIAMOND">다이아몬드</option>
+		<option value="MONSTER">요괴</option>
+        <option value="ITEM">아이템</option>
+        <option value="STAMINA_PVP">PVP 행동력</option>
+        <option value="STAMINA_ADVENTURE">모험 행동력</option>
+        <option value="STAMINA_SPECIAL">스페셜 행동력</option>
+        <option value="GACHA">가챠</option>
+        <option value="EXP">경험치</option>
+        <option value="FRIEND_POINT">곡옥</option>
+	</select>
+	VALUE
+	<input type="number" name="value6" value= "" >
+	
+	
+	<br>
+	TYPE
+	<select name="type7">
+		<option value="GOLD" selected>엽전</option>
+		<option value="DIAMOND">다이아몬드</option>
+		<option value="MONSTER">요괴</option>
+        <option value="ITEM">아이템</option>
+        <option value="STAMINA_PVP">PVP 행동력</option>
+        <option value="STAMINA_ADVENTURE">모험 행동력</option>
+        <option value="STAMINA_SPECIAL">스페셜 행동력</option>
+        <option value="GACHA">가챠</option>
+        <option value="EXP">경험치</option>
+        <option value="FRIEND_POINT">곡옥</option>
+	</select>
+	VALUE
+	<input type="number" name="value7" value= "" >
+	
+	
+	<br>
+	TYPE
+	<select name="type8">
+		<option value="GOLD" selected>엽전</option>
+		<option value="DIAMOND">다이아몬드</option>
+		<option value="MONSTER">요괴</option>
+        <option value="ITEM">아이템</option>
+        <option value="STAMINA_PVP">PVP 행동력</option>
+        <option value="STAMINA_ADVENTURE">모험 행동력</option>
+        <option value="STAMINA_SPECIAL">스페셜 행동력</option>
+        <option value="GACHA">가챠</option>
+        <option value="EXP">경험치</option>
+        <option value="FRIEND_POINT">곡옥</option>
+	</select>
+	VALUE
+	<input type="number" name="value8" value= "" >
+	
+	
+	<br>
+	TYPE
+	<select name="type9">
+		<option value="GOLD" selected>엽전</option>
+		<option value="DIAMOND">다이아몬드</option>
+		<option value="MONSTER">요괴</option>
+        <option value="ITEM">아이템</option>
+        <option value="STAMINA_PVP">PVP 행동력</option>
+        <option value="STAMINA_ADVENTURE">모험 행동력</option>
+        <option value="STAMINA_SPECIAL">스페셜 행동력</option>
+        <option value="GACHA">가챠</option>
+        <option value="EXP">경험치</option>
+        <option value="FRIEND_POINT">곡옥</option>
+	</select>
+	VALUE
+	<input type="number" name="value9" value= "" >
+	
+	
+	<br>
+	TYPE
+	<select name="type10">
+		<option value="GOLD" selected>엽전</option>
+		<option value="DIAMOND">다이아몬드</option>
+		<option value="MONSTER">요괴</option>
+        <option value="ITEM">아이템</option>
+        <option value="STAMINA_PVP">PVP 행동력</option>
+        <option value="STAMINA_ADVENTURE">모험 행동력</option>
+        <option value="STAMINA_SPECIAL">스페셜 행동력</option>
+        <option value="GACHA">가챠</option>
+        <option value="EXP">경험치</option>
+        <option value="FRIEND_POINT">곡옥</option>
+	</select>
+	VALUE
+	<input type="number" name="value10" value= "" >
+	
+	<br>
+	<input type="submit" value="send">
+</form>
+<br>
+
+
+
+<br>
+
+
+</div>

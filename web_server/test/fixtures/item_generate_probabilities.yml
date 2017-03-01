@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  ITEM_GENERATE_ID: 1
+  ITEM_ID: 1
+  PROBABILITY: 1
+
+two:
+  ITEM_GENERATE_ID: 1
+  ITEM_ID: 1
+  PROBABILITY: 1

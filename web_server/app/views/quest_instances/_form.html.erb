@@ -1,0 +1,61 @@
+<%= form_for(@quest_instance) do |f| %>
+  <% if @quest_instance.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@quest_instance.errors.count, "error") %> prohibited this quest_instance from being saved:</h2>
+
+      <ul>
+      <% @quest_instance.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :QUEST_NO %><br>
+    <%= f.number_field :QUEST_NO %>
+  </div>
+  <div class="field">
+    <%= f.label :TYPE %><br>
+    <%= f.text_area :TYPE %>
+  </div>
+  <div class="field">
+    <%= f.label :QUEST_INFO_ID %><br>
+    <%= f.number_field :QUEST_INFO_ID %>
+  </div>
+  <div class="field">
+    <%= f.label :USER_NO %><br>
+    <%= f.number_field :USER_NO %>
+  </div>
+  <div class="field">
+    <%= f.label :QUEST_VALUE %><br>
+    <%= f.number_field :QUEST_VALUE %>
+  </div>
+  <div class="field">
+    <%= f.label :ACTIVE_TIME %><br>
+    <%= f.datetime_select :ACTIVE_TIME %>
+  </div>
+  <div class="field">
+    <%= f.label :CLEAR %><br>
+    <%= f.text_area :CLEAR %>
+  </div>
+  <div class="field">
+    <%= f.label :CLEAR_TIME %><br>
+    <%= f.datetime_select :CLEAR_TIME %>
+  </div>
+  <div class="field">
+    <%= f.label :QUEST_APPLY_TYPE %><br>
+    <%= f.text_area :QUEST_APPLY_TYPE %>
+  </div>
+  <div class="field">
+    <%= f.label :GRADE %><br>
+    <%= f.number_field :GRADE %>
+  </div>
+  <div class="field">
+    <%= f.label :GROUP_ID %><br>
+    <%= f.number_field :GROUP_ID %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

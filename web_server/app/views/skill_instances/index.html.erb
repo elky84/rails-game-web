@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Skill Instances</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Skill no</th>
+      <th>Character no</th>
+      <th>Skill id</th>
+      <th>Skill level</th>
+      <th>Slot no</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @skill_instances.each do |skill_instance| %>
+      <tr>
+        <td><%= skill_instance.SKILL_NO %></td>
+        <td><%= skill_instance.CHARACTER_NO %></td>
+        <td><%= skill_instance.SKILL_ID %></td>
+        <td><%= skill_instance.SKILL_LEVEL %></td>
+        <td><%= skill_instance.SLOT_NO %></td>
+        <td><%= link_to 'Show', skill_instance %></td>
+        <td><%= link_to 'Edit', edit_skill_instance_path(skill_instance) %></td>
+        <td><%= link_to 'Destroy', skill_instance, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Skill instance', new_skill_instance_path %>

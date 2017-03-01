@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Monster no:</strong>
+  <%= @monster_instance.MONSTER_NO %>
+</p>
+
+<p>
+  <strong>User no:</strong>
+  <%= @monster_instance.USER_NO %>
+</p>
+
+<p>
+  <strong>Character no:</strong>
+  <%= @monster_instance.CHARACTER_NO %>
+</p>
+
+<p>
+  <strong>Monster id:</strong>
+  <%= @monster_instance.MONSTER_ID %>
+</p>
+
+<p>
+  <strong>Grow type detail:</strong>
+  <%= @monster_instance.GROW_TYPE_DETAIL %>
+</p>
+
+<p>
+  <strong>Level:</strong>
+  <%= @monster_instance.LEVEL %>
+</p>
+
+<p>
+  <strong>Exp:</strong>
+  <%= @monster_instance.EXP %>
+</p>
+
+<p>
+  <strong>Skill:</strong>
+  <%= @monster_instance.SKILL %>
+</p>
+
+<p>
+  <strong>Team slot:</strong>
+  <%= @monster_instance.TEAM_SLOT %>
+</p>
+
+<p>
+  <strong>New:</strong>
+  <%= @monster_instance.NEW %>
+</p>
+
+<%= link_to 'Edit', edit_monster_instance_path(@monster_instance) %> |
+<%= link_to 'Back', monster_instances_path %>

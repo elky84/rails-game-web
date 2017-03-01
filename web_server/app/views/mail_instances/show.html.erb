@@ -1,0 +1,59 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Mail no:</strong>
+  <%= @mail_instance.MAIL_NO %>
+</p>
+
+<p>
+  <strong>User no:</strong>
+  <%= @mail_instance.USER_NO %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @mail_instance.TITLE %>
+</p>
+
+<p>
+  <strong>Content:</strong>
+  <%= @mail_instance.CONTENT %>
+</p>
+
+<p>
+  <strong>Sender:</strong>
+  <%= @mail_instance.SENDER %>
+</p>
+
+<p>
+  <strong>Sender actor id:</strong>
+  <%= @mail_instance.SENDER_ACTOR_ID %>
+</p>
+
+<p>
+  <strong>Sender user no:</strong>
+  <%= @mail_instance.SENDER_USER_NO %>
+</p>
+
+<p>
+  <strong>Opened:</strong>
+  <%= @mail_instance.OPENED %>
+</p>
+
+<p>
+  <strong>Reward:</strong>
+  <%= @mail_instance.REWARD %>
+</p>
+
+<p>
+  <strong>End date:</strong>
+  <%= @mail_instance.END_DATE %>
+</p>
+
+<p>
+  <strong>Mail type:</strong>
+  <%= @mail_instance.MAIL_TYPE %>
+</p>
+
+<%= link_to 'Edit', edit_mail_instance_path(@mail_instance) %> |
+<%= link_to 'Back', mail_instances_path %>

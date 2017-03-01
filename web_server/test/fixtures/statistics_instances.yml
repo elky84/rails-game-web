@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  STATISTICS_NO: 1
+  TYPE: MyText
+  VALUE: 1
+  INFO: MyText
+  USER_LV: 1
+  DATE: MyText
+
+two:
+  STATISTICS_NO: 1
+  TYPE: MyText
+  VALUE: 1
+  INFO: MyText
+  USER_LV: 1
+  DATE: MyText

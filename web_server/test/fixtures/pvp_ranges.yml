@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  PVP_RANGE_ID: 1
+  RATING: 1
+  RANK: 1
+  ADD_RANK: 1
+
+two:
+  PVP_RANGE_ID: 1
+  RATING: 1
+  RANK: 1
+  ADD_RANK: 1

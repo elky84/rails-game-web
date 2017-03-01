@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Grow id:</strong>
+  <%= @user_grow.GROW_ID %>
+</p>
+
+<p>
+  <strong>Level:</strong>
+  <%= @user_grow.LEVEL %>
+</p>
+
+<p>
+  <strong>Require exp:</strong>
+  <%= @user_grow.REQUIRE_EXP %>
+</p>
+
+<%= link_to 'Edit', edit_user_grow_path(@user_grow) %> |
+<%= link_to 'Back', user_grows_path %>

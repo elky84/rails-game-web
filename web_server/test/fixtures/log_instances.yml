@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  LOG_NO: 1
+  USER_NO: 1
+  CHARACTER_NO: 1
+  LOG_TYPE: MyText
+  VALUE: MyText
+  CASH: 1
+  MONEY: 1
+  USER_LV: 1
+  EXP: 1
+  ACTION_TIME: 2016-01-06 11:22:22
+  IP: MyText
+
+two:
+  LOG_NO: 1
+  USER_NO: 1
+  CHARACTER_NO: 1
+  LOG_TYPE: MyText
+  VALUE: MyText
+  CASH: 1
+  MONEY: 1
+  USER_LV: 1
+  EXP: 1
+  ACTION_TIME: 2016-01-06 11:22:22
+  IP: MyText

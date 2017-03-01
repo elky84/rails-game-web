@@ -1,0 +1,25 @@
+<%= form_for(@quest_short_cut) do |f| %>
+  <% if @quest_short_cut.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@quest_short_cut.errors.count, "error") %> prohibited this quest_short_cut from being saved:</h2>
+
+      <ul>
+      <% @quest_short_cut.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :SHORT_CUT_NO %><br>
+    <%= f.number_field :SHORT_CUT_NO %>
+  </div>
+  <div class="field">
+    <%= f.label :SHORT_CUT_TYPE %><br>
+    <%= f.text_area :SHORT_CUT_TYPE %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  LEVEL: 1
+  REQUIRE_EXP: 1
+  STAMINA: 1
+
+two:
+  LEVEL: 1
+  REQUIRE_EXP: 1
+  STAMINA: 1

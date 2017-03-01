@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Parameters</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter id</th>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Explain</th>
+      <th>Apply stat</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @parameters.each do |parameter| %>
+      <tr>
+        <td><%= parameter.PARAMETER_ID %></td>
+        <td><%= parameter.NAME %></td>
+        <td><%= parameter.DESCRIPTION %></td>
+        <td><%= parameter.EXPLAIN %></td>
+        <td><%= parameter.APPLY_STAT %></td>
+        <td><%= link_to 'Show', parameter %></td>
+        <td><%= link_to 'Edit', edit_parameter_path(parameter) %></td>
+        <td><%= link_to 'Destroy', parameter, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Parameter', new_parameter_path %>

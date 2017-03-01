@@ -1,0 +1,87 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Stage Infos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Stage id</th>
+      <th>Area id</th>
+      <th>Stage number</th>
+      <th>Open</th>
+      <th>Type</th>
+      <th>Level</th>
+      <th>Coordinate</th>
+      <th>Bgm</th>
+      <th>Bg color</th>
+      <th>Name</th>
+      <th>Explain</th>
+      <th>Character level</th>
+      <th>Stamina</th>
+      <th>Phase</th>
+      <th>Monster</th>
+      <th>Item</th>
+      <th>Stage icon</th>
+      <th>Clear score</th>
+      <th>Clear exp</th>
+      <th>Clear money</th>
+      <th>Clear 1 reward</th>
+      <th>Clear 1 reward probability</th>
+      <th>Clear 2 reward</th>
+      <th>Clear 2 reward probability</th>
+      <th>Clear 3 reward</th>
+      <th>Clear 3 reward probability</th>
+      <th>Start scenario</th>
+      <th>End scenario</th>
+      <th>Bg prefeb</th>
+      <th>Infi tower sp reward</th>
+      <th>Infi tower preview</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @stage_infos.each do |stage_info| %>
+      <tr>
+        <td><%= stage_info.STAGE_ID %></td>
+        <td><%= stage_info.AREA_ID %></td>
+        <td><%= stage_info.STAGE_NUMBER %></td>
+        <td><%= stage_info.OPEN %></td>
+        <td><%= stage_info.TYPE %></td>
+        <td><%= stage_info.LEVEL %></td>
+        <td><%= stage_info.COORDINATE %></td>
+        <td><%= stage_info.BGM %></td>
+        <td><%= stage_info.BG_COLOR %></td>
+        <td><%= stage_info.NAME %></td>
+        <td><%= stage_info.EXPLAIN %></td>
+        <td><%= stage_info.CHARACTER_LEVEL %></td>
+        <td><%= stage_info.STAMINA %></td>
+        <td><%= stage_info.PHASE %></td>
+        <td><%= stage_info.MONSTER %></td>
+        <td><%= stage_info.ITEM %></td>
+        <td><%= stage_info.STAGE_ICON %></td>
+        <td><%= stage_info.CLEAR_SCORE %></td>
+        <td><%= stage_info.CLEAR_EXP %></td>
+        <td><%= stage_info.CLEAR_MONEY %></td>
+        <td><%= stage_info.CLEAR_1_REWARD %></td>
+        <td><%= stage_info.CLEAR_1_REWARD_PROBABILITY %></td>
+        <td><%= stage_info.CLEAR_2_REWARD %></td>
+        <td><%= stage_info.CLEAR_2_REWARD_PROBABILITY %></td>
+        <td><%= stage_info.CLEAR_3_REWARD %></td>
+        <td><%= stage_info.CLEAR_3_REWARD_PROBABILITY %></td>
+        <td><%= stage_info.START_SCENARIO %></td>
+        <td><%= stage_info.END_SCENARIO %></td>
+        <td><%= stage_info.BG_PREFEB %></td>
+        <td><%= stage_info.INFI_TOWER_SP_REWARD %></td>
+        <td><%= stage_info.INFI_TOWER_PREVIEW %></td>
+        <td><%= link_to 'Show', stage_info %></td>
+        <td><%= link_to 'Edit', edit_stage_info_path(stage_info) %></td>
+        <td><%= link_to 'Destroy', stage_info, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Stage info', new_stage_info_path %>

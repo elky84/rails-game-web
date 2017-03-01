@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  MONSTER_ID: 1
+  MONSTER_TYPE: MyText
+  MONSTER_GRADE: 1
+  GROW_TYPE: MyText
+  GROW_TYPE_DETAIL: MyText
+  MONSTER_PRICE: 1
+  ACTOR_ID: 1
+  SKIN_NUM: 1
+  GACHA_SPEECH: MyText
+
+two:
+  MONSTER_ID: 1
+  MONSTER_TYPE: MyText
+  MONSTER_GRADE: 1
+  GROW_TYPE: MyText
+  GROW_TYPE_DETAIL: MyText
+  MONSTER_PRICE: 1
+  ACTOR_ID: 1
+  SKIN_NUM: 1
+  GACHA_SPEECH: MyText

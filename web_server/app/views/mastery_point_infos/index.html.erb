@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Mastery Point Infos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Mastery point</th>
+      <th>Price type</th>
+      <th>Price</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @mastery_point_infos.each do |mastery_point_info| %>
+      <tr>
+        <td><%= mastery_point_info.MASTERY_POINT %></td>
+        <td><%= mastery_point_info.PRICE_TYPE %></td>
+        <td><%= mastery_point_info.PRICE %></td>
+        <td><%= link_to 'Show', mastery_point_info %></td>
+        <td><%= link_to 'Edit', edit_mastery_point_info_path(mastery_point_info) %></td>
+        <td><%= link_to 'Destroy', mastery_point_info, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Mastery point info', new_mastery_point_info_path %>

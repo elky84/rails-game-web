@@ -1,0 +1,93 @@
+<%= form_for(@ai_script) do |f| %>
+  <% if @ai_script.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@ai_script.errors.count, "error") %> prohibited this ai_script from being saved:</h2>
+
+      <ul>
+      <% @ai_script.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :index %><br>
+    <%= f.number_field :index %>
+  </div>
+  <div class="field">
+    <%= f.label :ai_type %><br>
+    <%= f.text_area :ai_type %>
+  </div>
+  <div class="field">
+    <%= f.label :protect_object_name %><br>
+    <%= f.text_area :protect_object_name %>
+  </div>
+  <div class="field">
+    <%= f.label :protect_range %><br>
+    <%= f.text_area :protect_range %>
+  </div>
+  <div class="field">
+    <%= f.label :search_range %><br>
+    <%= f.text_area :search_range %>
+  </div>
+  <div class="field">
+    <%= f.label :search_enemy_type %><br>
+    <%= f.text_area :search_enemy_type %>
+  </div>
+  <div class="field">
+    <%= f.label :idle_time_stop %><br>
+    <%= f.text_area :idle_time_stop %>
+  </div>
+  <div class="field">
+    <%= f.label :idle_time_random_range %><br>
+    <%= f.text_area :idle_time_random_range %>
+  </div>
+  <div class="field">
+    <%= f.label :attack_time_stop %><br>
+    <%= f.text_area :attack_time_stop %>
+  </div>
+  <div class="field">
+    <%= f.label :idle_move_range %><br>
+    <%= f.text_area :idle_move_range %>
+  </div>
+  <div class="field">
+    <%= f.label :go_away_time %><br>
+    <%= f.text_area :go_away_time %>
+  </div>
+  <div class="field">
+    <%= f.label :go_away_plus_random %><br>
+    <%= f.text_area :go_away_plus_random %>
+  </div>
+  <div class="field">
+    <%= f.label :state_stay_time %><br>
+    <%= f.text_area :state_stay_time %>
+  </div>
+  <div class="field">
+    <%= f.label :fixed_idle_stay_time %><br>
+    <%= f.text_area :fixed_idle_stay_time %>
+  </div>
+  <div class="field">
+    <%= f.label :skill_use_percent %><br>
+    <%= f.text_area :skill_use_percent %>
+  </div>
+  <div class="field">
+    <%= f.label :attack_after_type %><br>
+    <%= f.text_area :attack_after_type %>
+  </div>
+  <div class="field">
+    <%= f.label :is_all_include_phase %><br>
+    <%= f.number_field :is_all_include_phase %>
+  </div>
+  <div class="field">
+    <%= f.label :is_reset_under_attack %><br>
+    <%= f.number_field :is_reset_under_attack %>
+  </div>
+  <div class="field">
+    <%= f.label :add_serch_range %><br>
+    <%= f.text_area :add_serch_range %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

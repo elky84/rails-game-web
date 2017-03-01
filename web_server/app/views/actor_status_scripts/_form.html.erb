@@ -1,0 +1,209 @@
+<%= form_for(@actor_status_script) do |f| %>
+  <% if @actor_status_script.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@actor_status_script.errors.count, "error") %> prohibited this actor_status_script from being saved:</h2>
+
+      <ul>
+      <% @actor_status_script.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :index %><br>
+    <%= f.number_field :index %>
+  </div>
+  <div class="field">
+    <%= f.label :SKILL_TYPE %><br>
+    <%= f.text_area :SKILL_TYPE %>
+  </div>
+  <div class="field">
+    <%= f.label :scale_x %><br>
+    <%= f.text_area :scale_x %>
+  </div>
+  <div class="field">
+    <%= f.label :scale_y %><br>
+    <%= f.text_area :scale_y %>
+  </div>
+  <div class="field">
+    <%= f.label :spine_name %><br>
+    <%= f.text_area :spine_name %>
+  </div>
+  <div class="field">
+    <%= f.label :ui_sprite_name %><br>
+    <%= f.text_area :ui_sprite_name %>
+  </div>
+  <div class="field">
+    <%= f.label :actor_name %><br>
+    <%= f.text_area :actor_name %>
+  </div>
+  <div class="field">
+    <%= f.label :skill_list %><br>
+    <%= f.text_area :skill_list %>
+  </div>
+  <div class="field">
+    <%= f.label :random_skill_list %><br>
+    <%= f.text_area :random_skill_list %>
+  </div>
+  <div class="field">
+    <%= f.label :random_skill_percent %><br>
+    <%= f.text_area :random_skill_percent %>
+  </div>
+  <div class="field">
+    <%= f.label :shadow %><br>
+    <%= f.number_field :shadow %>
+  </div>
+  <div class="field">
+    <%= f.label :shadow_scale_x %><br>
+    <%= f.text_area :shadow_scale_x %>
+  </div>
+  <div class="field">
+    <%= f.label :shadow_scale_y %><br>
+    <%= f.text_area :shadow_scale_y %>
+  </div>
+  <div class="field">
+    <%= f.label :attack_count_max %><br>
+    <%= f.number_field :attack_count_max %>
+  </div>
+  <div class="field">
+    <%= f.label :ai_index %><br>
+    <%= f.number_field :ai_index %>
+  </div>
+  <div class="field">
+    <%= f.label :die_animation_curve %><br>
+    <%= f.number_field :die_animation_curve %>
+  </div>
+  <div class="field">
+    <%= f.label :die_animation_lenth %><br>
+    <%= f.text_area :die_animation_lenth %>
+  </div>
+  <div class="field">
+    <%= f.label :die_animation_speed %><br>
+    <%= f.text_area :die_animation_speed %>
+  </div>
+  <div class="field">
+    <%= f.label :HP %><br>
+    <%= f.text_area :HP %>
+  </div>
+  <div class="field">
+    <%= f.label :MP %><br>
+    <%= f.text_area :MP %>
+  </div>
+  <div class="field">
+    <%= f.label :ATTACK %><br>
+    <%= f.text_area :ATTACK %>
+  </div>
+  <div class="field">
+    <%= f.label :DEFENCE %><br>
+    <%= f.text_area :DEFENCE %>
+  </div>
+  <div class="field">
+    <%= f.label :HIT %><br>
+    <%= f.text_area :HIT %>
+  </div>
+  <div class="field">
+    <%= f.label :AVOID %><br>
+    <%= f.text_area :AVOID %>
+  </div>
+  <div class="field">
+    <%= f.label :CRITICAL_HIT %><br>
+    <%= f.text_area :CRITICAL_HIT %>
+  </div>
+  <div class="field">
+    <%= f.label :CRITICAL_AVOID %><br>
+    <%= f.text_area :CRITICAL_AVOID %>
+  </div>
+  <div class="field">
+    <%= f.label :CRITICAL_DAMAGE_PERCENT %><br>
+    <%= f.text_area :CRITICAL_DAMAGE_PERCENT %>
+  </div>
+  <div class="field">
+    <%= f.label :REGEN_HEALTH %><br>
+    <%= f.text_area :REGEN_HEALTH %>
+  </div>
+  <div class="field">
+    <%= f.label :REGEN_MP %><br>
+    <%= f.text_area :REGEN_MP %>
+  </div>
+  <div class="field">
+    <%= f.label :MOVE_SPEED_X %><br>
+    <%= f.text_area :MOVE_SPEED_X %>
+  </div>
+  <div class="field">
+    <%= f.label :MOVE_SPEED_Z %><br>
+    <%= f.text_area :MOVE_SPEED_Z %>
+  </div>
+  <div class="field">
+    <%= f.label :ATTACK_SPEED %><br>
+    <%= f.text_area :ATTACK_SPEED %>
+  </div>
+  <div class="field">
+    <%= f.label :RAGE_BASE %><br>
+    <%= f.text_area :RAGE_BASE %>
+  </div>
+  <div class="field">
+    <%= f.label :RAGE_REGEN %><br>
+    <%= f.text_area :RAGE_REGEN %>
+  </div>
+  <div class="field">
+    <%= f.label :COOL_TIME_ALL %><br>
+    <%= f.text_area :COOL_TIME_ALL %>
+  </div>
+  <div class="field">
+    <%= f.label :RESIST_POISON %><br>
+    <%= f.text_area :RESIST_POISON %>
+  </div>
+  <div class="field">
+    <%= f.label :RESIST_SILENCE %><br>
+    <%= f.text_area :RESIST_SILENCE %>
+  </div>
+  <div class="field">
+    <%= f.label :RESIST_STUN %><br>
+    <%= f.text_area :RESIST_STUN %>
+  </div>
+  <div class="field">
+    <%= f.label :RESIST_SLOW %><br>
+    <%= f.text_area :RESIST_SLOW %>
+  </div>
+  <div class="field">
+    <%= f.label :LEVEL %><br>
+    <%= f.number_field :LEVEL %>
+  </div>
+  <div class="field">
+    <%= f.label :VOICE %><br>
+    <%= f.text_area :VOICE %>
+  </div>
+  <div class="field">
+    <%= f.label :OTHER_IDLE_USE %><br>
+    <%= f.text_area :OTHER_IDLE_USE %>
+  </div>
+  <div class="field">
+    <%= f.label :actor_group_id %><br>
+    <%= f.number_field :actor_group_id %>
+  </div>
+  <div class="field">
+    <%= f.label :group_rank_id %><br>
+    <%= f.number_field :group_rank_id %>
+  </div>
+  <div class="field">
+    <%= f.label :special_skill %><br>
+    <%= f.text_area :special_skill %>
+  </div>
+  <div class="field">
+    <%= f.label :special_skill_percent %><br>
+    <%= f.text_area :special_skill_percent %>
+  </div>
+  <div class="field">
+    <%= f.label :DOWN_TIME %><br>
+    <%= f.text_area :DOWN_TIME %>
+  </div>
+  <div class="field">
+    <%= f.label :home_ani %><br>
+    <%= f.text_area :home_ani %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

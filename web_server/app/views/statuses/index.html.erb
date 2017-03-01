@@ -1,0 +1,71 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Statuses</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Status id</th>
+      <th>Attack</th>
+      <th>Defense</th>
+      <th>Hp</th>
+      <th>Mp</th>
+      <th>Rage base</th>
+      <th>Attack speed</th>
+      <th>Move speed x</th>
+      <th>Move speed z</th>
+      <th>Critical rate</th>
+      <th>Critical avoid</th>
+      <th>Critical damage</th>
+      <th>Hit rate</th>
+      <th>Dodge rate</th>
+      <th>Hp regen</th>
+      <th>Mp regen</th>
+      <th>Rage regen</th>
+      <th>Cool time all</th>
+      <th>Resist poison</th>
+      <th>Resist silence</th>
+      <th>Resist stun</th>
+      <th>Resist slow</th>
+      <th>Level</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @statuses.each do |status| %>
+      <tr>
+        <td><%= status.STATUS_ID %></td>
+        <td><%= status.ATTACK %></td>
+        <td><%= status.DEFENSE %></td>
+        <td><%= status.HP %></td>
+        <td><%= status.MP %></td>
+        <td><%= status.RAGE_BASE %></td>
+        <td><%= status.ATTACK_SPEED %></td>
+        <td><%= status.MOVE_SPEED_X %></td>
+        <td><%= status.MOVE_SPEED_Z %></td>
+        <td><%= status.CRITICAL_RATE %></td>
+        <td><%= status.CRITICAL_AVOID %></td>
+        <td><%= status.CRITICAL_DAMAGE %></td>
+        <td><%= status.HIT_RATE %></td>
+        <td><%= status.DODGE_RATE %></td>
+        <td><%= status.HP_REGEN %></td>
+        <td><%= status.MP_REGEN %></td>
+        <td><%= status.RAGE_REGEN %></td>
+        <td><%= status.COOL_TIME_ALL %></td>
+        <td><%= status.RESIST_POISON %></td>
+        <td><%= status.RESIST_SILENCE %></td>
+        <td><%= status.RESIST_STUN %></td>
+        <td><%= status.RESIST_SLOW %></td>
+        <td><%= status.LEVEL %></td>
+        <td><%= link_to 'Show', status %></td>
+        <td><%= link_to 'Edit', edit_status_path(status) %></td>
+        <td><%= link_to 'Destroy', status, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Status', new_status_path %>

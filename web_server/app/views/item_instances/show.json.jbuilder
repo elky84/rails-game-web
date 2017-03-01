@@ -1,0 +1,1 @@
+json.extract! @item_instance, :id, :ITEM_NO, :ITEM_ID, :USER_NO, :CHARACTER_NO, :START_DATE, :END_DATE, :ITEM_NAME, :LEVEL, :GRADE, :LIMIT, :VALUE, :DEFAULT_OPTION, :OPTION_LIST, :SLOT_TYPE, :EXPIRE_TYPE, :DURABILITY, :ENCHANT, :created_at, :updated_at

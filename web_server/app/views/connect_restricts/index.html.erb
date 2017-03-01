@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Connect Restricts</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Connect restrict id</th>
+      <th>Type</th>
+      <th>Value</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @connect_restricts.each do |connect_restrict| %>
+      <tr>
+        <td><%= connect_restrict.CONNECT_RESTRICT_ID %></td>
+        <td><%= connect_restrict.TYPE %></td>
+        <td><%= connect_restrict.VALUE %></td>
+        <td><%= link_to 'Show', connect_restrict %></td>
+        <td><%= link_to 'Edit', edit_connect_restrict_path(connect_restrict) %></td>
+        <td><%= link_to 'Destroy', connect_restrict, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Connect restrict', new_connect_restrict_path %>

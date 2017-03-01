@@ -1,0 +1,109 @@
+<%= form_for(@status) do |f| %>
+  <% if @status.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@status.errors.count, "error") %> prohibited this status from being saved:</h2>
+
+      <ul>
+      <% @status.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :STATUS_ID %><br>
+    <%= f.number_field :STATUS_ID %>
+  </div>
+  <div class="field">
+    <%= f.label :ATTACK %><br>
+    <%= f.text_area :ATTACK %>
+  </div>
+  <div class="field">
+    <%= f.label :DEFENSE %><br>
+    <%= f.text_area :DEFENSE %>
+  </div>
+  <div class="field">
+    <%= f.label :HP %><br>
+    <%= f.text_area :HP %>
+  </div>
+  <div class="field">
+    <%= f.label :MP %><br>
+    <%= f.text_area :MP %>
+  </div>
+  <div class="field">
+    <%= f.label :RAGE_BASE %><br>
+    <%= f.text_area :RAGE_BASE %>
+  </div>
+  <div class="field">
+    <%= f.label :ATTACK_SPEED %><br>
+    <%= f.text_area :ATTACK_SPEED %>
+  </div>
+  <div class="field">
+    <%= f.label :MOVE_SPEED_X %><br>
+    <%= f.text_area :MOVE_SPEED_X %>
+  </div>
+  <div class="field">
+    <%= f.label :MOVE_SPEED_Z %><br>
+    <%= f.text_area :MOVE_SPEED_Z %>
+  </div>
+  <div class="field">
+    <%= f.label :CRITICAL_RATE %><br>
+    <%= f.text_area :CRITICAL_RATE %>
+  </div>
+  <div class="field">
+    <%= f.label :CRITICAL_AVOID %><br>
+    <%= f.text_area :CRITICAL_AVOID %>
+  </div>
+  <div class="field">
+    <%= f.label :CRITICAL_DAMAGE %><br>
+    <%= f.text_area :CRITICAL_DAMAGE %>
+  </div>
+  <div class="field">
+    <%= f.label :HIT_RATE %><br>
+    <%= f.text_area :HIT_RATE %>
+  </div>
+  <div class="field">
+    <%= f.label :DODGE_RATE %><br>
+    <%= f.text_area :DODGE_RATE %>
+  </div>
+  <div class="field">
+    <%= f.label :HP_REGEN %><br>
+    <%= f.text_area :HP_REGEN %>
+  </div>
+  <div class="field">
+    <%= f.label :MP_REGEN %><br>
+    <%= f.text_area :MP_REGEN %>
+  </div>
+  <div class="field">
+    <%= f.label :RAGE_REGEN %><br>
+    <%= f.text_area :RAGE_REGEN %>
+  </div>
+  <div class="field">
+    <%= f.label :COOL_TIME_ALL %><br>
+    <%= f.text_area :COOL_TIME_ALL %>
+  </div>
+  <div class="field">
+    <%= f.label :RESIST_POISON %><br>
+    <%= f.text_area :RESIST_POISON %>
+  </div>
+  <div class="field">
+    <%= f.label :RESIST_SILENCE %><br>
+    <%= f.text_area :RESIST_SILENCE %>
+  </div>
+  <div class="field">
+    <%= f.label :RESIST_STUN %><br>
+    <%= f.text_area :RESIST_STUN %>
+  </div>
+  <div class="field">
+    <%= f.label :RESIST_SLOW %><br>
+    <%= f.text_area :RESIST_SLOW %>
+  </div>
+  <div class="field">
+    <%= f.label :LEVEL %><br>
+    <%= f.number_field :LEVEL %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Report no:</strong>
+  <%= @report_instance.REPORT_NO %>
+</p>
+
+<p>
+  <strong>User no:</strong>
+  <%= @report_instance.USER_NO %>
+</p>
+
+<p>
+  <strong>Character no:</strong>
+  <%= @report_instance.CHARACTER_NO %>
+</p>
+
+<p>
+  <strong>Report type:</strong>
+  <%= @report_instance.REPORT_TYPE %>
+</p>
+
+<p>
+  <strong>Value:</strong>
+  <%= @report_instance.VALUE %>
+</p>
+
+<p>
+  <strong>User lv:</strong>
+  <%= @report_instance.USER_LV %>
+</p>
+
+<p>
+  <strong>Exp:</strong>
+  <%= @report_instance.EXP %>
+</p>
+
+<p>
+  <strong>Action time:</strong>
+  <%= @report_instance.ACTION_TIME %>
+</p>
+
+<p>
+  <strong>Ip:</strong>
+  <%= @report_instance.IP %>
+</p>
+
+<%= link_to 'Edit', edit_report_instance_path(@report_instance) %> |
+<%= link_to 'Back', report_instances_path %>

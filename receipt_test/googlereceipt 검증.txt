@@ -1,0 +1,31 @@
+클라이언트 ID: 156081241075-8f6ja9i0vp1rcdi8fkv2u05b8pk7o61h.apps.googleusercontent.com 
+클라이언트 secret: a3e7-HagSXMdnjVax99J4d6B 
+Redirect_URI: urn:ietf:wg:oauth:2.0:oob
+(client_secret 참조)
+
+1. AuthCode 요청 
+- 주소(클라이언트 id, redirect_uri 입력)
+https://accounts.google.com/o/oauth2/auth?scope=https://www.googleapis.com/auth/androidpublisher&response_type=code&access_type=offline&redirect_uri=urn:ietf:wg:oauth:2.0:oob:auto&client_id=156081241075-8f6ja9i0vp1rcdi8fkv2u05b8pk7o61h.apps.googleusercontent.com
+
+- 페이지를 반환하는데 제목표시줄title에 Success code= 이후에 나옴 (에러인 경우, error=)
+
+- AuthCode 예시: 4/vvzstIr-j_ldcIKOOfk-sSYTB-cEdgBItMvQq7TalE8
+- 발급받은 코드는 1회용으로 이후 재사용 불가합니다 => refresh 요청으로 계속 사용가능
+
+2. Get AccessToken (return json형식)
+- 발급된 access token은 1회용이며 유효시간이 있음
+- 같이 발급되는 refresh token을 이용하여 재사용가능한 토큰을 요청해야함(유효시간 없슴)
+
+3. Refresh AccessToken (return json형식)
+- 발급된 access token은 유효시간동안 여러번 재사용 가능(유효시간 보통 1시간)
+- 재사용 요청을 여러번 했어도 각각의 코드 전부 유효시간 동안 재사용 가능함
+
+4. Get purchase status
+- 유효하지 않은경우 400 코드 Invalid Value 메세지 포함한 json 리턴
+- 401코드는 access token 권한오류. refresh를 하거나 불가한경우 authcode 요청부터 다시해야함!
+- 정상리턴형식: https://developers.google.com/android-publisher/api-ref/purchases/products#resource
+
+
+5. get sku detail
+- 실제 구매 정보를 확인해야 함. [환율 계산 이후 정보까지]
+- 리턴 규격

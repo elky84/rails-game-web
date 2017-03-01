@@ -1,0 +1,25 @@
+<%= form_for(@monster_grade_bonu) do |f| %>
+  <% if @monster_grade_bonu.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@monster_grade_bonu.errors.count, "error") %> prohibited this monster_grade_bonu from being saved:</h2>
+
+      <ul>
+      <% @monster_grade_bonu.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :GRADE %><br>
+    <%= f.number_field :GRADE %>
+  </div>
+  <div class="field">
+    <%= f.label :STATUS_ID %><br>
+    <%= f.number_field :STATUS_ID %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

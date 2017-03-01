@@ -1,0 +1,57 @@
+<%= form_for(@character_instance) do |f| %>
+  <% if @character_instance.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@character_instance.errors.count, "error") %> prohibited this character_instance from being saved:</h2>
+
+      <ul>
+      <% @character_instance.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :CHARACTER_NO %><br>
+    <%= f.number_field :CHARACTER_NO %>
+  </div>
+  <div class="field">
+    <%= f.label :USER_NO %><br>
+    <%= f.number_field :USER_NO %>
+  </div>
+  <div class="field">
+    <%= f.label :CHARACTER_ID %><br>
+    <%= f.number_field :CHARACTER_ID %>
+  </div>
+  <div class="field">
+    <%= f.label :LEVEL %><br>
+    <%= f.number_field :LEVEL %>
+  </div>
+  <div class="field">
+    <%= f.label :EXP %><br>
+    <%= f.number_field :EXP %>
+  </div>
+  <div class="field">
+    <%= f.label :LASTEST_ACTIVE_TIME %><br>
+    <%= f.datetime_select :LASTEST_ACTIVE_TIME %>
+  </div>
+  <div class="field">
+    <%= f.label :MASTERY_GROUP_ID %><br>
+    <%= f.number_field :MASTERY_GROUP_ID %>
+  </div>
+  <div class="field">
+    <%= f.label :PARTY_MONSTER_ID %><br>
+    <%= f.text_area :PARTY_MONSTER_ID %>
+  </div>
+  <div class="field">
+    <%= f.label :STAGE_INSTANCE_NO %><br>
+    <%= f.number_field :STAGE_INSTANCE_NO %>
+  </div>
+  <div class="field">
+    <%= f.label :COSTUME_ID %><br>
+    <%= f.number_field :COSTUME_ID %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

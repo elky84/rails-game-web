@@ -1,0 +1,1 @@
+json.extract! @mastery_info, :id, :MASTERY_ID, :MASTERY_TYPE, :GRADE, :NAME, :EXPLAIN, :MAX_LEVEL, :OPTION_ID, :OPTION_EFFECT, :EFFECT_TARGET, :PRE_LEVEL, :PRE_CONDITION, :ICON, :created_at, :updated_at

@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Max value id:</strong>
+  <%= @max_value_info.MAX_VALUE_ID %>
+</p>
+
+<p>
+  <strong>Max slot type:</strong>
+  <%= @max_value_info.MAX_SLOT_TYPE %>
+</p>
+
+<p>
+  <strong>Ext slot:</strong>
+  <%= @max_value_info.EXT_SLOT %>
+</p>
+
+<p>
+  <strong>Next ext slot:</strong>
+  <%= @max_value_info.NEXT_EXT_SLOT %>
+</p>
+
+<p>
+  <strong>Next cost:</strong>
+  <%= @max_value_info.NEXT_COST %>
+</p>
+
+<%= link_to 'Edit', edit_max_value_info_path(@max_value_info) %> |
+<%= link_to 'Back', max_value_infos_path %>

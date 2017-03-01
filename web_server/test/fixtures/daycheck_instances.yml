@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  DAYCHECK_NO: 1
+  USER_NO: 1
+  USER_TYPE: 1
+  DAYCHECK_ID: 1
+  TIME: MyText
+  CHECK: 1
+
+two:
+  DAYCHECK_NO: 1
+  USER_NO: 1
+  USER_TYPE: 1
+  DAYCHECK_ID: 1
+  TIME: MyText
+  CHECK: 1

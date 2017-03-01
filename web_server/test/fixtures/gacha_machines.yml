@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  GACHA_MACHINE_ID: 1
+  GACHA_MACHINE_TYPE: MyText
+
+two:
+  GACHA_MACHINE_ID: 1
+  GACHA_MACHINE_TYPE: MyText

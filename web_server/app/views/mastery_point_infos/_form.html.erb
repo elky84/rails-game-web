@@ -1,0 +1,29 @@
+<%= form_for(@mastery_point_info) do |f| %>
+  <% if @mastery_point_info.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@mastery_point_info.errors.count, "error") %> prohibited this mastery_point_info from being saved:</h2>
+
+      <ul>
+      <% @mastery_point_info.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :MASTERY_POINT %><br>
+    <%= f.number_field :MASTERY_POINT %>
+  </div>
+  <div class="field">
+    <%= f.label :PRICE_TYPE %><br>
+    <%= f.text_area :PRICE_TYPE %>
+  </div>
+  <div class="field">
+    <%= f.label :PRICE %><br>
+    <%= f.number_field :PRICE %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

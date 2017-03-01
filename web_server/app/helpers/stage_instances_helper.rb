@@ -1,0 +1,2 @@
+module StageInstancesHelper
+end

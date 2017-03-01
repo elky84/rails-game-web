@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  QUEST_TYPE_ID: 1
+  QUEST_ICON: MyText
+  TYPE: MyText
+  QUEST_NAME: MyText
+  QUEST_EXPLAIN: MyText
+  GUIDE_CHAR_IMAGE: MyText
+  QUEST_COMPLETE_EXPLAIN: MyText
+
+two:
+  QUEST_TYPE_ID: 1
+  QUEST_ICON: MyText
+  TYPE: MyText
+  QUEST_NAME: MyText
+  QUEST_EXPLAIN: MyText
+  GUIDE_CHAR_IMAGE: MyText
+  QUEST_COMPLETE_EXPLAIN: MyText

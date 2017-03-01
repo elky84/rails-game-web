@@ -1,0 +1,51 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  STATUS_ID: 1
+  ATTACK: MyText
+  DEFENSE: MyText
+  HP: MyText
+  MP: MyText
+  RAGE_BASE: MyText
+  ATTACK_SPEED: MyText
+  MOVE_SPEED_X: MyText
+  MOVE_SPEED_Z: MyText
+  CRITICAL_RATE: MyText
+  CRITICAL_AVOID: MyText
+  CRITICAL_DAMAGE: MyText
+  HIT_RATE: MyText
+  DODGE_RATE: MyText
+  HP_REGEN: MyText
+  MP_REGEN: MyText
+  RAGE_REGEN: MyText
+  COOL_TIME_ALL: MyText
+  RESIST_POISON: MyText
+  RESIST_SILENCE: MyText
+  RESIST_STUN: MyText
+  RESIST_SLOW: MyText
+  LEVEL: 1
+
+two:
+  STATUS_ID: 1
+  ATTACK: MyText
+  DEFENSE: MyText
+  HP: MyText
+  MP: MyText
+  RAGE_BASE: MyText
+  ATTACK_SPEED: MyText
+  MOVE_SPEED_X: MyText
+  MOVE_SPEED_Z: MyText
+  CRITICAL_RATE: MyText
+  CRITICAL_AVOID: MyText
+  CRITICAL_DAMAGE: MyText
+  HIT_RATE: MyText
+  DODGE_RATE: MyText
+  HP_REGEN: MyText
+  MP_REGEN: MyText
+  RAGE_REGEN: MyText
+  COOL_TIME_ALL: MyText
+  RESIST_POISON: MyText
+  RESIST_SILENCE: MyText
+  RESIST_STUN: MyText
+  RESIST_SLOW: MyText
+  LEVEL: 1

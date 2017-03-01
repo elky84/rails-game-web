@@ -1,0 +1,2 @@
+module MasteryInfosHelper
+end

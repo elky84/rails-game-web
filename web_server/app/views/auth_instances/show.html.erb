@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User no:</strong>
+  <%= @auth_instance.USER_NO %>
+</p>
+
+<p>
+  <strong>Private key:</strong>
+  <%= @auth_instance.PRIVATE_KEY %>
+</p>
+
+<p>
+  <strong>Ip:</strong>
+  <%= @auth_instance.IP %>
+</p>
+
+<p>
+  <strong>Auth key:</strong>
+  <%= @auth_instance.AUTH_KEY %>
+</p>
+
+<%= link_to 'Edit', edit_auth_instance_path(@auth_instance) %> |
+<%= link_to 'Back', auth_instances_path %>

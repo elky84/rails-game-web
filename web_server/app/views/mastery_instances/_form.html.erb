@@ -1,0 +1,37 @@
+<%= form_for(@mastery_instance) do |f| %>
+  <% if @mastery_instance.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@mastery_instance.errors.count, "error") %> prohibited this mastery_instance from being saved:</h2>
+
+      <ul>
+      <% @mastery_instance.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :MASTERY_NO %><br>
+    <%= f.number_field :MASTERY_NO %>
+  </div>
+  <div class="field">
+    <%= f.label :GROUP_NO %><br>
+    <%= f.number_field :GROUP_NO %>
+  </div>
+  <div class="field">
+    <%= f.label :USER_NO %><br>
+    <%= f.number_field :USER_NO %>
+  </div>
+  <div class="field">
+    <%= f.label :CHARACTER_NO %><br>
+    <%= f.number_field :CHARACTER_NO %>
+  </div>
+  <div class="field">
+    <%= f.label :MASTERY %><br>
+    <%= f.text_area :MASTERY %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

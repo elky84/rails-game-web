@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  COSTUME_ID: 1
+  ACTOR_ID: 1
+  SKIN_NAME: MyString
+
+two:
+  COSTUME_ID: 1
+  ACTOR_ID: 1
+  SKIN_NAME: MyString

@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Notice Instances</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Notice no</th>
+      <th>Notice type</th>
+      <th>Content</th>
+      <th>Start date</th>
+      <th>End date</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @notice_instances.each do |notice_instance| %>
+      <tr>
+        <td><%= notice_instance.NOTICE_NO %></td>
+        <td><%= notice_instance.NOTICE_TYPE %></td>
+        <td><%= notice_instance.CONTENT %></td>
+        <td><%= notice_instance.START_DATE %></td>
+        <td><%= notice_instance.END_DATE %></td>
+        <td><%= link_to 'Show', notice_instance %></td>
+        <td><%= link_to 'Edit', edit_notice_instance_path(notice_instance) %></td>
+        <td><%= link_to 'Destroy', notice_instance, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Notice instance', new_notice_instance_path %>

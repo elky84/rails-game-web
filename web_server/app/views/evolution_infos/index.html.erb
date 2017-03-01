@@ -1,0 +1,51 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Evolution Infos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Evolution id</th>
+      <th>Grade</th>
+      <th>Raw</th>
+      <th>Special monster list</th>
+      <th>Special skill list</th>
+      <th>Result</th>
+      <th>Result percent</th>
+      <th>Price coin</th>
+      <th>Price diamond</th>
+      <th>Evolution event type</th>
+      <th>Percent up</th>
+      <th>Start date time</th>
+      <th>End date time</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @evolution_infos.each do |evolution_info| %>
+      <tr>
+        <td><%= evolution_info.EVOLUTION_ID %></td>
+        <td><%= evolution_info.GRADE %></td>
+        <td><%= evolution_info.RAW %></td>
+        <td><%= evolution_info.SPECIAL_MONSTER_LIST %></td>
+        <td><%= evolution_info.SPECIAL_SKILL_LIST %></td>
+        <td><%= evolution_info.RESULT %></td>
+        <td><%= evolution_info.RESULT_PERCENT %></td>
+        <td><%= evolution_info.PRICE_COIN %></td>
+        <td><%= evolution_info.PRICE_DIAMOND %></td>
+        <td><%= evolution_info.EVOLUTION_EVENT_TYPE %></td>
+        <td><%= evolution_info.PERCENT_UP %></td>
+        <td><%= evolution_info.START_DATE_TIME %></td>
+        <td><%= evolution_info.END_DATE_TIME %></td>
+        <td><%= link_to 'Show', evolution_info %></td>
+        <td><%= link_to 'Edit', edit_evolution_info_path(evolution_info) %></td>
+        <td><%= link_to 'Destroy', evolution_info, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Evolution info', new_evolution_info_path %>

@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  USER_NO: 1
+  CHARACTER_NO: 1
+  PLAY_STAGE: MyText
+  CLEAR_STAGE: MyText
+  STAGE_SCORE: MyText
+  LAST_DATE: 2016-01-06 11:33:21
+
+two:
+  USER_NO: 1
+  CHARACTER_NO: 1
+  PLAY_STAGE: MyText
+  CLEAR_STAGE: MyText
+  STAGE_SCORE: MyText
+  LAST_DATE: 2016-01-06 11:33:21

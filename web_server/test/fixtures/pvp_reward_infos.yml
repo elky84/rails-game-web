@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  PVP_REWARD_ID: 1
+  RANGE_TYPE: MyText
+  MIN: 1
+  MAX: 1
+  REWARD_TYPE_AND_CAPACITY: MyText
+
+two:
+  PVP_REWARD_ID: 1
+  RANGE_TYPE: MyText
+  MIN: 1
+  MAX: 1
+  REWARD_TYPE_AND_CAPACITY: MyText

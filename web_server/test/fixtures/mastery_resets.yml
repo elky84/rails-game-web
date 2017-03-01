@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  MASTERY_RESET_ID: 1
+  COST: MyText
+
+two:
+  MASTERY_RESET_ID: 1
+  COST: MyText

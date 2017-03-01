@@ -1,0 +1,29 @@
+<%= form_for(@connect_restrict) do |f| %>
+  <% if @connect_restrict.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@connect_restrict.errors.count, "error") %> prohibited this connect_restrict from being saved:</h2>
+
+      <ul>
+      <% @connect_restrict.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :CONNECT_RESTRICT_ID %><br>
+    <%= f.number_field :CONNECT_RESTRICT_ID %>
+  </div>
+  <div class="field">
+    <%= f.label :TYPE %><br>
+    <%= f.text_area :TYPE %>
+  </div>
+  <div class="field">
+    <%= f.label :VALUE %><br>
+    <%= f.text_area :VALUE %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

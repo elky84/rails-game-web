@@ -1,0 +1,59 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Quest no:</strong>
+  <%= @quest_instance.QUEST_NO %>
+</p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @quest_instance.TYPE %>
+</p>
+
+<p>
+  <strong>Quest info id:</strong>
+  <%= @quest_instance.QUEST_INFO_ID %>
+</p>
+
+<p>
+  <strong>User no:</strong>
+  <%= @quest_instance.USER_NO %>
+</p>
+
+<p>
+  <strong>Quest value:</strong>
+  <%= @quest_instance.QUEST_VALUE %>
+</p>
+
+<p>
+  <strong>Active time:</strong>
+  <%= @quest_instance.ACTIVE_TIME %>
+</p>
+
+<p>
+  <strong>Clear:</strong>
+  <%= @quest_instance.CLEAR %>
+</p>
+
+<p>
+  <strong>Clear time:</strong>
+  <%= @quest_instance.CLEAR_TIME %>
+</p>
+
+<p>
+  <strong>Quest apply type:</strong>
+  <%= @quest_instance.QUEST_APPLY_TYPE %>
+</p>
+
+<p>
+  <strong>Grade:</strong>
+  <%= @quest_instance.GRADE %>
+</p>
+
+<p>
+  <strong>Group id:</strong>
+  <%= @quest_instance.GROUP_ID %>
+</p>
+
+<%= link_to 'Edit', edit_quest_instance_path(@quest_instance) %> |
+<%= link_to 'Back', quest_instances_path %>

@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User no:</strong>
+  <%= @user_give_instance.USER_NO %>
+</p>
+
+<p>
+  <strong>Give reply:</strong>
+  <%= @user_give_instance.GIVE_REPLY %>
+</p>
+
+<%= link_to 'Edit', edit_user_give_instance_path(@user_give_instance) %> |
+<%= link_to 'Back', user_give_instances_path %>

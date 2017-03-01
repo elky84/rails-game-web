@@ -1,0 +1,55 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Pvp Record Instances</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Pvp record instance no</th>
+      <th>Season num</th>
+      <th>Character no</th>
+      <th>Result</th>
+      <th>Result time</th>
+      <th>Add rating</th>
+      <th>Result rating</th>
+      <th>Match character no</th>
+      <th>Match chr lv</th>
+      <th>Match chr id</th>
+      <th>Match user nickname</th>
+      <th>Match user lv</th>
+      <th>Match chr def power</th>
+      <th>Match monster id</th>
+      <th>Match monster lv</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @pvp_record_instances.each do |pvp_record_instance| %>
+      <tr>
+        <td><%= pvp_record_instance.PVP_RECORD_INSTANCE_NO %></td>
+        <td><%= pvp_record_instance.SEASON_NUM %></td>
+        <td><%= pvp_record_instance.CHARACTER_NO %></td>
+        <td><%= pvp_record_instance.RESULT %></td>
+        <td><%= pvp_record_instance.RESULT_TIME %></td>
+        <td><%= pvp_record_instance.ADD_RATING %></td>
+        <td><%= pvp_record_instance.RESULT_RATING %></td>
+        <td><%= pvp_record_instance.MATCH_CHARACTER_NO %></td>
+        <td><%= pvp_record_instance.MATCH_CHR_LV %></td>
+        <td><%= pvp_record_instance.MATCH_CHR_ID %></td>
+        <td><%= pvp_record_instance.MATCH_USER_NICKNAME %></td>
+        <td><%= pvp_record_instance.MATCH_USER_LV %></td>
+        <td><%= pvp_record_instance.MATCH_CHR_DEF_POWER %></td>
+        <td><%= pvp_record_instance.MATCH_MONSTER_ID %></td>
+        <td><%= pvp_record_instance.MATCH_MONSTER_LV %></td>
+        <td><%= link_to 'Show', pvp_record_instance %></td>
+        <td><%= link_to 'Edit', edit_pvp_record_instance_path(pvp_record_instance) %></td>
+        <td><%= link_to 'Destroy', pvp_record_instance, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Pvp record instance', new_pvp_record_instance_path %>

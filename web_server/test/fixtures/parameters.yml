@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  PARAMETER_ID: 1
+  NAME: MyText
+  DESCRIPTION: MyText
+  EXPLAIN: MyText
+  APPLY_STAT: MyText
+
+two:
+  PARAMETER_ID: 1
+  NAME: MyText
+  DESCRIPTION: MyText
+  EXPLAIN: MyText
+  APPLY_STAT: MyText

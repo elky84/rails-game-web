@@ -1,0 +1,45 @@
+<%= form_for(@quest_type) do |f| %>
+  <% if @quest_type.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@quest_type.errors.count, "error") %> prohibited this quest_type from being saved:</h2>
+
+      <ul>
+      <% @quest_type.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :QUEST_TYPE_ID %><br>
+    <%= f.number_field :QUEST_TYPE_ID %>
+  </div>
+  <div class="field">
+    <%= f.label :QUEST_ICON %><br>
+    <%= f.text_area :QUEST_ICON %>
+  </div>
+  <div class="field">
+    <%= f.label :TYPE %><br>
+    <%= f.text_area :TYPE %>
+  </div>
+  <div class="field">
+    <%= f.label :QUEST_NAME %><br>
+    <%= f.text_area :QUEST_NAME %>
+  </div>
+  <div class="field">
+    <%= f.label :QUEST_EXPLAIN %><br>
+    <%= f.text_area :QUEST_EXPLAIN %>
+  </div>
+  <div class="field">
+    <%= f.label :GUIDE_CHAR_IMAGE %><br>
+    <%= f.text_area :GUIDE_CHAR_IMAGE %>
+  </div>
+  <div class="field">
+    <%= f.label :QUEST_COMPLETE_EXPLAIN %><br>
+    <%= f.text_area :QUEST_COMPLETE_EXPLAIN %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,53 @@
+<%= form_for(@character_info) do |f| %>
+  <% if @character_info.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@character_info.errors.count, "error") %> prohibited this character_info from being saved:</h2>
+
+      <ul>
+      <% @character_info.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :CHARACTER_ID %><br>
+    <%= f.number_field :CHARACTER_ID %>
+  </div>
+  <div class="field">
+    <%= f.label :TYPE %><br>
+    <%= f.text_area :TYPE %>
+  </div>
+  <div class="field">
+    <%= f.label :GROW_TYPE_DETAIL %><br>
+    <%= f.text_area :GROW_TYPE_DETAIL %>
+  </div>
+  <div class="field">
+    <%= f.label :EQUIP_TYPE %><br>
+    <%= f.text_area :EQUIP_TYPE %>
+  </div>
+  <div class="field">
+    <%= f.label :NAME %><br>
+    <%= f.text_area :NAME %>
+  </div>
+  <div class="field">
+    <%= f.label :EXPLAIN %><br>
+    <%= f.text_area :EXPLAIN %>
+  </div>
+  <div class="field">
+    <%= f.label :ACTOR_ID %><br>
+    <%= f.number_field :ACTOR_ID %>
+  </div>
+  <div class="field">
+    <%= f.label :PRICE %><br>
+    <%= f.number_field :PRICE %>
+  </div>
+  <div class="field">
+    <%= f.label :RELEASE %><br>
+    <%= f.number_field :RELEASE %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

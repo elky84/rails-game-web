@@ -1,0 +1,79 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Rate no:</strong>
+  <%= @rate_status.RATE_NO %>
+</p>
+
+<p>
+  <strong>User no:</strong>
+  <%= @rate_status.USER_NO %>
+</p>
+
+<p>
+  <strong>Poison rate:</strong>
+  <%= @rate_status.POISON_RATE %>
+</p>
+
+<p>
+  <strong>Silence rate:</strong>
+  <%= @rate_status.SILENCE_RATE %>
+</p>
+
+<p>
+  <strong>Paralyze rate:</strong>
+  <%= @rate_status.PARALYZE_RATE %>
+</p>
+
+<p>
+  <strong>Slow rate:</strong>
+  <%= @rate_status.SLOW_RATE %>
+</p>
+
+<p>
+  <strong>Resist poison:</strong>
+  <%= @rate_status.RESIST_POISON %>
+</p>
+
+<p>
+  <strong>Resist silence:</strong>
+  <%= @rate_status.RESIST_SILENCE %>
+</p>
+
+<p>
+  <strong>Resist paralyze:</strong>
+  <%= @rate_status.RESIST_PARALYZE %>
+</p>
+
+<p>
+  <strong>Resist slow:</strong>
+  <%= @rate_status.RESIST_SLOW %>
+</p>
+
+<p>
+  <strong>Hp steal hit:</strong>
+  <%= @rate_status.HP_STEAL_HIT %>
+</p>
+
+<p>
+  <strong>Mp steal hit:</strong>
+  <%= @rate_status.MP_STEAL_HIT %>
+</p>
+
+<p>
+  <strong>Hp steal damage:</strong>
+  <%= @rate_status.HP_STEAL_DAMAGE %>
+</p>
+
+<p>
+  <strong>Mp steal damage:</strong>
+  <%= @rate_status.MP_STEAL_DAMAGE %>
+</p>
+
+<p>
+  <strong>Last date:</strong>
+  <%= @rate_status.LAST_DATE %>
+</p>
+
+<%= link_to 'Edit', edit_rate_status_path(@rate_status) %> |
+<%= link_to 'Back', rate_statuses_path %>

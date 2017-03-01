@@ -1,0 +1,2 @@
+module UserGiveInstancesHelper
+end

@@ -1,0 +1,57 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Phase Infos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Phase id</th>
+      <th>Init pos</th>
+      <th>Move time</th>
+      <th>Clear</th>
+      <th>Wait time</th>
+      <th>Stay time</th>
+      <th>Monster</th>
+      <th>Monster gen info</th>
+      <th>Monster lv</th>
+      <th>Appear speed</th>
+      <th>Appear time</th>
+      <th>Team index</th>
+      <th>Start scenario</th>
+      <th>End scenario</th>
+      <th>Is boss phase</th>
+      <th>Phase width</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @phase_infos.each do |phase_info| %>
+      <tr>
+        <td><%= phase_info.PHASE_ID %></td>
+        <td><%= phase_info.INIT_POS %></td>
+        <td><%= phase_info.MOVE_TIME %></td>
+        <td><%= phase_info.CLEAR %></td>
+        <td><%= phase_info.WAIT_TIME %></td>
+        <td><%= phase_info.STAY_TIME %></td>
+        <td><%= phase_info.MONSTER %></td>
+        <td><%= phase_info.MONSTER_GEN_INFO %></td>
+        <td><%= phase_info.MONSTER_LV %></td>
+        <td><%= phase_info.APPEAR_SPEED %></td>
+        <td><%= phase_info.APPEAR_TIME %></td>
+        <td><%= phase_info.TEAM_INDEX %></td>
+        <td><%= phase_info.START_SCENARIO %></td>
+        <td><%= phase_info.END_SCENARIO %></td>
+        <td><%= phase_info.IS_BOSS_PHASE %></td>
+        <td><%= phase_info.PHASE_WIDTH %></td>
+        <td><%= link_to 'Show', phase_info %></td>
+        <td><%= link_to 'Edit', edit_phase_info_path(phase_info) %></td>
+        <td><%= link_to 'Destroy', phase_info, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Phase info', new_phase_info_path %>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>WebServer</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+
+  <header class="navbar navbar-fixed-top navbar-inverse">
+  <div class="container">
+	<%= link_to "GM Tool", root_path, id: "logo" %>
+	<nav>
+	  <ul class="nav navbar-nav navbar-right">
+		<li><%= link_to "Home",   root_path %></li>
+		<li><%= link_to "User",   home_user_path %></li>
+		<li><%= link_to "Log",   home_log_path %></li>
+		<li><%= link_to "Event",   home_event_path %></li>
+		<li><%= link_to "Mail",   home_mail_path %></li>
+		<li><%= link_to "Statistics",   home_statistics_path %></li>
+		<li><%= link_to "Coupon",   home_coupon_path %></li>
+		<li><%= link_to "Maintenance",   home_maintenance_path %></li>
+		<li><%= link_to "Dev",   home_dev_path %></li>
+	  </ul>
+	</nav>
+  </div>
+</header>
+
+</head>
+	
+<body>
+<div align="center">
+<%= yield %>
+</div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<%= form_for(@mastery_info) do |f| %>
+  <% if @mastery_info.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@mastery_info.errors.count, "error") %> prohibited this mastery_info from being saved:</h2>
+
+      <ul>
+      <% @mastery_info.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :MASTERY_ID %><br>
+    <%= f.number_field :MASTERY_ID %>
+  </div>
+  <div class="field">
+    <%= f.label :MASTERY_TYPE %><br>
+    <%= f.text_area :MASTERY_TYPE %>
+  </div>
+  <div class="field">
+    <%= f.label :GRADE %><br>
+    <%= f.number_field :GRADE %>
+  </div>
+  <div class="field">
+    <%= f.label :NAME %><br>
+    <%= f.text_area :NAME %>
+  </div>
+  <div class="field">
+    <%= f.label :EXPLAIN %><br>
+    <%= f.text_area :EXPLAIN %>
+  </div>
+  <div class="field">
+    <%= f.label :MAX_LEVEL %><br>
+    <%= f.number_field :MAX_LEVEL %>
+  </div>
+  <div class="field">
+    <%= f.label :OPTION_ID %><br>
+    <%= f.text_area :OPTION_ID %>
+  </div>
+  <div class="field">
+    <%= f.label :OPTION_EFFECT %><br>
+    <%= f.text_area :OPTION_EFFECT %>
+  </div>
+  <div class="field">
+    <%= f.label :EFFECT_TARGET %><br>
+    <%= f.text_area :EFFECT_TARGET %>
+  </div>
+  <div class="field">
+    <%= f.label :PRE_LEVEL %><br>
+    <%= f.number_field :PRE_LEVEL %>
+  </div>
+  <div class="field">
+    <%= f.label :PRE_CONDITION %><br>
+    <%= f.number_field :PRE_CONDITION %>
+  </div>
+  <div class="field">
+    <%= f.label :ICON %><br>
+    <%= f.text_area :ICON %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

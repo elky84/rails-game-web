@@ -1,0 +1,2 @@
+module MonsterEnchantsHelper
+end

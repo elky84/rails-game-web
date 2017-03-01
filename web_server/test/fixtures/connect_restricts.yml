@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  CONNECT_RESTRICT_ID: 1
+  TYPE: MyText
+  VALUE: MyText
+
+two:
+  CONNECT_RESTRICT_ID: 1
+  TYPE: MyText
+  VALUE: MyText

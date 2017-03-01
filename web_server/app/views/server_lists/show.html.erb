@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Index:</strong>
+  <%= @server_list.INDEX %>
+</p>
+
+<p>
+  <strong>Server type:</strong>
+  <%= @server_list.SERVER_TYPE %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @server_list.ADDRESS %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @server_list.NAME %>
+</p>
+
+<p>
+  <strong>Cu:</strong>
+  <%= @server_list.CU %>
+</p>
+
+<p>
+  <strong>Ru:</strong>
+  <%= @server_list.RU %>
+</p>
+
+<%= link_to 'Edit', edit_server_list_path(@server_list) %> |
+<%= link_to 'Back', server_lists_path %>

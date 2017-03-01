@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  MASTERY_POINT: 1
+  PRICE_TYPE: MyText
+  PRICE: 1
+
+two:
+  MASTERY_POINT: 1
+  PRICE_TYPE: MyText
+  PRICE: 1

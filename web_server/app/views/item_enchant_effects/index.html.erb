@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Item Enchant Effects</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Item enchant effect id</th>
+      <th>Item category</th>
+      <th>Level</th>
+      <th>Grade</th>
+      <th>Enchant</th>
+      <th>Basic effect</th>
+      <th>Bonus effect</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @item_enchant_effects.each do |item_enchant_effect| %>
+      <tr>
+        <td><%= item_enchant_effect.ITEM_ENCHANT_EFFECT_ID %></td>
+        <td><%= item_enchant_effect.ITEM_CATEGORY %></td>
+        <td><%= item_enchant_effect.LEVEL %></td>
+        <td><%= item_enchant_effect.GRADE %></td>
+        <td><%= item_enchant_effect.ENCHANT %></td>
+        <td><%= item_enchant_effect.BASIC_EFFECT %></td>
+        <td><%= item_enchant_effect.BONUS_EFFECT %></td>
+        <td><%= link_to 'Show', item_enchant_effect %></td>
+        <td><%= link_to 'Edit', edit_item_enchant_effect_path(item_enchant_effect) %></td>
+        <td><%= link_to 'Destroy', item_enchant_effect, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Item enchant effect', new_item_enchant_effect_path %>

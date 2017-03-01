@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  ITEM_OPTION_ID: 1
+  OPTION_ID: 1
+  DESCRIPTION: MyText
+  GRADE: MyText
+  DETAIL_ID: 1
+  MIN: 1
+  MAX: 1
+
+two:
+  ITEM_OPTION_ID: 1
+  OPTION_ID: 1
+  DESCRIPTION: MyText
+  GRADE: MyText
+  DETAIL_ID: 1
+  MIN: 1
+  MAX: 1
