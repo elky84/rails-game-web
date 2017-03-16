@@ -4,10 +4,10 @@ REM excel_file_name, sheet_name, key, option, destination, web_address
 
 
 
-ruby -I "../../../GundamBase/SazabiExcel" "../../../GundamBase/SazabiExcel/ExcelReader.rb" "skill/reaction/28_REACTION_CAMERA_MOVE.xlsx" "REACTION_CAMERA_MOVE" "index" "unity|json"  "../../program"
+ruby -I "../../../gundam_base/SazabiExcel" "../../../gundam_base/SazabiExcel/ExcelReader.rb" "skill/reaction/28_REACTION_CAMERA_MOVE.xlsx" "REACTION_CAMERA_MOVE" "index" "unity|json"  "../../program"
 IF %errorlevel% NEQ 0 GOTO :error
 
-ruby -I "../../../GundamBase/SazabiExcel" "../../../GundamBase/SazabiExcel/ExcelReader.rb" "skill/reaction/29_REACTION_CAMERA_ZOOM.xlsx" "REACTION_CAMERA_ZOOM" "index" "unity|json"  "../../program"
+ruby -I "../../../gundam_base/SazabiExcel" "../../../gundam_base/SazabiExcel/ExcelReader.rb" "skill/reaction/29_REACTION_CAMERA_ZOOM.xlsx" "REACTION_CAMERA_ZOOM" "index" "unity|json"  "../../program"
 IF %errorlevel% NEQ 0 GOTO :error
 
 

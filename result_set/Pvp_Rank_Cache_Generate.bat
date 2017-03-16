@@ -3,7 +3,7 @@ REM excel_file_name, sheet_name, key, option, destination, web_address
 @echo off
 
 
-ruby -I "../../../GundamBase/SazabiExcel" "../../../GundamBase/SazabiExcel/ExcelReader.rb" "../schema/PVP_RANK_CACHE_INSTANCE.xlsx" "PVP_RANK_CACHE_INSTANCE" "PVP_RANK_CACHE_INSTANCE_NO" "json:parser:result_single" "../../program"
+ruby -I "../../../gundam_base/SazabiExcel" "../../../gundam_base/SazabiExcel/ExcelReader.rb" "../schema/PVP_RANK_CACHE_INSTANCE.xlsx" "PVP_RANK_CACHE_INSTANCE" "PVP_RANK_CACHE_INSTANCE_NO" "json:parser:result_single" "../../program"
 IF %errorlevel% NEQ 0 GOTO :error
 
 GOTO :end

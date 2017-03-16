@@ -10,7 +10,7 @@ set ID=admin
 set PASSWORD=lv999ftp
 
 
-ruby -I "../../../GundamBase/SazabiExcel" "../../../GundamBase/SazabiExcel/ExcelReader.rb" "sound_list.xlsx" "SOUND_LIST" "INDEX" "json:patchdata" "../../program" "Android"
+ruby -I "../../../gundam_base/SazabiExcel" "../../../gundam_base/SazabiExcel/ExcelReader.rb" "sound_list.xlsx" "SOUND_LIST" "INDEX" "json:patchdata" "../../program" "Android"
 IF %errorlevel% NEQ 0 GOTO :error
 
 ruby sound_Patch.rb %VERSION% %IP% %PORT% %ID% %PASSWORD% Android "Sound\\Clip\\Area\\"

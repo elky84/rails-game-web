@@ -3,15 +3,15 @@ REM excel_file_name, sheet_name, key, option, destination, web_address
 @echo off
 
 set VERSION=Dev
-set IP=lv999.net
+set IP=elky.ddns.net
 set PORT=21
 set ID=admin
 set PASSWORD=lv999ftp
 
-ruby -I "../../../GundamBase/SazabiExcel" "../../../GundamBase/SazabiExcel/ExcelReader.rb" "texture_list.xlsx" "TEXTURE_LIST" "INDEX" "json:patchdata" "../../program" "Android"
+ruby -I "../../../gundam_base/SazabiExcel" "../../../gundam_base/SazabiExcel/ExcelReader.rb" "texture_list.xlsx" "TEXTURE_LIST" "INDEX" "json:patchdata" "../../program" "Android"
 IF %errorlevel% NEQ 0 GOTO :error
 
-ruby -I "../../../GundamBase/SazabiExcel" "../../../GundamBase/SazabiExcel/ExcelReader.rb" "texture_list.xlsx" "ALPHA_TEXTURE_LIST" "INDEX" "json:patchdata" "../../program" "Android"
+ruby -I "../../../gundam_base/SazabiExcel" "../../../gundam_base/SazabiExcel/ExcelReader.rb" "texture_list.xlsx" "ALPHA_TEXTURE_LIST" "INDEX" "json:patchdata" "../../program" "Android"
 IF %errorlevel% NEQ 0 GOTO :error
 
 ruby texture_Patch.rb %VERSION% %IP% %PORT% %ID% %PASSWORD% Android "UI\\Textures\\Equipments\\"

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export WORKING=$WORKSPACE/GundamBase
+export WORKING=$WORKSPACE/gundam_base
 export SRC=$WORKSPACE/Sunbee/web/patch
 export OUTPUT=/Users/radicham/Library/Application\ Support/RadicalChamber/Sunbee
 

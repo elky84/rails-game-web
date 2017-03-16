@@ -3,13 +3,13 @@ REM excel_file_name, sheet_name, key, option, destination, web_address
 @echo off
 
 set VERSION=Dev
-set IP=lv999.net
+set IP=elky.ddns.net
 set PORT=21
 set ID=admin
 set PASSWORD=lv999ftp
 
 
-ruby -I "../../../GundamBase/SazabiExcel" "../../../GundamBase/SazabiExcel/ExcelReader.rb" "sound_list.xlsx" "SOUND_LIST" "INDEX" "json:patchdata" "../../program" "PC"
+ruby -I "../../../gundam_base/SazabiExcel" "../../../gundam_base/SazabiExcel/ExcelReader.rb" "sound_list.xlsx" "SOUND_LIST" "INDEX" "json:patchdata" "../../program" "PC"
 IF %errorlevel% NEQ 0 GOTO :error
 
 ruby sound_Patch.rb %VERSION% %IP% %PORT% %ID% %PASSWORD% PC "Sound\\Clip\\Area\\"

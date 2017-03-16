@@ -42,13 +42,13 @@ namespace web_test_tool
             {
                 ++execute_count;
             }
-            ExecuteCommandSync("ruby -I ../../../../GundamBase/SazabiExcel ../../../../GundamBase/SazabiExcel/ExcelReader.rb data/SCRIPT_LIST.xlsx SCRIPT_LIST INDEX json:file " + AppDomain.CurrentDomain.BaseDirectory + "data");
+            ExecuteCommandSync("ruby -I ../../../../gundam_base/SazabiExcel ../../../../gundam_base/SazabiExcel/ExcelReader.rb data/SCRIPT_LIST.xlsx SCRIPT_LIST INDEX json:file " + AppDomain.CurrentDomain.BaseDirectory + "data");
 
             lock (lockObject)
             {
                 ++execute_count;
             }
-            ExecuteCommandSync("ruby -I ../../../../GundamBase/SazabiExcel ../../../../GundamBase/SazabiExcel/ExcelReader.rb data/SERVER_LIST.xlsx SERVER_LIST INDEX json:file " + AppDomain.CurrentDomain.BaseDirectory + "data");
+            ExecuteCommandSync("ruby -I ../../../../gundam_base/SazabiExcel ../../../../gundam_base/SazabiExcel/ExcelReader.rb data/SERVER_LIST.xlsx SERVER_LIST INDEX json:file " + AppDomain.CurrentDomain.BaseDirectory + "data");
 
             set_script_list();
 
