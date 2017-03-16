@@ -1,7 +1,7 @@
 class CreateVersionInstances < ActiveRecord::Migration
   def change
     create_table :version_instances do |t|
-      t.text :VALUE
+      t.string :VALUE
       t.text :EXPLAIN
 
       t.timestamps
