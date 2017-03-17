@@ -26,11 +26,11 @@ module Admin
       if Rails.env.development?
         return true
       else
-        if "106.251.53.134" != @remote_ip && "211.192.197.103" != @remote_ip && @remote_ip[0, 8] != "192.168."
-          logger.error("invalid ip. remote_ip: " + @remote_ip)
-          head(403)
-          return false
-        end    
+        #if "106.251.53.134" != @remote_ip && "211.192.197.103" != @remote_ip && @remote_ip[0, 8] != "192.168."
+        #  logger.error("invalid ip. remote_ip: " + @remote_ip)
+        #  head(403)
+        #  return false
+        #end    
       end       
       return true
     end   
