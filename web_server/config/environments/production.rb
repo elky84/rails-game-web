@@ -78,7 +78,7 @@ Rails.application.configure do
   require 'log4r'
   require 'log4r/yamlconfigurator'
   require 'easy_log4r'
-  Log4r::YamlConfigurator.load_yaml_file(File.expand_path('../../log4r.yml', __FILE__))
+  Log4r::YamlConfigurator.load_yaml_file(File.expand_path('../log4r.yml', __FILE__))
   
   config.cache_store = :redis_store, 'redis://127.0.0.1:6379/0/cache', { expires_in: 90.minutes }
 
