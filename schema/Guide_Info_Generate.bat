@@ -3,7 +3,7 @@ REM excel_file_name, sheet_name, key, option, destination, web_address
 @echo off
 
 
-ruby -I "../../../gundam_base/SazabiExcel" "../../../gundam_base/SazabiExcel/ExcelReader.rb" "GUIDE_INFO.xlsx" "GUIDE_INFO" "INDEX" "unity|json"  "../../program"
+ruby -I "../../gundam_base/SazabiExcel" "../../gundam_base/SazabiExcel/ExcelReader.rb" "GUIDE_INFO.xlsx" "GUIDE_INFO" "INDEX" "unity|json"  "../../program"
 IF %errorlevel% NEQ 0 GOTO :error
 
 GOTO :end

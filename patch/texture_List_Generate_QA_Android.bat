@@ -8,10 +8,10 @@ set PORT=30021
 set ID=admin
 set PASSWORD=lv999ftp
 
-ruby -I "../../../gundam_base/SazabiExcel" "../../../gundam_base/SazabiExcel/ExcelReader.rb" "texture_list.xlsx" "TEXTURE_LIST" "INDEX" "json:patchdata" "../../program" "Android"
+ruby -I "../../gundam_base/SazabiExcel" "../../gundam_base/SazabiExcel/ExcelReader.rb" "texture_list.xlsx" "TEXTURE_LIST" "INDEX" "json:patchdata" "../../program" "Android"
 IF %errorlevel% NEQ 0 GOTO :error
 
-ruby -I "../../../gundam_base/SazabiExcel" "../../../gundam_base/SazabiExcel/ExcelReader.rb" "texture_list.xlsx" "ALPHA_TEXTURE_LIST" "INDEX" "json:patchdata" "../../program" "Android"
+ruby -I "../../gundam_base/SazabiExcel" "../../gundam_base/SazabiExcel/ExcelReader.rb" "texture_list.xlsx" "ALPHA_TEXTURE_LIST" "INDEX" "json:patchdata" "../../program" "Android"
 IF %errorlevel% NEQ 0 GOTO :error
 
 ruby texture_Patch.rb %VERSION% %IP% %PORT% %ID% %PASSWORD% Android "UI\\Textures\\Equipments\\"

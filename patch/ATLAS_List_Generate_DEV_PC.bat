@@ -8,7 +8,7 @@ set PORT=21
 set ID=admin
 set PASSWORD=lv999ftp
 
-ruby -I "../../../gundam_base/SazabiExcel" "../../../gundam_base/SazabiExcel/ExcelReader.rb" "atlas_list.xlsx" "ATLAS_LIST" "INDEX" "json:patchdata" "" "PC"
+ruby -I "../../gundam_base/SazabiExcel" "../../gundam_base/SazabiExcel/ExcelReader.rb" "atlas_list.xlsx" "ATLAS_LIST" "INDEX" "json:patchdata" "" "PC"
 IF %errorlevel% NEQ 0 GOTO :error
 
 ruby ATLAS_Patch.rb %VERSION% %IP% %PORT% %ID% %PASSWORD% PC

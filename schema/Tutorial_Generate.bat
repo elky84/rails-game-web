@@ -2,10 +2,10 @@ REM 파라미터 순서
 REM excel_file_name, sheet_name, key, option, destination, web_address
 @echo off
 
-ruby -I "../../../gundam_base/SazabiExcel" "../../../gundam_base/SazabiExcel/ExcelReader.rb" "TUTORIAL.xlsx" "TUTORIAL" "TUTORIAL_ID" "unity|json"  "../../program"
+ruby -I "../../gundam_base/SazabiExcel" "../../gundam_base/SazabiExcel/ExcelReader.rb" "TUTORIAL.xlsx" "TUTORIAL" "TUTORIAL_ID" "unity|json"  "../../program"
 IF %errorlevel% NEQ 0 GOTO :error
 
-ruby -I "../../../gundam_base/SazabiExcel" "../../../gundam_base/SazabiExcel/ExcelReader.rb" "TUTORIAL_INSTANCE.xlsx" "TUTORIAL_INSTANCE" "TUTORIAL_NO" "rails_scaffold|unity"  "../../program"
+ruby -I "../../gundam_base/SazabiExcel" "../../gundam_base/SazabiExcel/ExcelReader.rb" "TUTORIAL_INSTANCE.xlsx" "TUTORIAL_INSTANCE" "TUTORIAL_NO" "rails_scaffold|unity"  "../../program"
 IF %errorlevel% NEQ 0 GOTO :error
 
 GOTO :end

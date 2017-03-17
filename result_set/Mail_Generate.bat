@@ -3,7 +3,7 @@ REM excel_file_name, sheet_name, key, option, destination, web_address
 @echo off
 
 
-ruby -I "../../../gundam_base/SazabiExcel" "../../../gundam_base/SazabiExcel/ExcelReader.rb" "../schema/MAIL_INSTANCE.xlsx" "MAIL_INSTANCE" "MAIL_NO" "json:parser:result_single" "../../program"
+ruby -I "../../gundam_base/SazabiExcel" "../../gundam_base/SazabiExcel/ExcelReader.rb" "../schema/MAIL_INSTANCE.xlsx" "MAIL_INSTANCE" "MAIL_NO" "json:parser:result_single" "../../program"
 IF %errorlevel% NEQ 0 GOTO :error
 
 GOTO :end

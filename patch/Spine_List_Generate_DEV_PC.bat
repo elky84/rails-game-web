@@ -9,7 +9,7 @@ set ID=admin
 set PASSWORD=lv999ftp
 
 
-ruby -I "../../../gundam_base/SazabiExcel" "../../../gundam_base/SazabiExcel/ExcelReader.rb" "spine_list.xlsx" "SPINE_LIST" "INDEX" "json:patchdata" "../../program" "PC"
+ruby -I "../../gundam_base/SazabiExcel" "../../gundam_base/SazabiExcel/ExcelReader.rb" "spine_list.xlsx" "SPINE_LIST" "INDEX" "json:patchdata" "../../program" "PC"
 IF %errorlevel% NEQ 0 GOTO :error
 
 ruby spine_Patch.rb %VERSION% %IP% %PORT% %ID% %PASSWORD% PC

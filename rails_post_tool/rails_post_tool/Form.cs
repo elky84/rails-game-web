@@ -44,13 +44,13 @@ namespace rails_post_tool
             {
                 ++execute_count;
             }
-            ExecuteCommandSync("ruby -I ../../../../gundam_base/SazabiExcel ../../../../gundam_base/SazabiExcel/ExcelReader.rb data/EXCEL_LIST.xlsx EXCEL_LIST INDEX json:file " + AppDomain.CurrentDomain.BaseDirectory + "data");
+            ExecuteCommandSync("ruby -I ../../../gundam_base/SazabiExcel ../../../gundam_base/SazabiExcel/ExcelReader.rb data/EXCEL_LIST.xlsx EXCEL_LIST INDEX json:file " + AppDomain.CurrentDomain.BaseDirectory + "data");
 
             lock (lockObject)
             {
                 ++execute_count;
             }
-            ExecuteCommandSync("ruby -I ../../../../gundam_base/SazabiExcel ../../../../gundam_base/SazabiExcel/ExcelReader.rb data/SERVER_LIST.xlsx SERVER_LIST INDEX json:file " + AppDomain.CurrentDomain.BaseDirectory + "data");
+            ExecuteCommandSync("ruby -I ../../../gundam_base/SazabiExcel ../../../gundam_base/SazabiExcel/ExcelReader.rb data/SERVER_LIST.xlsx SERVER_LIST INDEX json:file " + AppDomain.CurrentDomain.BaseDirectory + "data");
 
             set_excel_list();
 
@@ -196,7 +196,7 @@ namespace rails_post_tool
                 ++execute_count;
             }
 
-            string cmd = "ruby -I ../../../../gundam_base/SazabiExcel ../../../../gundam_base/SazabiExcel/ExcelReader.rb " + dest + file + ".xlsx " + excel + " " + index + " rails_post:" + address;
+            string cmd = "ruby -I ../../../gundam_base/SazabiExcel ../../../gundam_base/SazabiExcel/ExcelReader.rb " + dest + file + ".xlsx " + excel + " " + index + " rails_post:" + address;
             ExecuteCommandAsync(cmd);
         }
 

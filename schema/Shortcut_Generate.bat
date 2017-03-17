@@ -1,6 +1,6 @@
 @echo off
 
-ruby -I "../../../gundam_base/SazabiExcel" "../../../gundam_base/SazabiExcel/ExcelReader.rb" "SHORT_CUT.xlsx" "SHORT_CUT" "SHORT_CUT_ID" "unity|json" "../../program"  "../../program"
+ruby -I "../../gundam_base/SazabiExcel" "../../gundam_base/SazabiExcel/ExcelReader.rb" "SHORT_CUT.xlsx" "SHORT_CUT" "SHORT_CUT_ID" "unity|json" "../../program"  "../../program"
 IF %errorlevel% NEQ 0 GOTO :error
 
 

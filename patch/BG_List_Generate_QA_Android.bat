@@ -9,7 +9,7 @@ set PORT=30021
 set ID=admin
 set PASSWORD=lv999ftp
 
-ruby -I "../../../gundam_base/SazabiExcel" "../../../gundam_base/SazabiExcel/ExcelReader.rb" "BG_list.xlsx" "BG_LIST" "INDEX" "json:patchdata" "" "Android"
+ruby -I "../../gundam_base/SazabiExcel" "../../gundam_base/SazabiExcel/ExcelReader.rb" "BG_list.xlsx" "BG_LIST" "INDEX" "json:patchdata" "" "Android"
 IF %errorlevel% NEQ 0 GOTO :error
 
 ruby BG_Patch.rb %VERSION% %IP% %PORT% %ID% %PASSWORD% Android

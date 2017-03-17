@@ -9,7 +9,7 @@ set ID=admin
 set PASSWORD=lv999ftp
 
 
-ruby -I "../../../gundam_base/SazabiExcel" "../../../gundam_base/SazabiExcel/ExcelReader.rb" "effect_list.xlsx" "EFFECT_LIST" "INDEX" "json:patchdata" "" "PC"
+ruby -I "../../gundam_base/SazabiExcel" "../../gundam_base/SazabiExcel/ExcelReader.rb" "effect_list.xlsx" "EFFECT_LIST" "INDEX" "json:patchdata" "" "PC"
 IF %errorlevel% NEQ 0 GOTO :error
 
 ruby EFFECT_Patch.rb %VERSION% %IP% %PORT% %ID% %PASSWORD% PC

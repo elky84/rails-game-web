@@ -3,7 +3,7 @@ REM excel_file_name, sheet_name, key, option, destination, web_address
 @echo off
 
 
-ruby -I "../../../gundam_base/SazabiExcel" "../../../gundam_base/SazabiExcel/ExcelReader.rb" "STATUS.xlsx" "STATUS" "STATUS_ID" "rails_scaffold|unity|json"  "../../program"
+ruby -I "../../gundam_base/SazabiExcel" "../../gundam_base/SazabiExcel/ExcelReader.rb" "STATUS.xlsx" "STATUS" "STATUS_ID" "rails_scaffold|unity|json"  "../../program"
 IF %errorlevel% NEQ 0 GOTO :error
 
 

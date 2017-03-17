@@ -9,7 +9,7 @@ set PORT=30021
 set ID=admin
 set PASSWORD=lv999ftp
 
-ruby -I "../../../gundam_base/SazabiExcel" "../../../gundam_base/SazabiExcel/ExcelReader.rb" "JSON_LIST.xlsx" "LIST" "INDEX" "json:patchdata"
+ruby -I "../../gundam_base/SazabiExcel" "../../gundam_base/SazabiExcel/ExcelReader.rb" "JSON_LIST.xlsx" "LIST" "INDEX" "json:patchdata"
 IF %errorlevel% NEQ 0 GOTO :error
 
 ruby JSON_Patch.rb %VERSION% %IP% %PORT% %ID% %PASSWORD%
