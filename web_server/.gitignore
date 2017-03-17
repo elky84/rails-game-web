@@ -18,3 +18,9 @@
 
 # ignore schema file
 schema.rb
+
+# ignore precompile files
+/public/assets
+
+# ignore vscode file
+/.vscode

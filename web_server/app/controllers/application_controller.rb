@@ -105,8 +105,12 @@ class ApplicationController < ActionController::Base
         return @nextid['seq'] + 1
       end
     else
-      @nextid = ActiveRecord::Base.connection.execute("select nextval('#{table}_id_seq')").first
-      return @nextid['nextval']
+      @nextid = ActiveRecord::Base.connection.execute("select max(id)+1 from #{table}").first
+      if @nextid == [nil]
+        return 1
+      else
+        return @nextid[0]
+      end
     end
   end
   
