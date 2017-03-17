@@ -16,21 +16,21 @@ namespace rails_post_tool
 {
     public partial class Form : System.Windows.Forms.Form
     {
-        Dictionary<string, Tuple<string, string> > dic_excel = new Dictionary<string, Tuple<string, string>>();
+        readonly Dictionary<string, Tuple<string, string> > _dicExcel = new Dictionary<string, Tuple<string, string>>();
 
-        Dictionary<string, string> dic_server = new Dictionary<string, string>();
+        readonly Dictionary<string, string> _dicServer = new Dictionary<string, string>();
 
-        string destination;
+        private string _destination;
 
-        int execute_count = 0;
-        private object lockObject = new object();
+        int _executeCount = 0;
+        private readonly object _lockObject = new object();
 
         public Form()
         {
             InitializeComponent();
 
             NativeMethods.AllocConsole();
-            Console.WriteLine("Debug Console");
+            Console.WriteLine(@"Debug Console");
         }
 
         ~Form()
@@ -40,15 +40,15 @@ namespace rails_post_tool
 
         private void Form_Load(object sender, EventArgs e)
         {
-            lock (lockObject)
+            lock (_lockObject)
             {
-                ++execute_count;
+                ++_executeCount;
             }
             ExecuteCommandSync("ruby -I ../../../gundam_base/SazabiExcel ../../../gundam_base/SazabiExcel/ExcelReader.rb data/EXCEL_LIST.xlsx EXCEL_LIST INDEX json:file " + AppDomain.CurrentDomain.BaseDirectory + "data");
 
-            lock (lockObject)
+            lock (_lockObject)
             {
-                ++execute_count;
+                ++_executeCount;
             }
             ExecuteCommandSync("ruby -I ../../../gundam_base/SazabiExcel ../../../gundam_base/SazabiExcel/ExcelReader.rb data/SERVER_LIST.xlsx SERVER_LIST INDEX json:file " + AppDomain.CurrentDomain.BaseDirectory + "data");
 
@@ -60,29 +60,29 @@ namespace rails_post_tool
 
         private void set_excel_list()
         {
-            string text = System.IO.File.ReadAllText("data/EXCEL_LIST.json");
+            var text = System.IO.File.ReadAllText("data/EXCEL_LIST.json");
 
-            JObject obj = JObject.Parse(text);
+            var obj = JObject.Parse(text);
 
             foreach (var x in obj)
             {
-                string name = x.Key;
-                JToken value = x.Value;
+                var name = x.Key;
+                var value = x.Value;
 
                 var itemObj = value;
-                string excel = itemObj[1].ToString().Trim();
-                string key = itemObj[2].ToString().Trim();
+                var excel = itemObj[1].ToString().Trim();
+                var key = itemObj[2].ToString().Trim();
                 add_excel(excel, excel, key);
             }
         }
 
         public bool add_excel(string file, string excel, string index)
         {
-            dic_excel.Add(excel, Tuple.Create<string, string>(index, file));
+            _dicExcel.Add(excel, Tuple.Create<string, string>(index, file));
 
             if (true == listbox_excel.Items.Contains(excel))
             {
-                MessageBox.Show("duplicated excel file. " + excel);
+                MessageBox.Show(@"duplicated excel file. " + excel);
                 return false;
             }
 
@@ -92,19 +92,19 @@ namespace rails_post_tool
 
         private void set_server_list()
         {
-            string text = System.IO.File.ReadAllText("data/SERVER_LIST.json");
+            var text = System.IO.File.ReadAllText("data/SERVER_LIST.json");
 
-            JObject obj = JObject.Parse(text);
+            var obj = JObject.Parse(text);
 
             foreach (var x in obj)
             {
-                string name = x.Key;
-                JToken value = x.Value;
+                var name = x.Key;
+                var value = x.Value;
 
                 var itemObj = value;
-                string address = itemObj[2].ToString();
-                string server_name = itemObj[3].ToString();
-                dic_server.Add(server_name, address);
+                var address = itemObj[2].ToString();
+                var server_name = itemObj[3].ToString();
+                _dicServer.Add(server_name, address);
 
                 if (true == comboBox_Destination.Items.Contains(server_name))
                 {
@@ -120,7 +120,7 @@ namespace rails_post_tool
 
         private void button_none_Click(object sender, EventArgs e)
         {
-            for (int i = 0; i < listbox_excel.Items.Count; ++i)
+            for (var i = 0; i < listbox_excel.Items.Count; ++i)
             {
                 if (listbox_excel.GetItemChecked(i))
                 {
@@ -133,7 +133,7 @@ namespace rails_post_tool
 
         private void button_all_Click(object sender, EventArgs e)
         {
-            for (int i = 0; i < listbox_excel.Items.Count; ++i)
+            for (var i = 0; i < listbox_excel.Items.Count; ++i)
             {
                 listbox_excel.SetItemChecked(i, true);
             }
@@ -143,26 +143,26 @@ namespace rails_post_tool
 
         private void button_run_Click(object sender, EventArgs e)
         {
-            if( false == dic_server.ContainsKey(destination))
+            if( false == _dicServer.ContainsKey(_destination))
             {
-                MessageBox.Show("invalid destination. " + destination);
+                MessageBox.Show("invalid destination. " + _destination);
                 return;
             }
 
-            string address = dic_server[destination];
+            var address = _dicServer[_destination];
 
-            for (int i = 0; i < listbox_excel.Items.Count; ++i)
+            for (var i = 0; i < listbox_excel.Items.Count; ++i)
             {
                 if (listbox_excel.GetItemChecked(i))
                 {
-                    string excel = listbox_excel.Items[i].ToString();
-                    if( false == dic_excel.ContainsKey(excel))
+                    var excel = listbox_excel.Items[i].ToString();
+                    if( false == _dicExcel.ContainsKey(excel))
                     {
                         MessageBox.Show("invalid excel name. " + excel);
                         return;
                     }
 
-                    Tuple<string, string> tuple = dic_excel[excel];
+                    var tuple = _dicExcel[excel];
 
                     execute_async(tuple.Item2, excel, "../../schema/", tuple.Item1, address);
                 }
@@ -170,14 +170,14 @@ namespace rails_post_tool
 
             if (true == checkBox_include_SERVER_LIST.Checked)
             {
-                execute_async("SERVER_LIST_" + destination, "SERVER_LIST", "./data/", "INDEX", address);
+                execute_async("SERVER_LIST_" + _destination, "SERVER_LIST", "./data/", "INDEX", address);
             }
 
             while(true)
             {
-                lock (lockObject)
+                lock (_lockObject)
                 {
-                    if(execute_count <= 0)
+                    if(_executeCount <= 0)
                     {
                         break;
                     }
@@ -185,18 +185,18 @@ namespace rails_post_tool
                 }
             }
 
-            MessageBox.Show("Rails Post Completed");
+            MessageBox.Show(@"Rails Post Completed");
 
         }
 
         void execute_async(string file, string excel, string dest, string index, string address)
         {
-            lock (lockObject)
+            lock (_lockObject)
             {
-                ++execute_count;
+                ++_executeCount;
             }
 
-            string cmd = "ruby -I ../../../gundam_base/SazabiExcel ../../../gundam_base/SazabiExcel/ExcelReader.rb " + dest + file + ".xlsx " + excel + " " + index + " rails_post:" + address;
+            var cmd = "ruby -I ../../../gundam_base/SazabiExcel ../../../gundam_base/SazabiExcel/ExcelReader.rb " + dest + file + ".xlsx " + excel + " " + index + " rails_post:" + address;
             ExecuteCommandAsync(cmd);
         }
 
@@ -204,7 +204,7 @@ namespace rails_post_tool
         {
             try
             {
-                Console.WriteLine("execute: " + command);
+                Console.WriteLine(@"execute: " + command);
 
                 // create the ProcessStartInfo using "cmd" as the program to be run,
                 // and "/c " as the parameters.
@@ -219,21 +219,23 @@ namespace rails_post_tool
                 // Do not create the black window.
                 procStartInfo.CreateNoWindow = true;
                 // Now we create a process, assign its ProcessStartInfo and start it
-                System.Diagnostics.Process proc = new System.Diagnostics.Process();
-                proc.StartInfo = procStartInfo;
+                System.Diagnostics.Process proc = new System.Diagnostics.Process {StartInfo = procStartInfo};
                 proc.Start();
 
-                proc.WaitForExit();
+                while (proc.HasExited)
+                {
+                    Thread.Sleep(1);
+                }
 
                 // Get the output into a string
-                string result = proc.StandardOutput.ReadToEnd();
+                var result = proc.StandardOutput.ReadToEnd();
 
                 // Display the command output.
-                Console.WriteLine("shell execute result : " + result);
+                Console.WriteLine(@"shell execute result : " + result);
 
-                lock (lockObject)
+                lock (_lockObject)
                 {
-                    --execute_count;
+                    --_executeCount;
                 }
             }
             catch (Exception objException)
@@ -248,11 +250,13 @@ namespace rails_post_tool
             try
             {
                 //Asynchronously start the Thread to process the Execute command request.
-                Thread objThread = new Thread(new ParameterizedThreadStart(ExecuteCommandSync));
+                var objThread = new Thread(new ParameterizedThreadStart(ExecuteCommandSync))
+                {
+                    IsBackground = true,
+                    Priority = ThreadPriority.AboveNormal
+                };
                 //Make the thread as background thread.
-                objThread.IsBackground = true;
                 //Set the Priority of the thread.
-                objThread.Priority = ThreadPriority.AboveNormal;
                 //Start the thread.
                 objThread.Start(command);
             }
@@ -274,15 +278,15 @@ namespace rails_post_tool
         {
             if ( comboBox_Destination.SelectedIndex >= 0)
             {
-                this.destination = comboBox_Destination.SelectedItem as string;
+                this._destination = comboBox_Destination.SelectedItem as string;
 
-                if (false == dic_server.ContainsKey(destination))
+                if (false == _dicServer.ContainsKey(_destination))
                 {
-                    MessageBox.Show("invalid destination. " + destination);
+                    MessageBox.Show(@"invalid destination. " + _destination);
                     return;
                 }
 
-                string address = dic_server[destination];
+                string address = _dicServer[_destination];
                 label_address_content.Text = address;
             }
         }
