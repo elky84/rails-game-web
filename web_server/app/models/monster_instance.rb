@@ -3,7 +3,7 @@ class MonsterInstance < ActiveRecord::Base
     if Rails.env.development?
       where("MONSTER_NO = ?", "#{search}")
     else
-      where("\"MONSTER_NO\" = ?", "#{search}")
+      where("`MONSTER_NO` = ?", "#{search}")
     end 
   end
 end

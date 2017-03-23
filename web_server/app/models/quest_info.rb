@@ -3,7 +3,7 @@ class QuestInfo < ActiveRecord::Base
     if Rails.env.development?
       where("QUEST_INFO_ID = ?", "#{search}")
     else
-      where("\"QUEST_INFO_ID\" = ?", "#{search}")
+      where("`QUEST_INFO_ID` = ?", "#{search}")
     end 
   end
 end

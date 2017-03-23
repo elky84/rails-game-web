@@ -3,7 +3,7 @@ class PhaseInfo < ActiveRecord::Base
     if Rails.env.development?
       where("PHASE_ID = ?", "#{search}")
     else
-      where("\"PHASE_ID\" = ?", "#{search}")
+      where("`PHASE_ID` = ?", "#{search}")
     end 
   end
 end

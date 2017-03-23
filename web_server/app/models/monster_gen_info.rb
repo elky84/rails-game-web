@@ -3,7 +3,7 @@ class MonsterGenInfo < ActiveRecord::Base
     if Rails.env.development?
       where("INDEX = ?", "#{search}")
     else
-      where("\"INDEX\" = ?", "#{search}")
+      where("`INDEX` = ?", "#{search}")
     end 
   end
 end

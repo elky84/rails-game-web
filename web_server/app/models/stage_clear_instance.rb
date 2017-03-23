@@ -3,7 +3,7 @@ class StageClearInstance < ActiveRecord::Base
     if Rails.env.development?
       where("CHARACTER_NO = ?", "#{search}")
     else
-      where("\"CHARACTER_NO\" = ?", "#{search}")
+      where("`CHARACTER_NO` = ?", "#{search}")
     end 
   end
 end

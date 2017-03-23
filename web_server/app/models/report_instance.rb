@@ -3,7 +3,7 @@ class ReportInstance < ActiveRecord::Base
     if Rails.env.development?
       where("REPORT_NO = ?", "#{search}")
     else
-      where("\"REPORT_NO\" = ?", "#{search}")
+      where("`REPORT_NO` = ?", "#{search}")
     end 
   end
 end

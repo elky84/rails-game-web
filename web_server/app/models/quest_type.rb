@@ -3,7 +3,7 @@ class QuestType < ActiveRecord::Base
     if Rails.env.development?
       where("QUEST_TYPE_ID = ?", "#{search}")
     else
-      where("\"QUEST_TYPE_ID\" = ?", "#{search}")
+      where("`QUEST_TYPE_ID` = ?", "#{search}")
     end 
   end
 end

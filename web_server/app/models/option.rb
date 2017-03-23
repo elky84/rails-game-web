@@ -3,7 +3,7 @@ class Option < ActiveRecord::Base
     if Rails.env.development?
       where("OPTION_ID = ?", "#{search}")
     else
-      where("\"OPTION_ID\" = ?", "#{search}")
+      where("`OPTION_ID` = ?", "#{search}")
     end 
   end
 end

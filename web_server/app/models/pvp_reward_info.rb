@@ -3,7 +3,7 @@ class PvpRewardInfo < ActiveRecord::Base
     if Rails.env.development?
       where("PVP_REWARD_ID = ?", "#{search}")
     else
-      where("\"PVP_REWARD_ID\" = ?", "#{search}")
+      where("`PVP_REWARD_ID` = ?", "#{search}")
     end 
   end
 end

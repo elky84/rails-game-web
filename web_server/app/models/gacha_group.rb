@@ -3,7 +3,7 @@ class GachaGroup < ActiveRecord::Base
     if Rails.env.development?
       where("GACHA_GROUP_ID = ?", "#{search}")
     else
-      where("\"GACHA_GROUP_ID\" = ?", "#{search}")
+      where("`GACHA_GROUP_ID` = ?", "#{search}")
     end 
   end
 end

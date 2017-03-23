@@ -3,7 +3,7 @@ class Parameter < ActiveRecord::Base
     if Rails.env.development?
       where("PARAMETER_ID = ?", "#{search}")
     else
-      where("\"PARAMETER_ID\" = ?", "#{search}")
+      where("`PARAMETER_ID` = ?", "#{search}")
     end 
   end
 end

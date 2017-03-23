@@ -3,7 +3,7 @@ class PvpRange < ActiveRecord::Base
     if Rails.env.development?
       where("PVP_RANGE_ID = ?", "#{search}")
     else
-      where("\"PVP_RANGE_ID\" = ?", "#{search}")
+      where("`PVP_RANGE_ID` = ?", "#{search}")
     end 
   end
 end

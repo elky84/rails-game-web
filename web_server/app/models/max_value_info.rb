@@ -3,7 +3,7 @@ class MaxValueInfo < ActiveRecord::Base
     if Rails.env.development?
       where("MAX_VALUE_ID = ?", "#{search}")
     else
-      where("\"MAX_VALUE_ID\" = ?", "#{search}")
+      where("`MAX_VALUE_ID` = ?", "#{search}")
     end 
   end
 end

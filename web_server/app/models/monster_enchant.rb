@@ -3,7 +3,7 @@ class MonsterEnchant < ActiveRecord::Base
     if Rails.env.development?
       where("MONSTER_ENCHANT_ID = ?", "#{search}")
     else
-      where("\"MONSTER_ENCHANT_ID\" = ?", "#{search}")
+      where("`MONSTER_ENCHANT_ID` = ?", "#{search}")
     end 
   end
 end

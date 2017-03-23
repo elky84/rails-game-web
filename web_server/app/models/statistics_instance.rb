@@ -3,7 +3,7 @@ class StatisticsInstance < ActiveRecord::Base
     if Rails.env.development?
       where("STATISTICS_NO = ?", "#{search}")
     else
-      where("\"STATISTICS_NO\" = ?", "#{search}")
+      where("`STATISTICS_NO` = ?", "#{search}")
     end 
   end
 end

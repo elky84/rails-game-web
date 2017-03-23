@@ -3,7 +3,7 @@ class Status < ActiveRecord::Base
     if Rails.env.development?
       where("STATUS_ID = ?", "#{search}")
     else
-      where("\"STATUS_ID\" = ?", "#{search}")
+      where("`STATUS_ID` = ?", "#{search}")
     end 
   end
 end

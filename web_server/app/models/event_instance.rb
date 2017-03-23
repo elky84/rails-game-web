@@ -3,7 +3,7 @@ class EventInstance < ActiveRecord::Base
     if Rails.env.development?
       where("EVENT_NO = ?", "#{search}")
     else
-      where("\"EVENT_NO\" = ?", "#{search}")
+      where("`EVENT_NO` = ?", "#{search}")
     end 
   end
 end

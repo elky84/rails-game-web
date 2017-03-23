@@ -3,7 +3,7 @@ class StageInstance < ActiveRecord::Base
     if Rails.env.development?
       where("STAGE_PROGRESS_NO = ?", "#{search}")
     else
-      where("\"STAGE_PROGRESS_NO\" = ?", "#{search}")
+      where("`STAGE_PROGRESS_NO` = ?", "#{search}")
     end 
   end
 end

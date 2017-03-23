@@ -3,7 +3,7 @@ class TutorialInstance < ActiveRecord::Base
     if Rails.env.development?
       where("TUTORIAL_NO = ?", "#{search}")
     else
-      where("\"TUTORIAL_NO\" = ?", "#{search}")
+      where("`TUTORIAL_NO` = ?", "#{search}")
     end 
   end
 end

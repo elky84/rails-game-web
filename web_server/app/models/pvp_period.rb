@@ -3,7 +3,7 @@ class PvpPeriod < ActiveRecord::Base
     if Rails.env.development?
       where("PVP_PERIOD_ID = ?", "#{search}")
     else
-      where("\"PVP_PERIOD_ID\" = ?", "#{search}")
+      where("`PVP_PERIOD_ID` = ?", "#{search}")
     end 
   end
 end

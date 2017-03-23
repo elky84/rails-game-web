@@ -3,7 +3,7 @@ class PvpRecordInstance < ActiveRecord::Base
     if Rails.env.development?
       where("PVP_RECORD_INSTANCE_NO = ?", "#{search}")
     else
-      where("\"PVP_RECORD_INSTANCE_NO\" = ?", "#{search}")
+      where("`PVP_RECORD_INSTANCE_NO` = ?", "#{search}")
     end 
   end
 end

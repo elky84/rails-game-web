@@ -3,7 +3,7 @@ class SkillScript < ActiveRecord::Base
     if Rails.env.development?
       where("SKILL_ID = ?", "#{search}")
     else
-      where("\"SKILL_ID\" = ?", "#{search}")
+      where("`SKILL_ID` = ?", "#{search}")
     end 
   end
 end
