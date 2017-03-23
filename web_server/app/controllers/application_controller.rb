@@ -10,7 +10,7 @@ class ApplicationController < ActionController::Base
     if Rails.env.development?
       return name
     else
-      return "\"#{name}\""
+      return "`#{name}`"
     end
   end 
   
