@@ -3,7 +3,7 @@ class FriendInstance < ActiveRecord::Base
     if Rails.env.development?
       where("FRIEND_NO = ?", "#{search}")
     else
-      where("\"FRIEND_NO\" = ?", "#{search}")
+      where("`FRIEND_NO` = ?", "#{search}")
     end 
   end
 end

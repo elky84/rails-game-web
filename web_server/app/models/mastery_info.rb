@@ -3,7 +3,7 @@ class MasteryInfo < ActiveRecord::Base
     if Rails.env.development?
       where("MASTERY_ID = ?", "#{search}")
     else
-      where("\"MASTERY_ID\" = ?", "#{search}")
+      where("`MASTERY_ID` = ?", "#{search}")
     end 
   end
 end

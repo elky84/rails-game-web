@@ -3,7 +3,7 @@ class AreaInfo < ActiveRecord::Base
     if Rails.env.development?
       where("AREA_ID = ?", "#{search}")
     else
-      where("\"AREA_ID\" = ?", "#{search}")
+      where("`AREA_ID` = ?", "#{search}")
     end 
   end
 end

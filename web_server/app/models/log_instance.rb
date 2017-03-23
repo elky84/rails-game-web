@@ -3,7 +3,7 @@ class LogInstance < ActiveRecord::Base
     if Rails.env.development?
       where("LOG_NO = ?", "#{search}")
     else
-      where("\"LOG_NO\" = ?", "#{search}")
+      where("`LOG_NO` = ?", "#{search}")
     end 
   end
 end

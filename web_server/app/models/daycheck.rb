@@ -3,7 +3,7 @@ class Daycheck < ActiveRecord::Base
     if Rails.env.development?
       where("DAYCHECK_ID = ?", "#{search}")
     else
-      where("\"DAYCHECK_ID\" = ?", "#{search}")
+      where("`DAYCHECK_ID` = ?", "#{search}")
     end 
   end
 end

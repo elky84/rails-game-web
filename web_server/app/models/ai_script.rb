@@ -3,7 +3,7 @@ class AiScript < ActiveRecord::Base
     if Rails.env.development?
       where("index = ?", "#{search}")
     else
-      where("\"index\" = ?", "#{search}")
+      where("`index` = ?", "#{search}")
     end 
   end
 end

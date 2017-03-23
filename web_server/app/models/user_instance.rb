@@ -3,7 +3,7 @@ class UserInstance < ActiveRecord::Base
     if Rails.env.development?
       where("USER_NO = ?", "#{search}")
     else
-      where("\"USER_NO\" = ?", "#{search}")
+      where("`USER_NO` = ?", "#{search}")
     end 
   end
 end

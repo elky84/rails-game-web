@@ -3,7 +3,7 @@ class MailInstance < ActiveRecord::Base
     if Rails.env.development?
       where("MAIL_NO = ?", "#{search}")
     else
-      where("\"MAIL_NO\" = ?", "#{search}")
+      where("`MAIL_NO` = ?", "#{search}")
     end 
   end
 end

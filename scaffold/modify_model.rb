@@ -28,7 +28,7 @@ to = "class #{model_name} < ActiveRecord::Base
     if Rails.env.development?
       where(\"#{key} = ?\", #{search_statement})
     else
-      where(\"\\\"#{key}\\\" = ?\", #{search_statement})
+      where(\"`#{key}` = ?\", #{search_statement})
     end 
   end"
 #puts to

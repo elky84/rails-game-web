@@ -3,7 +3,7 @@ class ItemInfo < ActiveRecord::Base
     if Rails.env.development?
       where("ITEM_ID = ?", "#{search}")
     else
-      where("\"ITEM_ID\" = ?", "#{search}")
+      where("`ITEM_ID` = ?", "#{search}")
     end 
   end
 end

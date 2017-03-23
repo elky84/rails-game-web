@@ -3,7 +3,7 @@ class ConnectRestrict < ActiveRecord::Base
     if Rails.env.development?
       where("CONNECT_RESTRICT_NO = ?", "#{search}")
     else
-      where("\"CONNECT_RESTRICT_NO\" = ?", "#{search}")
+      where("`CONNECT_RESTRICT_NO` = ?", "#{search}")
     end 
   end
 end

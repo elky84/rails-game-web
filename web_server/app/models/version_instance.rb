@@ -3,7 +3,7 @@ class VersionInstance < ActiveRecord::Base
     if Rails.env.development?
       where("VALUE = ?", "#{search}")
     else
-      where("\"VALUE\" = ?", "#{search}")
+      where("`VALUE` = ?", "#{search}")
     end 
   end
 end

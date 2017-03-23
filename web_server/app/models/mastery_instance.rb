@@ -3,7 +3,7 @@ class MasteryInstance < ActiveRecord::Base
     if Rails.env.development?
       where("GROUP_NO = ?", "#{search}")
     else
-      where("\"GROUP_NO\" = ?", "#{search}")
+      where("`GROUP_NO` = ?", "#{search}")
     end 
   end
 end

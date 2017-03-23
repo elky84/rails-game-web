@@ -3,7 +3,7 @@ class CharacterInfo < ActiveRecord::Base
     if Rails.env.development?
       where("CHARACTER_ID = ?", "#{search}")
     else
-      where("\"CHARACTER_ID\" = ?", "#{search}")
+      where("`CHARACTER_ID` = ?", "#{search}")
     end 
   end
 end

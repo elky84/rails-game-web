@@ -3,7 +3,7 @@ class Condition < ActiveRecord::Base
     if Rails.env.development?
       where("CONDITION_ID = ?", "#{search}")
     else
-      where("\"CONDITION_ID\" = ?", "#{search}")
+      where("`CONDITION_ID` = ?", "#{search}")
     end 
   end
 end
