@@ -69,7 +69,6 @@ Rails.application.configure do
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
    
-  # ���δ��� ������ ���� �� �� ó��.
   #config.middleware.insert_before ActionDispatch::Static, Rack::Deflater
   
   require 'log4r'
@@ -79,5 +78,6 @@ Rails.application.configure do
   
   config.cache_store = :redis_store, 'redis://127.0.0.1:6379/0/cache', { expires_in: 90.minutes }
 
-  config.logger = ActiveSupport::Logger.new(STDOUT)
+  #config.logger = ActiveSupport::Logger.new(STDOUT)
+  config.logger = ActiveSupport::Logger.new('./log/production.log', 'daily')
 end
