@@ -462,6 +462,8 @@ Rails.application.routes.draw do
   get 'home/maintenance'
   get 'home/log'
   
+  get 'admin'
+  
   get 'statistics/uv'
   get 'statistics/nru'
   get 'statistics/retention'

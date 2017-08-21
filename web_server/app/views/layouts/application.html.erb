@@ -4,8 +4,8 @@
   <title>GM Tool</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-	<%= favicon_link_tag(source='favicon.ico')%>
-	<%= render 'application/favicon' %>
+  <%= favicon_link_tag(source='favicon.ico')%>
+  <%= render 'application/favicon' %>
   <%= csrf_meta_tags %>
 
   <header class="navbar navbar-fixed-top navbar-inverse">
@@ -22,6 +22,7 @@
 		<li><%= link_to "Coupon",   home_coupon_path %></li>
 		<li><%= link_to "Maintenance",   home_maintenance_path %></li>
 		<li><%= link_to "Dev",   home_dev_path %></li>
+		<li><%= link_to "Admin",   admin_path %></li>
 	  </ul>
 	</nav>
   </div>
