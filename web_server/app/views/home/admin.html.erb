@@ -1,1 +1,9 @@
-<iframe src="/admin/">
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+function resizeIframe(fr) {
+                fr.setExpression('height',aaa.document.body.scrollHeight);
+                fr.setExpression('width',aaa.document.body.scrollWidth);
+}
+//-->
+</SCRIPT>
+<iframe frameborder="0" id="aaa"  scrolling="no" src="/admin/" width=650 onload="resizeIframe(this)"></iframe>
