@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>WebServer</title>
+  <title>GM Tool</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 	<%= favicon_link_tag(source='favicon.ico')%>
+	<%= render 'application/favicon' %>
   <%= csrf_meta_tags %>
-	<link href="<%= image_path("favicon.ico") %>" rel="shortcut icon" />
 
   <header class="navbar navbar-fixed-top navbar-inverse">
   <div class="container">
