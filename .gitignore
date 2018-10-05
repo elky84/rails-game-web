@@ -74,3 +74,6 @@ Temp/
 
 #ignore aptana studio project files
 .project
+
+test_tool/bin/
+test_tool/packages
