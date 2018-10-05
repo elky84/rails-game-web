@@ -27,3 +27,7 @@ c# web_test_tool
 ### web_server
 rails web server.
 include admin-tool.
+
+![rails_game_web_01](./rails_game_web_01.png)
+
+![rails_game_web_02](./rails_game_web_02.png)
