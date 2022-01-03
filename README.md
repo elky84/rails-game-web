@@ -1,6 +1,6 @@
 [![Website](https://img.shields.io/website-up-down-green-red/http/shields.io.svg?label=elky-essay)](https://elky84.github.io)
-<img src="https://img.shields.io/badge/made%20with-Ruby-red.svg" alt="made with Ruby">
-<img src="https://img.shields.io/badge/made%20with-Rails-orange.svg" alt="made with Rails">
+![Made with](https://img.shields.io/badge/made%20with-Ruby-brightgreen.svg)
+![Made with](https://img.shields.io/badge/made%20with-Rails-green.svg)
 
 ![GitHub forks](https://img.shields.io/github/forks/elky84/rails-game-web.svg?style=social&label=Fork)
 ![GitHub stars](https://img.shields.io/github/stars/elky84/rails-game-web.svg?style=social&label=Stars)
